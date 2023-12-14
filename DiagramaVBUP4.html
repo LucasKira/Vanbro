@@ -13,6 +13,11 @@
             position: relative;
         }
 
+        #container {
+            position: relative;
+            width: 1000px;
+        }
+
         img {
             width: 100%;
             display: block;
@@ -32,6 +37,7 @@
             background-color: rgba(240, 248, 255, 0);
             border-color: rgba(240, 248, 255, 0);
             cursor: pointer;
+            font-size: 0.8em; /* Adicionado tamanho de fonte em relação à imagem */
         }
 
         .clicavel {
@@ -139,8 +145,10 @@
 </head>
 
 <body>
-    <img src="vanbro1.png" alt="">
-    <button onclick="clicarEixo()" id="eixo12"></button>
+    <div id="container">
+        <img src="vanbro1.png" alt="">
+        <button onclick="clicarEixo()" id="eixo12"></button>
+    
     <div id="codigo12">
         <ul>
             <li id="design">EIXO INDUZIDO (CFE. CONFIGURAÇÃO) <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
@@ -192,6 +200,7 @@
         </ul>
         <button id="capturarTela" onclick="capturarTela()">Capturar Tela</button>
     </div>
+</div>
 
     <script>
         const eixo = document.querySelector('#codigo12')
