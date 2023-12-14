@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBUP4</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: auto;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            z-index: -1;
+        }
+
+        #eixo12 {
+            width: 3%;
+            height: 25%;
+            position: absolute;
+            top: 20%;
+            left: 33.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgba(240, 248, 255, 0);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+        }
+
+        .clicavel {
+            cursor: pointer;
+        }
+
+        .clicavel:hover {
+            background-color: rgba(61, 57, 57, 0.445);
+        }
+
+        #codigo12 {
+            position: absolute;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%; /* Altura máxima da div */
+            overflow-y: auto; /* Adiciona barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
+        }
+
+        #codigo12 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo12 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo12 li:last-child {
+            border-bottom: none;
+        }
+
+        #fecharEixo {
+            position: absolute;
+            width: 15%;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(240, 248, 255, 0.664);
+            border: none;
+            color: rgba(61, 57, 57, 0.8);
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #pedidos {
+            text-align: center;
+            position: absolute;
+            top: 100%;
+            left: 10px;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 10px;
+            border-radius: 10px;
+            z-index: 1;
+            overflow: hidden;
+            width: 35%;
+            transition: height 0.3s;
+            max-height: 10%; /* Alterado para 10% */
+        }
+
+        #pedidosUl {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        #pedidos:hover #pedidosUl {
+            opacity: 1;
+        }
+
+        .pedidoLi {
+            padding: 5px 0; /* Reduzido o espaçamento */
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .removerPedido {
+            cursor: pointer;
+            color: #ff5555;
+        }
+
+        #design {
+            font-weight: bold;
+        }
+
+        #capturarTela {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(240, 248, 255, 0.664);
+            border: none;
+            color: rgba(61, 57, 57, 0.8);
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="vanbro1.png" alt="">
+    <button onclick="clicarEixo()" id="eixo12"></button>
+    <div id="codigo12">
+        <ul>
+            <li id="design">EIXO INDUZIDO (CFE. CONFIGURAÇÃO) <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: INOX AISI410/SILIC.</li>
+            <div id="eixo">
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) /
+                    CÓDIGO: 300.022.000703 </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 14CM (HP 0,5 M - 0,5/0,7 T) /
+                    CÓDIGO: 300.022.000043
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 18CM (HP 0,7 M - 1,0 T)/
+                    CÓDIGO: 300.022.000044
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 23CM (HP 1,0 M - 1,5 T)/
+                    CÓDIGO: 300.022.000045
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 28CM (HP 1,5 M - 2,0 T)/
+                    CÓDIGO: 300.022.000046
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 35CM (HP 2,0 M -2,5/3,0 T)/
+                    CODIGO: 300.022.000047
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 42CM (HP 2,5/3,0 M - 3,5/4,0 T)/
+                    CÓDIGO: 300.022.000048
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 48CM (HP 3,5/4,0 M - 4,5/5,0 T)/
+                    CÓDIGO: 300.022.000049
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 52CM (HP 4,5/5,0 M - 5,5 T)/
+                    CÓDIGO: 300.022.000050
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 56CM (HP 5,5 M - 6,0 T)/
+                    CÓDIGO: 300.022.000051 </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T)/
+                    CÓDIGO: 300.022.000052</li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 65CM (HP 11,0 T)/
+                    CÓDIGO: 300.022.001383
+                </li>
+                <li onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 70CM (HP 12,0 T)/
+                    CÓDIGO: 300.022.001384 </li>
+            </div>
+        </ul>
+    </div>
+
+    <div id="pedidos">
+        PEDIDO
+        <ul id="pedidosUl">
+            <!-- Itens adicionados serão inseridos aqui -->
+        </ul>
+        <button id="capturarTela" onclick="capturarTela()">Capturar Tela</button>
+    </div>
+
+    <script>
+        const eixo = document.querySelector('#codigo12')
+        eixo.style.display = 'none'
+
+        function clicarEixo() {
+            eixo.style.display = 'block'
+        }
+
+        function fecharEixo() {
+            eixo.style.display = 'none'
+        }
+
+        function clicarNaLi(element) {
+            const eixoLi = document.querySelector('#codigo12')
+
+            // Adiciona o conteúdo da li clicada à lista de pedidos
+            const pedidosUl = document.getElementById('pedidosUl');
+            const novoPedido = document.createElement('li');
+            novoPedido.className = 'pedidoLi';
+            novoPedido.innerHTML = `${element.textContent} <span class="removerPedido" onclick="removerPedido(this)">Remover</span>`;
+
+            pedidosUl.appendChild(novoPedido);
+
+            // Expande a div de pedidos para baixo
+            const pedidos = document.getElementById('pedidos');
+            pedidos.style.maxHeight = pedidos.scrollHeight + "px";
+        }
+
+        function removerPedido(element) {
+            // Remove o item da lista de pedidos
+            const pedidoRemover = element.parentNode;
+            const pedidosUl = document.getElementById('pedidosUl');
+            pedidosUl.removeChild(pedidoRemover);
+        }
+
+        function capturarTela() {
+            // Captura a tela da div "pedidos"
+            html2canvas(document.getElementById('pedidos')).then(function (canvas) {
+                // Cria um elemento de imagem a partir do canvas
+                var img = new Image();
+                img.src = canvas.toDataURL('image/png');
+
+                // Cria um link para fazer o download da imagem
+                var link = document.createElement('a');
+                link.href = img.src;
+                link.download = 'captura_de_tela_pedidos.png';
+
+                // Adiciona o link ao corpo da página e simula um clique
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+    </script>
+</body>
+
+</html>
