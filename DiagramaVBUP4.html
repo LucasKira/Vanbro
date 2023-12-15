@@ -15,13 +15,16 @@
         #container {
             position: relative;
             width: 100%;
+            
         }
 
         img {
             width: 100%;
+            height: 100%;
             display: block;
             margin: 0 auto;
             z-index: -1;
+
         }
 
         #eixo12 {
@@ -167,6 +170,55 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        #nomeP{
+            position: relative;
+            text-align: left;
+            margin-left: 5px;
+            width: 500%;
+            font-size: 100%;
+            list-style: none;
+            padding: 0;
+            
+        }
+        #emailP{
+            position: relative;
+            text-align: left;
+            margin-left: 5px;
+            width: 500%;
+            font-size: 100%;
+            list-style: none;
+            padding: 0;
+            
+        }
+        #empresaP{
+            position: relative;
+            text-align: left;
+            margin-left: 5px;
+            width: 500%;
+            font-size: 100%;
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        #fecharEixoEmbaixo{
+            position: absolute;
+            width: 15%;
+            top: 685px;
+            right: 17px;
+            background-color: rgba(240, 248, 255, 0.664);
+            border: none;
+            color: rgba(61, 57, 57, 0.8);
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        
+        
+
         /* Adicionando o CSS para esconder as setas nos campos de número */
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button {
@@ -177,6 +229,7 @@
         input[type="number"] {
             -moz-appearance: textfield;
         }
+
         
 
     </style>
@@ -268,6 +321,7 @@
                             <input type="number" min="1">
                         
                     </li>
+                    <button onclick="fecharEixo()" id="fecharEixoEmbaixo">FECHAR</button>
                 </div>
             </ul>
         </div>
@@ -275,12 +329,12 @@
         <div id="pedidos">
             PEDIDO
             <div id="registro">
-                <label for="name">Nome:</label>
-                <input type="text number">
-                <label for="Empresa">Empresa:</label>
-                <input type="text number">
-                <label for="email">E-mail:</label>
-                <input type="text number">
+                <p id="nomeP"><label for="name">Nome:</label>
+                <input id="lbl1" type="text number"></p>
+                <p id="empresaP"><label for="Empresa">Empresa:</label>
+                <input id="lbl2" type="text number"></p>
+                <p id="emailP"><label for="email">E-mail:</label>
+                <input id="lbl3" type="text number"></p>
             </div>
             <ul id="pedidosUl">
                 <!-- Itens adicionados serão inseridos aqui -->
