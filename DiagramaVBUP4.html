@@ -15,6 +15,7 @@
         #container {
             position: relative;
             width: 100rem;
+            background-color: #ff5555;
             
         }
 
@@ -36,7 +37,7 @@
             transform: translate(-50%, -50%);
             z-index: 0;
             color: rgba(240, 248, 255, 0);
-            background-color: rgba(240, 248, 255, 0);
+            background-color: rgba(240, 248, 255, 0.747);
             border-color: rgba(240, 248, 255, 0);
             cursor: pointer;
             font-size: 0.8em;
@@ -171,52 +172,9 @@
             align-items: center;
         }
 
-        #nomeP{
-            position: relative;
-            text-align: left;
-            margin-left: 5px;
-            width: 500%;
-            font-size: 100%;
-            list-style: none;
-            padding: 0;
-            
-        }
-        #emailP{
-            position: relative;
-            text-align: left;
-            margin-left: 5px;
-            width: 500%;
-            font-size: 100%;
-            list-style: none;
-            padding: 0;
-            
-        }
-        #empresaP{
-            position: relative;
-            text-align: left;
-            margin-left: 5px;
-            width: 500%;
-            font-size: 100%;
-            list-style: none;
-            padding: 0;
-            
-        }
-
-        #fecharEixoEmbaixo{
-            position: absolute;
-            width: 15%;
-            top: 685px;
-            right: 17px;
-            background-color: rgba(240, 248, 255, 0.664);
-            border: none;
-            color: rgba(61, 57, 57, 0.8);
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
-
         
+
+               
         
 
         /* Adicionando o CSS para esconder as setas nos campos de número */
@@ -224,11 +182,126 @@
         input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0;
-    }
+        }
 
         input[type="number"] {
             -moz-appearance: textfield;
         }
+
+        #eixo11{
+            width: 2%;
+            height: 2%;
+            position: absolute;
+            top: 37%;
+            left: 33.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #buchaGrafite{
+            width: 3%;
+            height: 4%;
+            position: absolute;
+            top: 43%;
+            left: 33.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #mancalInferior{
+            width: 7.5%;
+            height: 9.5%;
+            position: absolute;
+            top: 51.5%;
+            left: 33.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #discoAxialGrafite{
+            width: 4.9%;
+            height: 3%;
+            position: absolute;
+            top: 60.8%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #discoGrafite{
+            width: 4.5%;
+            height: 3%;
+            position: absolute;
+            top: 65.7%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #pinoElastico{
+            width: 0.5%;
+            height: 5%;
+            position: absolute;
+            top: 62.8%;
+            left: 30.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #discoAxialInox{
+            width: 5%;
+            height: 3%;
+            position: absolute;
+            top: 70.3%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        
+        }
+        #discoPoliester{
+            width: 5%;
+            height: 2%;
+            position: absolute;
+            top: 73.1%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+
 
         
 
@@ -239,6 +312,16 @@
     <div id="container">
         <img src="vanbro1.png" alt="">
         <button onclick="clicarEixo()" id="eixo12"></button>
+        <button id="eixo11"></button>
+        <button id="buchaGrafite"></button>
+        <button id="mancalInferior"></button>
+        <button id="discoAxialGrafite"></button>
+        <button id="discoGrafite"></button>
+        <button id="pinoElastico"></button>
+        <button id="discoAxialInox"></button>
+        <button id="discoPoliester"></button>
+        <button id="tampaInferior"></button>
+        
 
         <div id="codigo12">
             <ul>
@@ -321,7 +404,7 @@
                             <input type="number" min="1">
                         
                     </li>
-                    <button onclick="fecharEixo()" id="fecharEixoEmbaixo">FECHAR</button>
+                    
                 </div>
             </ul>
         </div>
@@ -329,12 +412,7 @@
         <div id="pedidos">
             PEDIDO
             <div id="registro">
-                <p id="nomeP"><label for="name">Nome:</label>
-                <input id="lbl1" type="text number"></p>
-                <p id="empresaP"><label for="Empresa">Empresa:</label>
-                <input id="lbl2" type="text number"></p>
-                <p id="emailP"><label for="email">E-mail:</label>
-                <input id="lbl3" type="text number"></p>
+                
             </div>
             <ul id="pedidosUl">
                 <!-- Itens adicionados serão inseridos aqui -->
