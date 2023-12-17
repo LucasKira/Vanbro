@@ -14,7 +14,7 @@
 
         #container {
             position: relative;
-            width: 100rem;
+            width: 80rem;
             
             
         }
@@ -78,6 +78,34 @@
         #codigo12 li:last-child {
             border-bottom: none;
         }
+       
+        #codigo11 {
+            position: absolute;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+        }
+
+        #codigo11 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo11 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo11 li:last-child {
+            border-bottom: none;
+        }
+        
 
         #fecharEixo {
             position: absolute;
@@ -94,7 +122,7 @@
 
         #pedidos {
             text-align: center;
-            position: absolute;
+            position: absolute;            
             top: 100%;
             left: 10px;
             color: rgb(195, 147, 201);
@@ -146,13 +174,23 @@
         #capturarTela {
             position: absolute;
             top: 5px;
-            right: 5px;
+            left: 5px;
             background-color: rgba(240, 248, 255, 0.664);
             border: none;
-            color: rgba(61, 57, 57, 0.8);
+            color: rgba(41, 92, 99, 0.8);
             cursor: pointer;
             padding: 5px 10px;
             border-radius: 5px;
+        }
+        #removerTodos{
+            position: absolute;
+            right: 6px;
+            cursor: pointer;
+            color: #ff5555;
+            font-weight: bold;
+            background-color: rgba(240, 248, 255, 0);
+            border-color: #ff5555;
+            border-radius: 10%;
         }
 
         input {
@@ -171,6 +209,7 @@
             justify-content: space-between;
             align-items: center;
         }
+
 
         
 
@@ -234,7 +273,7 @@
             width: 4.9%;
             height: 3%;
             position: absolute;
-            top: 60.8%;
+            top: 60.7%;
             left: 33.5%;
             transform: translate(-50%, -50%);
             z-index: 0;
@@ -248,7 +287,7 @@
             width: 4.5%;
             height: 3%;
             position: absolute;
-            top: 65.7%;
+            top: 65.5%;
             left: 33.5%;
             transform: translate(-50%, -50%);
             z-index: 0;
@@ -262,8 +301,8 @@
             width: 0.5%;
             height: 5%;
             position: absolute;
-            top: 62.8%;
-            left: 30.5%;
+            top: 63.3%;
+            left: 30.8%;
             transform: translate(-50%, -50%);
             z-index: 0;
             color: rgba(240, 248, 255, 0);
@@ -276,7 +315,7 @@
             width: 5%;
             height: 3%;
             position: absolute;
-            top: 70.3%;
+            top: 70%;
             left: 33.5%;
             transform: translate(-50%, -50%);
             z-index: 0;
@@ -291,7 +330,7 @@
             width: 5%;
             height: 2%;
             position: absolute;
-            top: 73.1%;
+            top: 73.9%;
             left: 33.5%;
             transform: translate(-50%, -50%);
             z-index: 0;
@@ -301,6 +340,356 @@
             cursor: pointer;
             font-size: 0.8em;
         }
+        #tampaInferior{
+            width: 7.5%;
+            height: 8.5%;
+            position: absolute;
+            top: 82%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #diafragma{
+            width: 4.5%;
+            height: 3%;
+            position: absolute;
+            top: 90%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #tamdaDaCamara{
+            width: 5.2%;
+            height: 3%;
+            position: absolute;
+            top: 94%;
+            left: 33.2%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #porcaSextavada51612{
+            width: 8.2%;
+            height: 7%;
+            position: absolute;
+            top: 10%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #protetorDeAreiaNitril{
+            width: 2.4%;
+            height: 2.5%;
+            position: absolute;
+            top: 16.4%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #protetorDeAreiaPoliacetal{
+            width: 2.4%;
+            height: 2.2%;
+            position: absolute;
+            top: 20%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #retentorSuperior{
+            width: 2.4%;
+            height: 2.2%;
+            position: absolute;
+            top: 23.5%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #conjuntoMancalSuperior{
+            width: 7%;
+            height: 9%;
+            position: absolute;
+            top: 30.5%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        
+        
+        #tampao{
+            width: 2%;
+            height: 2%;
+            position: absolute;
+            top: 30%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #buchaGrafiteSuperior{
+            width: 3%;
+            height: 4.5%;
+            position: absolute;
+            top: 40%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #prensaCabo{
+            width: 2%;
+            height: 2%;
+            position: absolute;
+            top: 41%;
+            left: 68.6%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #anelOring{
+            width: 8.2%;
+            height: 7.5%;
+            position: absolute;
+            top: 48.8%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #tampaSuperior{
+            width: 8.2%;
+            height: 7.5%;
+            position: absolute;
+            top: 59.3%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #etiqueta22{
+            width: 2.7%;
+            height: 2%;
+            position: absolute;
+            top: 58.8%;
+            left: 53.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #etiqueta21{
+            width: 2.7%;
+            height: 2%;
+            position: absolute;
+            top: 62.2%;
+            left: 53.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #etiqueta35{
+            width: 4%;
+            height: 6%;
+            position: absolute;
+            top: 55.3%;
+            left: 80.1%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #etiqueta34{
+            width: 4%;
+            height: 3%;
+            position: absolute;
+            top: 61.3%;
+            left: 79.5%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        
+        
+        #conjuntoEstator{
+            width: 8.2%;
+            height: 24%;
+            position: absolute;
+            top: 82.5%;
+            left: 61.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(219, 225, 231);
+            border-color: rgba(240, 248, 255, 0);
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        #isolacaoExterna{
+            width: 2%;
+            height: 2%;
+            position: absolute;
+            top: 80.5%;
+            left: 78.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        #bobinadoMotor{
+            width: 1.8%;
+            height: 1.8%;
+            position: absolute;
+            top: 77.7%;
+            left: 76.3%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        #isolacaoInterna{
+            width: 2%;
+            height: 2%;
+            position: absolute;
+            top: 82.3%;
+            left: 72.2%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        #isolacaoCanal{
+            width: 1.8%;
+            height: 1.8%;
+            position: absolute;
+            top: 92%;
+            left: 75.2%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        #saidaDeCabos{
+            width: 1.6%;
+            height: 1.6%;
+            position: absolute;
+            top: 76%;
+            left: 83.2%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        #conjuntoTampaDeCanal{
+            width: 1.6%;
+            height: 1.6%;
+            position: absolute;
+            top: 90.2%;
+            left: 80.2%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            color: rgba(240, 248, 255, 0);
+            background-color: rgb(183, 233, 209);
+            border-color: rgba(34, 228, 16, 0.822);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        
+        
+
+        
 
 
         
@@ -312,15 +701,46 @@
     <div id="container">
         <img src="vanbro1.png" alt="">
         <button onclick="clicarEixo()" id="eixo12"></button>
-        <button id="eixo11"></button>
-        <button id="buchaGrafite"></button>
-        <button id="mancalInferior"></button>
-        <button id="discoAxialGrafite"></button>
-        <button id="discoGrafite"></button>
-        <button id="pinoElastico"></button>
-        <button id="discoAxialInox"></button>
-        <button id="discoPoliester"></button>
-        <button id="tampaInferior"></button>
+        <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
+        <button class="pecas" id="buchaGrafite"></button>
+        <button class="pecas" id="mancalInferior"></button>
+        <button class="pecas" id="discoAxialGrafite"></button>
+        <button class="pecas" id="discoGrafite"></button>
+        <button class="pecas" id="pinoElastico"></button>
+        <button class="pecas" id="discoAxialInox"></button>
+        <button class="pecas" id="discoPoliester"></button>
+        <button class="pecas" id="tampaInferior"></button>
+        <button class="pecas" id="diafragma"></button>
+        <button class="pecas" id="tamdaDaCamara"></button>
+        <button class="pecas" id="porcaSextavada51612"></button>
+        <button class="pecas" id="protetorDeAreiaNitril"></button>
+        <button class="pecas" id="protetorDeAreiaPoliacetal"></button>
+        <button class="pecas" id="retentorSuperior"></button>
+        <button class="pecas" id="tampao"></button>
+        <button class="pecas" id="buchaGrafiteSuperior"></button>
+        <button class="pecas" id="conjuntoMancalSuperior"></button>
+        <button class="pecas" id="etiqueta21"></button>
+        <button class="pecas" id="etiqueta22"></button>
+        <button class="pecas" id="tampaSuperior"></button>        
+        <button class="pecas" id="anelOring"></button>
+        <button class="pecas" id="prensaCabo"></button>
+        <button class="pecas" id="etiqueta35"></button>
+        <button class="pecas" id="etiqueta34"></button>
+        <button class="pecas" id="conjuntoEstator"></button>
+        <button class="pecas" id="isolacaoExterna"></button>
+        <button class="pecas" id="isolacaoCanal"></button>
+        <button class="pecas" id="bobinadoMotor"></button>
+        <button class="pecas" id="isolacaoInterna"></button>
+        <button class="pecas" id="conjuntoTampaDeCanal"></button>
+        <button class="pecas" id="saidaDeCabos"></button>
+
+
+
+
+
+
+
+
         
 
         <div id="codigo12">
@@ -408,8 +828,14 @@
                 </div>
             </ul>
         </div>
+        
 
-        <div id="pedidos">
+        
+        
+        
+
+
+        <div id="pedidos">     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
             PEDIDO
             <div id="registro">
                 
@@ -421,18 +847,45 @@
         </div>
     </div>
 
+    <div id="codigo11">
+        <ul>
+            <li id="design">CHAVETA INDUZIDO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: INOX AISI 304. <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
+                    <input type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    
+
+
+
     <script>
         const itensAdicionados = [];
 
         const eixo = document.querySelector('#codigo12')
         eixo.style.display = 'none'
+        const eixo11 = document.querySelector('#codigo11')
+        eixo11.style.display = 'none'
 
         function clicarEixo() {
+            eixo11.style.display = 'none'
             eixo.style.display = 'block'
         }
 
         function fecharEixo() {
             eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            
+        }
+
+        function clicarEixo11(){
+            eixo.style.display = 'none'
+            eixo11.style.display ='block'
+
         }
 
         function clicarNaLi(element) {
@@ -480,6 +933,16 @@
             link.click();
             document.body.removeChild(link);
         }
+
+        function removerItens() {
+        // Obtém a referência para a lista (ul)
+        var lista = document.querySelector('#pedidos ul');
+
+        // Remove todos os elementos filhos da lista
+        while (lista.firstChild) {
+            lista.removeChild(lista.firstChild);
+        }
+    }
     </script>
 </body>
 
