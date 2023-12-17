@@ -105,6 +105,33 @@
         #codigo11 li:last-child {
             border-bottom: none;
         }
+
+        #codigo10 {
+            position: absolute;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+        }
+
+        #codigo10 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo10 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo10 li:last-child {
+            border-bottom: none;
+        }
         
 
         #fecharEixo {
@@ -192,6 +219,8 @@
             border-color: #ff5555;
             border-radius: 10%;
         }
+        
+        
 
         input {
             width: 12%;
@@ -210,6 +239,7 @@
             align-items: center;
         }
 
+        
 
         
 
@@ -702,46 +732,39 @@
         <img src="vanbro1.png" alt="">
         <button onclick="clicarEixo()" id="eixo12"></button>
         <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
-        <button class="pecas" id="buchaGrafite"></button>
-        <button class="pecas" id="mancalInferior"></button>
-        <button class="pecas" id="discoAxialGrafite"></button>
-        <button class="pecas" id="discoGrafite"></button>
-        <button class="pecas" id="pinoElastico"></button>
-        <button class="pecas" id="discoAxialInox"></button>
-        <button class="pecas" id="discoPoliester"></button>
-        <button class="pecas" id="tampaInferior"></button>
-        <button class="pecas" id="diafragma"></button>
-        <button class="pecas" id="tamdaDaCamara"></button>
-        <button class="pecas" id="porcaSextavada51612"></button>
-        <button class="pecas" id="protetorDeAreiaNitril"></button>
-        <button class="pecas" id="protetorDeAreiaPoliacetal"></button>
-        <button class="pecas" id="retentorSuperior"></button>
-        <button class="pecas" id="tampao"></button>
-        <button class="pecas" id="buchaGrafiteSuperior"></button>
-        <button class="pecas" id="conjuntoMancalSuperior"></button>
-        <button class="pecas" id="etiqueta21"></button>
-        <button class="pecas" id="etiqueta22"></button>
-        <button class="pecas" id="tampaSuperior"></button>        
-        <button class="pecas" id="anelOring"></button>
-        <button class="pecas" id="prensaCabo"></button>
-        <button class="pecas" id="etiqueta35"></button>
-        <button class="pecas" id="etiqueta34"></button>
-        <button class="pecas" id="conjuntoEstator"></button>
-        <button class="pecas" id="isolacaoExterna"></button>
-        <button class="pecas" id="isolacaoCanal"></button>
-        <button class="pecas" id="bobinadoMotor"></button>
-        <button class="pecas" id="isolacaoInterna"></button>
-        <button class="pecas" id="conjuntoTampaDeCanal"></button>
-        <button class="pecas" id="saidaDeCabos"></button>
-
-
-
-
-
-
-
-
+        <button onclick="buchaGrafite()" class="pecas" id="buchaGrafite"></button>
+        <button onclick="mancalInferior()" class="pecas" id="mancalInferior"></button>
+        <button onclick="discoAxialGrafite()" class="pecas" id="discoAxialGrafite"></button>
+        <button onclick="discoGrafite()" class="pecas" id="discoGrafite"></button>
+        <button onclick="pinoElastico()" class="pecas" id="pinoElastico"></button>
+        <button onclick="discoAxialInox()" class="pecas" id="discoAxialInox"></button>
+        <button onclick="discoPoliester()" class="pecas" id="discoPoliester"></button>
+        <button onclick="tampaInferior()" class="pecas" id="tampaInferior"></button>
+        <button onclick="diafragma()" class="pecas" id="diafragma"></button>
+        <button onclick="tamdaDaCamara()" class="pecas" id="tamdaDaCamara"></button>
+        <button onclick="porcaSextavada51612()" class="pecas" id="porcaSextavada51612"></button>
+        <button onclick="protetorDeAreiaNitril()" class="pecas" id="protetorDeAreiaNitril"></button>
+        <button onclick="protetorDeAreiaPoliacetal()" class="pecas" id="protetorDeAreiaPoliacetal"></button>
+        <button onclick="retentorSuperior()" class="pecas" id="retentorSuperior"></button>
+        <button onclick="tampao()" class="pecas" id="tampao"></button>
+        <button onclick="buchaGrafiteSuperior()" class="pecas" id="buchaGrafiteSuperior"></button>
+        <button onclick="conjuntoMancalSuperior()" class="pecas" id="conjuntoMancalSuperior"></button>
+        <button onclick="etiqueta21()" class="pecas" id="etiqueta21"></button>
+        <button onclick="etiqueta22()" class="pecas" id="etiqueta22"></button>
+        <button onclick="tampaSuperior()" class="pecas" id="tampaSuperior"></button>        
+        <button onclick="anelOring()" class="pecas" id="anelOring"></button>
+        <button onclick="prensaCabo()" class="pecas" id="prensaCabo"></button>
+        <button onclick="etiqueta35()" class="pecas" id="etiqueta35"></button>
+        <button onclick="etiqueta34()" class="pecas" id="etiqueta34"></button>
+        <button onclick="conjuntoEstator()" class="pecas" id="conjuntoEstator"></button>
+        <button onclick="isolacaoExterna()" class="pecas" id="isolacaoExterna"></button>
+        <button onclick="isolacaoCanal()" class="pecas" id="isolacaoCanal"></button>
+        <button onclick="bobinadoMotor()" class="pecas" id="bobinadoMotor"></button>
+        <button onclick="isolacaoInterna()" class="pecas" id="isolacaoInterna"></button>
+        <button onclick="conjuntoTampaDeCanal()" class="pecas" id="conjuntoTampaDeCanal"></button>
+        <button onclick="saidaDeCabos()" class="pecas" id="saidaDeCabos"></button>
         
+                
 
         <div id="codigo12">
             <ul>
@@ -749,8 +772,9 @@
                 <li id="design">MATERIAL: INOX AISI410/SILIC. <span id="quantidade">Quantidade</span></li>
                 <div id="eixo">
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
-                        <input type="number" min="1">
+                        <span id="span1" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
+                        <input id="input1" type="number" min="1">   
+
                     </li>
                     <li class="eixo-container">
                         <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 14CM (HP 0,5 M - 0,5/0,7 T) /
@@ -827,13 +851,7 @@
                     
                 </div>
             </ul>
-        </div>
-        
-
-        
-        
-        
-
+        </div>    
 
         <div id="pedidos">     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
             PEDIDO
@@ -859,17 +877,33 @@
             </div>
         </ul>
     </div>
+    <div id="codigo10">
+        <ul>
+            <li id="design">CHAVETA INDUZIDO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: INOX AISI 304. <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
+                    <input type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
     
 
 
-
     <script>
+
+        
+
         const itensAdicionados = [];
 
         const eixo = document.querySelector('#codigo12')
         eixo.style.display = 'none'
         const eixo11 = document.querySelector('#codigo11')
         eixo11.style.display = 'none'
+        const buchaDeGrafite = document.querySelector('#codigo10')
+        buchaDeGrafite.style.display = 'none'
 
         function clicarEixo() {
             eixo11.style.display = 'none'
@@ -879,12 +913,19 @@
         function fecharEixo() {
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
-            
+            buchaDeGrafite.style.display = 'none'
         }
 
         function clicarEixo11(){
             eixo.style.display = 'none'
             eixo11.style.display ='block'
+
+        }
+        function buchaGrafite(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'block'
+
 
         }
 
@@ -935,14 +976,17 @@
         }
 
         function removerItens() {
-        // Obtém a referência para a lista (ul)
-        var lista = document.querySelector('#pedidos ul');
+            // Obtém a referência para a lista (ul)
+            var lista = document.querySelector('#pedidos ul');
 
-        // Remove todos os elementos filhos da lista
-        while (lista.firstChild) {
-            lista.removeChild(lista.firstChild);
-        }
+            // Remove todos os elementos filhos da lista
+            while (lista.firstChild) {
+                lista.removeChild(lista.firstChild);
+            }
     }
+        
+        
+
     </script>
 </body>
 
