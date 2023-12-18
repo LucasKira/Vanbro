@@ -61,8 +61,9 @@
             padding: 20px;
             border-radius: 10px;
             z-index: 1;
-            max-height: 35%;
+            max-height: 50%;
             overflow-y: auto;
+            font-size: 140%;
         }
 
         #codigo12 ul {
@@ -90,6 +91,7 @@
             z-index: 1;
             max-height: 35%;
             overflow-y: auto;
+            font-size: 140%;
         }
 
         #codigo11 ul {
@@ -117,6 +119,7 @@
             z-index: 1;
             max-height: 35%;
             overflow-y: auto;
+            font-size: 140%;
         }
 
         #codigo10 ul {
@@ -144,6 +147,7 @@
             z-index: 1;
             max-height: 35%;
             overflow-y: auto;
+            font-size: 140%;
         }
 
         #codigo9 ul {
@@ -157,6 +161,60 @@
         }
 
         #codigo9 li:last-child {
+            border-bottom: none;
+        }
+        #codigo6 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+            font-size: 140%;
+        }
+
+        #codigo6 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo6 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo6 li:last-child {
+            border-bottom: none;
+        }
+        #codigo7 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+            font-size: 140%;
+        }
+
+        #codigo7 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo7 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo7 li:last-child {
             border-bottom: none;
         }
         
@@ -223,6 +281,7 @@
 
         #design {
             font-weight: bold;
+            
         }
 
         #capturarTela {
@@ -761,7 +820,7 @@
         <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
         <button onclick="buchaGrafite()" class="pecas" id="buchaGrafite"></button>
         <button onclick="mancalInferior()" class="pecas" id="mancalInferior"></button>
-        <button onclick="discoAxialGrafite()" class="pecas" id="discoAxialGrafite"></button>
+        <button onclick="discoAxialDeGrafite()" class="pecas" id="discoAxialGrafite"></button>
         <button onclick="discoGrafite()" class="pecas" id="discoGrafite"></button>
         <button onclick="pinoElastico()" class="pecas" id="pinoElastico"></button>
         <button onclick="discoAxialInox()" class="pecas" id="discoAxialInox"></button>
@@ -928,6 +987,30 @@
             </div>
         </ul>
     </div>
+    <div id="codigo6">
+        <ul>
+            <li id="design">CONJUNTO DISCO GRAFITE <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span onclick="clicarNaLi(this)" class="clicavel">CONJUNTO DISCO GRAFITE / CÓDIGO: 310.028.000010</span>
+                    <input type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div id="codigo7">
+        <ul>
+            <li id="design">DISCO AXIAL GRAFITE <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: GRAFITE <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL GRAFITE / CÓDIGO: 310.028.000010</span>
+                    <input type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
     
 
 
@@ -945,6 +1028,64 @@
         buchaDeGrafite.style.display = 'none'
         const conjuntoMancalInferior = document.querySelector('#codigo9')
         conjuntoMancalInferior.style.display = 'none'
+        const discoAxialGrafite = document.querySelector('#codigo6')
+        discoAxialGrafite.style.display = 'none'
+        const discoGrafite = document.querySelector('#codigo7')
+        discoGrafite.style.display = 'none'
+        const pinoElastico = document.querySelector('#codigo9')
+        pinoElastico.style.display = 'none'
+        const discoAxialInox = document.querySelector('#codigo9')
+        discoAxialInox.style.display = 'none'
+        const discoPoliester = document.querySelector('#codigo9')
+        discoPoliester.style.display = 'none'
+        const tampaInferior = document.querySelector('#codigo9')
+        tampaInferior.style.display = 'none'
+        const diafragma = document.querySelector('#codigo9')
+        diafragma.style.display = 'none'
+        const tamdaDaCamara = document.querySelector('#codigo9')
+        tamdaDaCamara.style.display = 'none'
+        const porcaSextavada51612 = document.querySelector('#codigo9')
+        porcaSextavada51612.style.display = 'none'
+        const protetorDeAreiaNitril = document.querySelector('#codigo9')
+        protetorDeAreiaNitril.style.display = 'none'
+        const protetorDeAreiaPoliace = document.querySelector('#codigo9')
+        protetorDeAreiaPoliace.style.display = 'none'
+        const retentorSuperior = document.querySelector('#codigo9')
+        retentorSuperior.style.display = 'none'
+        const tampao = document.querySelector('#codigo9')
+        tampao.style.display = 'none'
+        const buchaGrafiteSuperior = document.querySelector('#codigo9')
+        buchaGrafiteSuperior.style.display = 'none'
+        const conjuntoMancalSuperior = document.querySelector('#codigo9')
+        conjuntoMancalSuperior.style.display = 'none'
+        const etiqueta21 = document.querySelector('#codigo9')
+        etiqueta21.style.display = 'none'
+        const etiqueta22 = document.querySelector('#codigo9')
+        etiqueta22.style.display = 'none'
+        const tampaSuperior = document.querySelector('#codigo9')
+        tampaSuperior.style.display = 'none'
+        const anelOring = document.querySelector('#codigo9')
+        anelOring.style.display = 'none'
+        const prensaCabo = document.querySelector('#codigo9')
+        prensaCabo.style.display = 'none'
+        const etiqueta35 = document.querySelector('#codigo9')
+        etiqueta35.style.display = 'none'
+        const etiqueta34 = document.querySelector('#codigo9')
+        etiqueta34.style.display = 'none'
+        const conjuntoEstator = document.querySelector('#codigo9')
+        conjuntoEstator.style.display = 'none'
+        const isolacaoExterna = document.querySelector('#codigo9')
+        isolacaoExterna.style.display = 'none'
+        const isolacaoCanal = document.querySelector('#codigo9')
+        isolacaoCanal.style.display = 'none'
+        const bobinadoMotor = document.querySelector('#codigo9')
+        bobinadoMotor.style.display = 'none'
+        const isolacaoInterna = document.querySelector('#codigo9')
+        isolacaoInterna.style.display = 'none'
+        const conjuntoTampaDeCanal = document.querySelector('#codigo9')
+        conjuntoTampaDeCanal.style.display = 'none'
+        const saidaDeCabos = document.querySelector('#codigo9')
+        saidaDeCabos.style.display = 'none'
 
        
         function fecharEixo() {
@@ -952,6 +1093,8 @@
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            
 
         }
 
@@ -960,6 +1103,7 @@
             eixo.style.display = 'block'
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
         }
 
         
@@ -969,6 +1113,7 @@
             eixo11.style.display ='block'
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
 
         }
         function buchaGrafite(){
@@ -976,6 +1121,7 @@
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'block'
             conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
 
         }
         function mancalInferior(){
@@ -983,7 +1129,18 @@
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'block'
+            discoAxialGrafite.style.display = 'none'
         }
+
+        function discoAxialDeGrafite(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'block'
+        }
+
+
 
         function clicarNaLi(element) {
             const eixoLi = document.querySelector('#codigo12')
