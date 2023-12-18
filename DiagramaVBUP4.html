@@ -53,7 +53,7 @@
         }
 
         #codigo12 {
-            position: absolute;
+            position: fixed;
             top: 17%;
             left: 24%;
             color: rgb(195, 147, 201);
@@ -80,7 +80,7 @@
         }
        
         #codigo11 {
-            position: absolute;
+            position: fixed;
             top: 17%;
             left: 24%;
             color: rgb(195, 147, 201);
@@ -107,7 +107,7 @@
         }
 
         #codigo10 {
-            position: absolute;
+            position: fixed;
             top: 17%;
             left: 24%;
             color: rgb(195, 147, 201);
@@ -130,6 +130,33 @@
         }
 
         #codigo10 li:last-child {
+            border-bottom: none;
+        }
+
+        #codigo9 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+        }
+
+        #codigo9 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo9 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo9 li:last-child {
             border-bottom: none;
         }
         
@@ -879,11 +906,23 @@
     </div>
     <div id="codigo10">
         <ul>
-            <li id="design">CHAVETA INDUZIDO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
-            <li id="design">MATERIAL: INOX AISI 304. <span id="quantidade">Quantidade</span></li>
+            <li id="design">BUCHA MANCAL STD <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: GRAFITE. <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
+                    <span onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL STD / CÓDIGO: 300.006.000067</span>
+                    <input type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div id="codigo9">
+        <ul>
+            <li id="design">CONJUNTO MANCAL INFERIOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span onclick="clicarNaLi(this)" class="clicavel">CONJUNTO MANCAL INFERIOR / CÓDIGO: 310.005.000043</span>
                     <input type="number" min="1">
                                 
             </div>
@@ -904,12 +943,15 @@
         eixo11.style.display = 'none'
         const buchaDeGrafite = document.querySelector('#codigo10')
         buchaDeGrafite.style.display = 'none'
+        const conjuntoMancalInferior = document.querySelector('#codigo9')
+        conjuntoMancalInferior.style.display = 'none'
 
        
         function fecharEixo() {
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
 
         }
 
@@ -917,6 +959,7 @@
             eixo11.style.display = 'none'
             eixo.style.display = 'block'
             buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
         }
 
         
@@ -925,14 +968,21 @@
             eixo.style.display = 'none'
             eixo11.style.display ='block'
             buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
 
         }
         function buchaGrafite(){
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'block'
+            conjuntoMancalInferior.style.display = 'none'
 
-
+        }
+        function mancalInferior(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'block'
         }
 
         function clicarNaLi(element) {
