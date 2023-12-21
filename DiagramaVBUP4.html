@@ -31,7 +31,7 @@
        
 
         .clicavel {
-            cursor: pointer;
+            cursor: default;
             font-size: 80%;
         }
 
@@ -204,6 +204,87 @@
         #codigo7 li:last-child {
             border-bottom: none;
         }
+        #codigo8 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+            font-size: 140%;
+        }
+
+        #codigo8 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo8 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo8 li:last-child {
+            border-bottom: none;
+        }
+        #codigo5 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 35%;
+            overflow-y: auto;
+            font-size: 140%;
+        }
+
+        #codigo5 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #codigo5 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        #codigo5 li:last-child {
+            border-bottom: none;
+        }
+        .divPecas {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 38%;
+            overflow-y: auto;
+            font-size: 120%;
+        }
+
+        .divPecas ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .divPecas li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        .divPecas li:last-child {
+            border-bottom: none;
+        }
         
 
         #fecharEixo {
@@ -281,6 +362,8 @@
             cursor: pointer;
             padding: 5px 10px;
             border-radius: 5px;
+            font-weight: bold;
+
         }
         #removerTodos{
             position: absolute;
@@ -296,7 +379,8 @@
         
 
         input {
-            width: 12%;
+            position:static;
+            width: 8%;
             margin-right: 10px;
             text-align: center;
             border-color: rgba(121, 211, 214, 0.836);
@@ -774,6 +858,31 @@
             font-size: 0.8em;
             border-radius: 100%;
         }
+        #adicionarPedidoBtn{
+            position: absolute;
+            align-items: center;
+            margin-left: 710px;
+            cursor: pointer;
+            background-color: #4caf75; /* Cor de fundo verde */
+            color: white; /* Cor do texto branco */
+            padding: 4px 8px; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda padrão do botão */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo */
+            box-shadow: #52b2be;
+
+
+        }
+        #adicionarPedidoBtn:hover{
+                background-color: #3b753e; /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        #adicionarPedidoBtn:active{
+            background-color: #52b2be; /* Cor de fundo mais escura ao clicar no botão */        
+        }
+    
         
         
 
@@ -787,31 +896,32 @@
 
 <body>
     <div id="container">
-        <img src="vanbro1.png" alt="">
+        <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
+       
         <button onclick="clicarEixo()" class="pecas" id="eixo12"></button>
         <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
         <button onclick="buchaGrafite()" class="pecas" id="buchaGrafite"></button>
         <button onclick="mancalInferior()" class="pecas" id="mancalInferior"></button>
         <button onclick="discoAxialDeGrafite()" class="pecas" id="discoAxialGrafite"></button>
         <button onclick="discoGrafite()" class="pecas" id="discoGrafite"></button>
-        <button onclick="pinoElastico()" class="pecas" id="pinoElastico"></button>
-        <button onclick="discoAxialInox()" class="pecas" id="discoAxialInox"></button>
-        <button onclick="discoPoliester()" class="pecas" id="discoPoliester"></button>
-        <button onclick="tampaInferior()" class="pecas" id="tampaInferior"></button>
-        <button onclick="diafragma()" class="pecas" id="diafragma"></button>
-        <button onclick="tamdaDaCamara()" class="pecas" id="tamdaDaCamara"></button>
-        <button onclick="porcaSextavada51612()" class="pecas" id="porcaSextavada51612"></button>
-        <button onclick="protetorDeAreiaNitril()" class="pecas" id="protetorDeAreiaNitril"></button>
-        <button onclick="protetorDeAreiaPoliacetal()" class="pecas" id="protetorDeAreiaPoliacetal"></button>
+        <button onclick="pinoDeElastico()" class="pecas" id="pinoElastico"></button>
+        <button onclick="discoAxialDeInox()" class="pecas" id="discoAxialInox"></button>
+        <button onclick="discoDePoliester()" class="pecas" id="discoPoliester"></button>
+        <button onclick="tampaDeInferior()" class="pecas" id="tampaInferior"></button>
+        <button onclick="diafragmaDe()" class="pecas" id="diafragma"></button>
+        <button onclick="tampaDeDaCamara()" class="pecas" id="tamdaDaCamara"></button>
+        <button onclick="porcaSextavada51612f()" class="pecas" id="porcaSextavada51612"></button>
+        <button onclick="protetorDeAreiaDeNitril()" class="pecas" id="protetorDeAreiaNitril"></button>
+        <button onclick="protetorDeAreiaPoliacetalf()" class="pecas" id="protetorDeAreiaPoliacetal"></button>
         <button onclick="retentorSuperior()" class="pecas" id="retentorSuperior"></button>
-        <button onclick="tampao()" class="pecas" id="tampao"></button>
-        <button onclick="buchaGrafiteSuperior()" class="pecas" id="buchaGrafiteSuperior"></button>
-        <button onclick="conjuntoMancalSuperior()" class="pecas" id="conjuntoMancalSuperior"></button>
+        <button onclick="tampaof()" class="pecas" id="tampao"></button>
+        <button onclick="buchaDeGrafiteSuperiorf()" class="pecas" id="buchaGrafiteSuperior"></button>
+        <button onclick="conjuntoMancalSuperiorf()" class="pecas" id="conjuntoMancalSuperior"></button>
         <button onclick="etiqueta21()" class="pecas" id="etiqueta21"></button>
-        <button onclick="etiqueta22()" class="pecas" id="etiqueta22"></button>
-        <button onclick="tampaSuperior()" class="pecas" id="tampaSuperior"></button>        
-        <button onclick="anelOring()" class="pecas" id="anelOring"></button>
-        <button onclick="prensaCabo()" class="pecas" id="prensaCabo"></button>
+        <button onclick="etiqueta220()" class="pecas" id="etiqueta22"></button>
+        <button onclick="tampaSuperiorf()" class="pecas" id="tampaSuperior"></button>        
+        <button onclick="anelOringf()" class="pecas" id="anelOring"></button>
+        <button onclick="prensaCabof()" class="pecas" id="prensaCabo"></button>
         <button onclick="etiqueta35()" class="pecas" id="etiqueta35"></button>
         <button onclick="etiqueta34()" class="pecas" id="etiqueta34"></button>
         <button onclick="conjuntoEstator()" class="pecas" id="conjuntoEstator"></button>
@@ -824,86 +934,102 @@
         
                 
 
-        <div id="codigo12">
+        <div class="divPecas" id="codigo12">
             <ul>
                 <li id="design">EIXO INDUZIDO (CFE. CONFIGURAÇÃO) <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
                 <li id="design">MATERIAL: INOX AISI410/SILIC. <span id="quantidade">Quantidade</span></li>
                 <div id="eixo">
                     <li class="eixo-container">
-                        <span id="span1" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
-                        <input id="input1" type="number" min="1">   
+                        <span id="span1" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
+                        <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span1','#input1')">&#x1F6D2;</button>
+                        <input id="input1" type="number" min="1">
+  
 
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 14CM (HP 0,5 M - 0,5/0,7 T) /
+                        <span id="span2" class="clicavel">EIXO INDUZIDO 4" VMU 14CM (HP 0,5 M - 0,5/0,7 T) /
                             CÓDIGO: 300.022.000043</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span2','#input2')">&#x1F6D2;</button>
+                            <input id="input2" type="number" min="1">
+
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 18CM (HP 0,7 M - 1,0 T)/
+                        <span id="span3" class="clicavel">EIXO INDUZIDO 4" VMU 18CM (HP 0,7 M - 1,0 T)/
                             CÓDIGO: 300.022.000044</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span3','#input3')">&#x1F6D2;</button>
+                            <input id="input3" type="number" min="1">
+
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 23CM (HP 1,0 M - 1,5 T)/
+                        <span id="span4"  class="clicavel">EIXO INDUZIDO 4" VMU 23CM (HP 1,0 M - 1,5 T)/
                             CÓDIGO: 300.022.000045</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span4','#input4')">&#x1F6D2;</button>
+                            <input id="input4" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 28CM (HP 1,5 M - 2,0 T)/
+                        <span id="span5" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 28CM (HP 1,5 M - 2,0 T)/
                             CÓDIGO: 300.022.000046</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span5','#input5')">&#x1F6D2;</button>
+                            <input id="input5" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 35CM (HP 2,0 M -2,5/3,0 T)/
+                        <span id="span6" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 35CM (HP 2,0 M -2,5/3,0 T)/
                             CODIGO: 300.022.000047</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span6','#input6')">&#x1F6D2;</button>
+                            <input id="input6" type="number" min="1">
                             
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 42CM (HP 2,5/3,0 M - 3,5/4,0 T)/
+                        <span id="span7" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 42CM (HP 2,5/3,0 M - 3,5/4,0 T)/
                             CÓDIGO: 300.022.000048</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span7','#input7')">&#x1F6D2;</button>
+                            <input id="input7" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 48CM (HP 3,5/4,0 M - 4,5/5,0 T)/
+                        <span id="span8" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 48CM (HP 3,5/4,0 M - 4,5/5,0 T)/
                             CÓDIGO: 300.022.000049</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span8','#input8')">&#x1F6D2;</button>
+                            <input id="input8" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 52CM (HP 4,5/5,0 M - 5,5 T)/
+                        <span id="span9" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 52CM (HP 4,5/5,0 M - 5,5 T)/
                             CÓDIGO: 300.022.000050</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span9','#input9')">&#x1F6D2;</button>
+                            <input id="input9" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 56CM (HP 5,5 M - 6,0 T)/
+                        <span id="span10" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 56CM (HP 5,5 M - 6,0 T)/
                             CÓDIGO: 300.022.000051</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span10','#input10')">&#x1F6D2;</button>
+                            <input id="input10" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T)/
+                        <span id="span11" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T)/
                             CÓDIGO: 300.022.000052</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span11','#input11')">&#x1F6D2;</button>
+                            <input id="input11" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 65CM (HP 11,0 T)/
+                        <span id="span12" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 65CM (HP 11,0 T)/
                             CÓDIGO: 300.022.001383</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span12','#input12')">&#x1F6D2;</button>
+                            <input id="input12" type="number" min="1">
                         
                     </li>
                     <li class="eixo-container">
-                        <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 70CM (HP 12,0 T)/
+                        <span id="span13" onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 70CM (HP 12,0 T)/
                             CÓDIGO: 300.022.001384</span>
-                            <input type="number" min="1">
+                            <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span13','#input13')">&#x1F6D2;</button>
+                            <input id="input13" type="number" min="1">
                         
                     </li>
                     
@@ -911,7 +1037,7 @@
             </ul>
         </div>    
 
-        <div id="pedidos">     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
+        <div class="divPecas" id="pedidos">     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
             PEDIDO
             <div id="registro">
                 
@@ -923,38 +1049,42 @@
         </div>
     </div>
 
-    <div id="codigo11">
+    <div class="divPecas" id="codigo11">
         <ul>
             <li id="design">CHAVETA INDUZIDO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
             <li id="design">MATERIAL: INOX AISI 304. <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel">EIXO INDUZIDO 4" VMU 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.022.000703</span>
-                    <input type="number" min="1">
+                    <span id="span14" onclick="clicarNaLi(this)" class="clicavel">CHAVETA INDUZIDO / CÓDIGO: 300.024.000004</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span14','#input14')">&#x1F6D2;</button>
+                    <input id="input14" type="number" min="1">
+                    </li>
                                 
             </div>
         </ul>
     </div>
-    <div id="codigo10">
+    <div class="divPecas" id="codigo10">
         <ul>
             <li id="design">BUCHA MANCAL STD <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
             <li id="design">MATERIAL: GRAFITE. <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL STD / CÓDIGO: 300.006.000067</span>
-                    <input type="number" min="1">
+                    <span id="span15" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL STD / CÓDIGO: 300.006.000067</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span14','#input14')">&#x1F6D2;</button>
+                    <input id="input15" type="number" min="1">
                                 
             </div>
         </ul>
     </div>
-    <div id="codigo9">
+    <div class="divPecas" id="codigo9">
         <ul>
             <li id="design">CONJUNTO MANCAL INFERIOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
             <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel">CONJUNTO MANCAL INFERIOR / CÓDIGO: 310.005.000043</span>
-                    <input type="number" min="1">
+                    <span id="span16" onclick="clicarNaLi(this)" class="clicavel">CONJUNTO MANCAL INFERIOR / CÓDIGO: 310.005.000043</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span16','#input16')">&#x1F6D2;</button>
+                    <input id="input16" type="number" min="1">
                                 
             </div>
         </ul>
@@ -965,24 +1095,278 @@
             <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel">CONJUNTO DISCO GRAFITE / CÓDIGO: 310.028.000010</span>
-                    <input type="number" min="1">
+                    <span id="span17" onclick="clicarNaLi(this)" class="clicavel">CONJUNTO DISCO GRAFITE / CÓDIGO: 310.028.000010</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span17','#input17')">&#x1F6D2;</button>
+                    <input id="input17" type="number" min="1">
                                 
             </div>
         </ul>
     </div>
-    <div id="codigo7">
+    <div class="divPecas" id="codigo7">
         <ul>
             <li id="design">DISCO AXIAL GRAFITE <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
             <li id="design">MATERIAL: GRAFITE <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL GRAFITE / CÓDIGO: 310.028.000010</span>
-                    <input type="number" min="1">
+                    <span id="span18" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL GRAFITE / CÓDIGO: 310.028.000010</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span18','#input18')">&#x1F6D2;</button>
+                    <input id="input18" type="number" min="1">
                                 
             </div>
         </ul>
     </div>
+    <div class="divPecas" id="codigo8">
+        <ul>
+            <li id="design">PINO ELASTICO 2,0x8MM<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: SAE 1045 TEMP  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span19" onclick="clicarNaLi(this)" class="clicavel"> PINO ELASTICO 2,0x8MM / CÓDIGO: 300.051.000004</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span19','#input19')">&#x1F6D2;</button>
+                    <input id="input19" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo5">
+        <ul>
+            <li id="design">DISCO AXIAL INOX<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: INOX AISI 410/420  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span20" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL INOX / CÓDIGO: 300.028.000005</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span20','#input20')">&#x1F6D2;</button>
+                    <input id="input20" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo4">
+        <ul>
+            <li id="design">DISCO POLIESTER<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: POLIESTER.  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span21" onclick="clicarNaLi(this)" class="clicavel"> DISCO POLIESTER / CÓDIGO: 300.026.000001</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span21','#input21')">&#x1F6D2;</button>
+                    <input id="input21" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo3">
+        <ul>
+            <li id="design">DIAFRAGMA<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: NITRILICA  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span22" onclick="clicarNaLi(this)" class="clicavel"> DIAFRAGMA / CÓDIGO: 300.055.000002</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span22','#input22')">&#x1F6D2;</button>
+                    <input id="input22" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo2">
+        <ul>
+            <li id="design">TAMPA DA CAMARA<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: POLIACETAL  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span23" onclick="clicarNaLi(this)" class="clicavel"> TAMPA DA CAMARA / CÓDIGO: 300.031.000147</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span23','#input23')">&#x1F6D2;</button>
+                    <input id="input23" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo1">
+        <ul>
+            <li id="design">CONJUNTO TAMPA INFERIOR<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: -----.  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span24" onclick="clicarNaLi(this)" class="clicavel"> CONJUNTO TAMPA INFERIOR / CÓDIGO: 310.031.000021</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span24','#input24')">&#x1F6D2;</button>
+                    <input id="input24" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo33">
+        <ul>
+            <li id="design">PORCA SEXTAVADA 5/16X1/2" E ARRUELA LISA 5/16"<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: INOX AISI 304  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span25" onclick="clicarNaLi(this)" class="clicavel"> PORCA SEXTAVADA 5/16X1/2" / CÓDIGO: 300.002.000009</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span25','#input25')">&#x1F6D2;</button>
+                    <input id="input25" type="number" min="1">
+                <li class="eixo-container">
+                    <span id="span26" onclick="clicarNaLi(this)" class="clicavel"> ARRUELA LISA 5/16" / CÓDIGO: 300.007.000005</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span26','#input26')">&#x1F6D2;</button>
+                    <input id="input26" type="number" min="1">                
+            </div>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="divPecas" id="codigo31">
+        <ul>
+            <li id="design">PROTETOR DE AREIA NITRIL<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: NITRILICA  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span27" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL INOX / CÓDIGO: 300.016.000010</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span27','#input27')">&#x1F6D2;</button>
+                    <input id="input27" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo30">
+        <ul>
+            <li id="design">PROTETOR DE AREIA POLIACETAL<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: POLIACETAL  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span28" onclick="clicarNaLi(this)" class="clicavel"> PROTETOR DE AREIA POLIACETAL / CÓDIGO: 300.016.000017</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span28','#input28')">&#x1F6D2;</button>
+                    <input id="input28" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo29">
+        <ul>
+            <li id="design">RETENTOR SUPERIOR (SAV6269)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: NITRILICA  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span29" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL INOX / CÓDIGO: 300.011.000004</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span29','#input29')">&#x1F6D2;</button>
+                    <input id="input29" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo28">
+        <ul>
+            <li id="design">CONJUNTO TAMPAO<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: POLIACETAL  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span30" onclick="clicarNaLi(this)" class="clicavel"> CONJUNTO TAMPAO / CÓDIGO: 310.033.000001</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span30','#input30')">&#x1F6D2;</button>
+                    <input id="input30" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo102">
+        <ul>
+            <li id="design">BUCHA MANCAL STD<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: GRAFITE  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span31" onclick="clicarNaLi(this)" class="clicavel"> BUCHA MANCAL STD / CÓDIGO: 300.006.000067</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span31','#input31')">&#x1F6D2;</button>
+                    <input id="input31" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo26">
+        <ul>
+            <li id="design">PRENSA CABO<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: NITRILICA  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span32" onclick="clicarNaLi(this)" class="clicavel"> PRENSA CABO (3X1,5mm²) / CÓDIGO: 300.036.000033</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span32','#input32')">&#x1F6D2;</button>
+                    <input id="input32" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span33" onclick="clicarNaLi(this)" class="clicavel"> PRENSA CABO (6X1,5mm²) / CÓDIGO: 300.036.000011</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span33','#input33')">&#x1F6D2;</button>
+                    <input id="input33" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span34" onclick="clicarNaLi(this)" class="clicavel"> PRENSA CABO (3X2,5mm²) / CÓDIGO: 300.036.000036</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span34','#input34')">&#x1F6D2;</button>
+                    <input id="input34" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span35" onclick="clicarNaLi(this)" class="clicavel"> PRENSA CABO (3X4mm²) / CÓDIGO: 300.036.000001</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span35','#input35')">&#x1F6D2;</button>
+                    <input id="input35" type="number" min="1">
+                </li>
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo25">
+        <ul>
+            <li id="design">ANEL O'RING (11454) / PARAFUSO PRISIONEIRO 5/16" <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: NITRILICA / INOX AISI 304 <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span36" onclick="clicarNaLi(this)" class="clicavel"> ANEL O'RING (11454) / CÓDIGO: 300.012.000035</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span36','#input36')">&#x1F6D2;</button>
+                    <input id="input36" type="number" min="4">
+                </li>
+                <li class="eixo-container">
+                    <span id="span37" onclick="clicarNaLi(this)" class="clicavel"> PARAFUSO PRISIONEIRO 5/16" / CÓDIGO: 300.014.000003</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span37','#input37')">&#x1F6D2;</button>
+                    <input id="input37" type="number" min="4">
+                </li>                 
+            </div>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="divPecas" id="codigo23">
+        <ul>
+            <li id="design">TAMPA SUPERIOR<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: FOFO GG20  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span38" onclick="clicarNaLi(this)" class="clicavel"> TAMPA SUPERIOR / CÓDIGO: 300.031.000006</span>
+                    <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span38','#input38')">&#x1F6D2;</button>
+                    <input id="input38" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo22">
+        <ul>
+            <li id="design">ETIQUETA N02 ADVERTENCIA BOMBA 4"/6" (POR AGUA NO
+                MOTOR)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: VINIL  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span39" onclick="clicarNaLi(this)" class="clicavel"> ETIQUETA N02 ADVERTENCIA BOMBA 4"/6" (POR AGUA NO
+                        MOTOR) / CÓDIGO: 300.034.000003</span>
+                        <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span39','#input39')">&#x1F6D2;</button>
+                        <input id="input39" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo27">
+        <ul>
+            <li id="design">CONJUNTO MANCAL SUPERIOR<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: -----  <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span40" onclick="clicarNaLi(this)" class="clicavel"> CONJUNTO MANCAL SUPERIOR / CÓDIGO: 310.005.000039</span>
+                        <button id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span40','#input40')">&#x1F6D2;</button>
+                        <input id="input40" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    
     
 
 
@@ -990,7 +1374,6 @@
 
         
 
-        const itensAdicionados = [];
 
         const eixo = document.querySelector('#codigo12')
         eixo.style.display = 'none'
@@ -1004,41 +1387,41 @@
         discoAxialGrafite.style.display = 'none'
         const discoDeGrafite = document.querySelector('#codigo7')
         discoDeGrafite.style.display = 'none'
-        const pinoElastico = document.querySelector('#codigo9')
+        const pinoElastico = document.querySelector('#codigo8')
         pinoElastico.style.display = 'none'
-        const discoAxialInox = document.querySelector('#codigo9')
+        const discoAxialInox = document.querySelector('#codigo5')
         discoAxialInox.style.display = 'none'
-        const discoPoliester = document.querySelector('#codigo9')
+        const discoPoliester = document.querySelector('#codigo4')
         discoPoliester.style.display = 'none'
-        const tampaInferior = document.querySelector('#codigo9')
+        const tampaInferior = document.querySelector('#codigo1')
         tampaInferior.style.display = 'none'
-        const diafragma = document.querySelector('#codigo9')
+        const diafragma = document.querySelector('#codigo3')
         diafragma.style.display = 'none'
-        const tamdaDaCamara = document.querySelector('#codigo9')
-        tamdaDaCamara.style.display = 'none'
-        const porcaSextavada51612 = document.querySelector('#codigo9')
+        const tampaDaCamara = document.querySelector('#codigo2')
+        tampaDaCamara.style.display = 'none'
+        const porcaSextavada51612 = document.querySelector('#codigo33')
         porcaSextavada51612.style.display = 'none'
-        const protetorDeAreiaNitril = document.querySelector('#codigo9')
+        const protetorDeAreiaNitril = document.querySelector('#codigo31')
         protetorDeAreiaNitril.style.display = 'none'
-        const protetorDeAreiaPoliace = document.querySelector('#codigo9')
-        protetorDeAreiaPoliace.style.display = 'none'
-        const retentorSuperior = document.querySelector('#codigo9')
+        const protetorDeAreiaPoliacetal = document.querySelector('#codigo30')
+        protetorDeAreiaPoliacetal.style.display = 'none'
+        const retentorSuperior = document.querySelector('#codigo29')
         retentorSuperior.style.display = 'none'
-        const tampao = document.querySelector('#codigo9')
+        const tampao = document.querySelector('#codigo28')
         tampao.style.display = 'none'
-        const buchaGrafiteSuperior = document.querySelector('#codigo9')
+        const buchaGrafiteSuperior = document.querySelector('#codigo102')
         buchaGrafiteSuperior.style.display = 'none'
-        const conjuntoMancalSuperior = document.querySelector('#codigo9')
+        const conjuntoMancalSuperior = document.querySelector('#codigo27')
         conjuntoMancalSuperior.style.display = 'none'
         const etiqueta21 = document.querySelector('#codigo9')
         etiqueta21.style.display = 'none'
-        const etiqueta22 = document.querySelector('#codigo9')
+        const etiqueta22 = document.querySelector('#codigo22')
         etiqueta22.style.display = 'none'
-        const tampaSuperior = document.querySelector('#codigo9')
+        const tampaSuperior = document.querySelector('#codigo23')
         tampaSuperior.style.display = 'none'
-        const anelOring = document.querySelector('#codigo9')
+        const anelOring = document.querySelector('#codigo25')
         anelOring.style.display = 'none'
-        const prensaCabo = document.querySelector('#codigo9')
+        const prensaCabo = document.querySelector('#codigo26')
         prensaCabo.style.display = 'none'
         const etiqueta35 = document.querySelector('#codigo9')
         etiqueta35.style.display = 'none'
@@ -1059,14 +1442,430 @@
         const saidaDeCabos = document.querySelector('#codigo9')
         saidaDeCabos.style.display = 'none'
 
-       
+
+        function conjuntoMancalSuperiorf(){
+            
+        }
+        function conjuntoMancalSuperiorf(){
+            
+        }
+        function conjuntoMancalSuperiorf(){
+            
+        }
+        function conjuntoMancalSuperiorf(){
+            
+        }
+        function conjuntoMancalSuperiorf(){
+            conjuntoMancalSuperior.style.display = 'block'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+        }
+        function etiqueta220(){
+            etiqueta22.style.display = 'block'
+            tampaSuperior.style.display = 'none'
+            prensaCabo.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+        function tampaSuperiorf(){
+            tampaSuperior.style.display = 'block'
+            prensaCabo.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            anelOring.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+        function anelOringf(){
+            prensaCabo.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            anelOring.style.display = 'block'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function prensaCabof(){
+            prensaCabo.style.display = 'block'
+            buchaGrafiteSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function buchaDeGrafiteSuperior(){
+            buchaGrafiteSuperior.style.display ='block'
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function tampaof(){
+            buchaGrafiteSuperior.style.display ='none'
+            tampao.style.display = 'block'
+            retentorSuperior.style.display ='none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function retentorSuperiorf(){
+            tampao.style.display = 'none'
+            retentorSuperior.style.display ='block'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function protetorDeAreiaPoliacetalf(){
+            protetorDeAreiaPoliacetal.style.display ='block'
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function protetorDeAreiaDeNitril(){
+            protetorDeAreiaPoliacetal.style.display ='none'
+            protetorDeAreiaNitril.style.display = 'block'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+     
+        }
+        function porcaSextavada51612f(){
+            protetorDeAreiaNitril.style.display = 'none'
+            porcaSextavada51612.style.display = 'block'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function tampaDeDaCamara(){
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            diafragma.style.display = 'none'
+            tampaDaCamara.style.display = 'block'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+        function diafragmaDe(){
+            protetorDeAreiaNitril.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            diafragma.style.display = 'block'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+        function tampaDeInferior(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'block'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+
+        function clicarImagem(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+        }
+
         function fecharEixo() {
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'none'
-            discoDeGrafite.style.display = 'none'        
+            discoDeGrafite.style.display = 'none'
+            pinoElastico.style.display ='none'      
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
 
         }
 
@@ -1077,10 +1876,24 @@
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'none'
             discoDeGrafite.style.display = 'none'
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
 
-        }
-
-        
+        }        
 
         function clicarEixo11(){
             eixo.style.display = 'none'
@@ -1089,7 +1902,22 @@
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'none'
             discoDeGrafite.style.display = 'none'
-
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
 
         }
         function buchaGrafite(){
@@ -1099,6 +1927,22 @@
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'none'
             discoDeGrafite.style.display = 'none'
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
 
         }
         function mancalInferior(){
@@ -1108,6 +1952,22 @@
             conjuntoMancalInferior.style.display = 'block'
             discoAxialGrafite.style.display = 'none'
             discoDeGrafite.style.display = 'none'
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
 
         }
 
@@ -1118,6 +1978,24 @@
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'block'
             discoDeGrafite.style.display = 'none'
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
         }
         function discoGrafite(){
             eixo.style.display = 'none'
@@ -1125,69 +2003,195 @@
             buchaDeGrafite.style.display = 'none'
             conjuntoMancalInferior.style.display = 'none'
             discoAxialGrafite.style.display = 'none'
-            discoDeGrafite.style.display = 'block'            
+            discoDeGrafite.style.display = 'block'      
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'    
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function pinoDeElastico(){
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none'      
+            pinoElastico.style.display ='block'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none' 
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'          
+
+        }   
+        function discoAxialDeInox(){
+            discoAxialInox.style.display = 'block'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
+        }
+        function discoDePoliester() {
+            discoAxialInox.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoPoliester.style.display ='block'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+
+
         }
 
 
 
-        function clicarNaLi(element) {
-            const eixoLi = document.querySelector('#codigo12')
+        
 
-            // Adiciona o conteúdo da li clicada à lista de pedidos
-            const pedidosUl = document.getElementById('pedidosUl');
-            const novoPedido = document.createElement('li');
-            novoPedido.className = 'pedidoLi';
+        let itensAdicionados = [];
 
-            // Adiciona a quantidade ao lado esquerdo de cada item na lista de pedidos
-            const quantidadeInput = element.nextElementSibling;
-            const quantidade = quantidadeInput.value || 1;
+function removerPedido(element) {
+    // Remove o item da lista de pedidos
+    const pedidoRemover = element.parentNode;
+    const pedidosUl = document.getElementById('pedidosUl');
+    pedidosUl.removeChild(pedidoRemover);
 
-            novoPedido.innerHTML = `${element.textContent} Quantidade:${quantidade} <span class="removerPedido" onclick="removerPedido(this)">Remover</span>`;
-
-            pedidosUl.appendChild(novoPedido);
-
-            // Adiciona o item à lista de itens adicionados
-            itensAdicionados.push(`${element.textContent} QTD:${quantidade}`);
-
-            // Expande a div de pedidos para baixo
-            const pedidos = document.getElementById('pedidos');
-            pedidos.style.maxHeight = pedidos.scrollHeight + "px";
-        }
-
-        function removerPedido(element) {
-            // Remove o item da lista de pedidos
-            const pedidoRemover = element.parentNode;
-            const pedidosUl = document.getElementById('pedidosUl');
-            pedidosUl.removeChild(pedidoRemover);
-        }
-
-        function salvarItens() {
-            // Cria um blob de texto com os itens adicionados
-            const itensBlob = new Blob([itensAdicionados.join('\n')], { type: 'text/plain' });
-
-            // Cria um link para fazer o download do arquivo de texto
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(itensBlob);
-            link.download = 'Pedido.txt';
-
-            // Adiciona o link ao corpo da página e simula um clique
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
-        function removerItens() {
-            // Obtém a referência para a lista (ul)
-            var lista = document.querySelector('#pedidos ul');
-
-            // Remove todos os elementos filhos da lista
-            while (lista.firstChild) {
-                lista.removeChild(lista.firstChild);
-            }
+    // Remove o item da lista de itensAdicionados
+    const indexRemover = itensAdicionados.findIndex(item => item.includes(element.textContent));
+    if (indexRemover !== -1) {
+        itensAdicionados.splice(indexRemover, 1);
     }
+}
+
+function salvarItens() {
+    // Obtém a referência para a lista de pedidos
+    const pedidosUl = document.getElementById('pedidosUl');
+
+    // Obtém os elementos da lista de pedidos
+    const listaPedidos = pedidosUl.getElementsByClassName('pedidoLi');
+
+    // Cria um array para armazenar os itens visíveis
+    const itensVisiveis = [];
+
+    // Adiciona os itens visíveis ao array
+    for (const pedidoLi of listaPedidos) {
+        itensVisiveis.push(pedidoLi.textContent.replace('Remover',''));
+    }
+
+    // Cria um blob de texto com os itens visíveis
+    const itensBlob = new Blob([itensVisiveis.join('\n\n\n\n')], { type: 'text/plain' });
+    
+    // Cria um link para fazer o download do arquivo de texto
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(itensBlob);
+    link.download = 'Pedido.txt';
+
+    // Adiciona o link ao corpo da página e simula um clique
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+function removerItens() {
+    // Obtém a referência para a lista (ul)
+    const lista = document.querySelector('#pedidos ul');
+
+    // Remove todos os elementos filhos da lista
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+
+    // Limpa o array de itensAdicionados
+    itensAdicionados = [];
+}
+
+function adicionarPedidoBotao(item1, item2) {
+    const quantidadeInput = document.querySelector(item2);
+    const quantidade = quantidadeInput.value || 1;
+    const spanItem = document.querySelector(item1);
+
+    // Adiciona o conteúdo do spanItem à lista de pedidos
+    const pedidosUl = document.getElementById('pedidosUl');
+    const novoPedido = document.createElement('li');
+    novoPedido.className = 'pedidoLi';
+
+    // Adiciona a quantidade ao lado esquerdo de cada item na lista de pedidos
+    novoPedido.innerHTML = `${spanItem.textContent} Quantidade:${quantidade} <span class="removerPedido" onclick="removerPedido(this)">Remover</span>`;
+
+    pedidosUl.appendChild(novoPedido);
+
+    // Adiciona o item à lista de itens adicionados
+    itensAdicionados.push(`${spanItem.textContent} QTD:${quantidade}`);
+    
+    // Expande a div de pedidos para baixo
+    const pedidos = document.getElementById('pedidos');
+    pedidos.style.maxHeight = pedidos.scrollHeight + "px";
+}
+
+
+
+
+
         
-        
-        
+
 
     </script>
 </body>
