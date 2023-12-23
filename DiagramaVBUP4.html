@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VBUP4</title>
     <style>
+       
+       @media screen and (max-width: 600px) {
+            /* Estilos para telas menores que 600 pixels de largura */
+            /* Ajuste o layout conforme necessário */
+        }
+
         body {
             margin: 0;
             overflow: auto;
@@ -15,11 +22,14 @@
         #container {
             position: relative;
             width: 70rem;
+            max-width: 100%;
+            height: auto
             
             
         }
 
         img {
+            
             width: 100%;
             height: 100%;
             display: block;
@@ -2271,14 +2281,14 @@
                                     <input id="input82" type="number" min="1">
                             </li>
                             <li class="eixo-container">
-                                <span id="span70" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000016</span>
-                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span70','#input70')">&#x1F6D2;</button>
-                                    <input id="input70" type="number" min="1">
+                                <span id="span83" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 03,5/4,0HP M 440V 60HZ VMU/E / CÓDIGO: 310.045.000036</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span83','#input83')">&#x1F6D2;</button>
+                                    <input id="input83" type="number" min="1">
                             </li>
                             <li class="eixo-container">
-                                <span id="span71" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000022</span>
-                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span71','#input71')">&#x1F6D2;</button>
-                                    <input id="input71" type="number" min="1">
+                                <span id="span84" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 03,5/4,0HP T 220/380V 60HZ VMU / CÓDIGO: 310.045.000031</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span84','#input84')">&#x1F6D2;</button>
+                                    <input id="input84" type="number" min="1">
                             </li>
                             <li class="eixo-container">
                                 <span id="span72" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000023</span>
@@ -3598,7 +3608,6 @@ function adicionarPedidoBotao(item1, item2) {
 
 
     </script>
-            <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
 
 </body>
 
