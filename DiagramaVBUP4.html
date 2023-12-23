@@ -3518,10 +3518,18 @@ function adicionarPedidoBotao(item1, item2) {
     // Adiciona o item à lista de itens adicionados
     itensAdicionados.push(`${spanItem.textContent} QTD:${quantidade}`);
     
-    // Expande a div de pedidos para baixo
+    // Verifica se a altura máxima foi atingida e adiciona scrollbar se necessário
     const pedidos = document.getElementById('pedidos');
-    pedidos.style.maxHeight = pedidos.scrollHeight + "px";
+    const maxHeight = 550; // Defina a altura máxima desejada em pixels
+    if (pedidos.scrollHeight > maxHeight) {
+        pedidos.style.overflowY = 'auto';
+        pedidos.style.maxHeight = maxHeight + "px";
+    } else {
+        pedidos.style.overflowY = 'hidden'; // Esconde o scrollbar se não for necessário
+        pedidos.style.maxHeight = pedidos.scrollHeight + "px";
+    }
 }
+
 
 
 
