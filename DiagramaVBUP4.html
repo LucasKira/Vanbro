@@ -1421,7 +1421,7 @@
         }
 
         #pedidosUl {
-            font-size: 59%;
+            font-size: 63%;
             list-style: none;
             padding: 0;
             text-align: left;
@@ -1526,11 +1526,11 @@
                     <label id="labelnome" for="">Nome: </label>
                     <input id="inputnome" placeholder="Nome" type="text"><br>
                     <label id="labelempresa" for="">Empresa: </label>
-                    <input id="inputempresa" type="text"><br>
+                    <input id="inputempresa" placeholder="Empresa" type="text"><br>
                     <label id="labelemail" for="">E-mail: </label>
-                    <input id="inputemail" type="text"><br>
+                    <input id="inputemail" placeholder="exemple@exemple.com" type="text"><br>
                     <label id="labeltelefone" for="">Telefone: </label>
-                    <input id="inputtelefone" type="text"><br>
+                    <input id="inputtelefone" placeholder="051999999999" type="number"><br>
                     <button id="capturarTela" onclick="salvarItens()">Salvar Itens</button>
                     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
                 </div>
@@ -3479,33 +3479,53 @@ function removerPedido(element) {
 }
 
 function salvarItens() {
-    // Obtém a referência para a lista de pedidos
-    const pedidosUl = document.getElementById('pedidosUl');
+    const inputpedido1 = document.querySelector('#inputnome');
+    const inputpedido2 = document.querySelector('#inputempresa');
+    const inputpedido3 = document.querySelector('#inputemail');
+    const inputpedido4 = document.querySelector('#inputtelefone');
 
-    // Obtém os elementos da lista de pedidos
-    const listaPedidos = pedidosUl.getElementsByClassName('pedidoLi');
+    if (inputpedido1.value == '' || inputpedido2.value == '' || inputpedido3.value == '' || inputpedido4.value == '') {
+        alert('Para salvar o pedido, preencha o formulário');
+    } else if (!inputpedido3.value.includes('@')) {
+        alert("Digite seu email corretamente");
+    } else if (inputpedido4.value.length < 11) {
+        alert("Digite seu telefone completo, com o DDD. Ex: 05199999999");
+    } else {
+        // Obtém a referência para a lista de pedidos
+        const pedidosUl = document.getElementById('pedidosUl');
 
-    // Cria um array para armazenar os itens visíveis
-    const itensVisiveis = [];
+        // Obtém os elementos da lista de pedidos
+        const listaPedidos = pedidosUl.getElementsByClassName('pedidoLi');
 
-    // Adiciona os itens visíveis ao array
-    for (const pedidoLi of listaPedidos) {
-        itensVisiveis.push(pedidoLi.textContent.replace('Remover',''));
+        // Cria um array para armazenar os itens visíveis
+        const itensVisiveis = [];
+
+        // Adiciona os itens visíveis ao array
+        for (const pedidoLi of listaPedidos) {
+            itensVisiveis.push(pedidoLi.textContent.replace('Remover', ''));
+        }
+
+        // Adiciona os dados dos inputs ao array de itensVisiveis
+        itensVisiveis.unshift(`Nome: ${inputpedido1.value}\nEmpresa: ${inputpedido2.value}\nEmail: ${inputpedido3.value}\nTelefone: ${inputpedido4.value}`);
+        
+
+        // Cria um blob de texto com os itens visíveis
+        const itensBlob = new Blob([itensVisiveis.join('\n\n\n\n')], { type: 'text/plain' });
+
+        // Cria um link para fazer o download do arquivo de texto
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(itensBlob);
+        link.download = `Pedido_Cliente_${inputpedido1.value}_Empresa_${inputpedido2.value}.txt`;
+
+        // Adiciona o link ao corpo da página e simula um clique
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
-
-    // Cria um blob de texto com os itens visíveis
-    const itensBlob = new Blob([itensVisiveis.join('\n\n\n\n')], { type: 'text/plain' });
-    
-    // Cria um link para fazer o download do arquivo de texto
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(itensBlob);
-    link.download = 'Pedido.txt';
-
-    // Adiciona o link ao corpo da página e simula um clique
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
 }
+
+
+
 
 
 function removerItens() {
@@ -3550,13 +3570,7 @@ function adicionarPedidoBotao(item1, item2) {
         pedidos.style.maxHeight = pedidos.scrollHeight + "px";
     }
 }
-
-
-
-
-
-
-        
+      
 
 
     </script>
