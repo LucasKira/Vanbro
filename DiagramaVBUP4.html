@@ -14,7 +14,7 @@
 
         #container {
             position: relative;
-            width: 80rem;
+            width: 70rem;
             
             
         }
@@ -76,7 +76,7 @@
             padding: 20px;
             border-radius: 10px;
             z-index: 1;
-            max-height: 35%;
+            max-height: 55%;
             overflow-y: auto;
             font-size: 140%;
         }
@@ -267,7 +267,7 @@
             padding: 20px;
             border-radius: 10px;
             z-index: 1;
-            max-height: 38%;
+            max-height: 55%;
             overflow-y: auto;
             font-size: 120%;
         }
@@ -303,21 +303,21 @@
         #pedidos {
             text-align: center;
             position: absolute;            
-            top: 100%;
-            left: 10px;
+            top: 2%;
+            left: 75%;
             color: rgb(195, 147, 201);
             background-color: rgb(23, 52, 105);
             padding: 10px;
             border-radius: 10px;
-            z-index: 1;
+            z-index: 0;
             overflow: hidden;
-            width: 30%;
+            width: 19rem;            
             transition: max-height 0.3s;
-            max-height: 10%;
+            max-height: 15%;
         }
 
         #pedidosUl {
-            font-size: 80%;
+            font-size: 59%;
             list-style: none;
             padding: 0;
             text-align: left;
@@ -339,6 +339,7 @@
             border-bottom: 1px solid rgba(240, 248, 255, 0.5);
             display: flex;
             justify-content: space-between;
+            
         }
 
         .removerPedido {
@@ -354,11 +355,11 @@
 
         #capturarTela {
             position: absolute;
-            top: 5px;
+            top: 110px;
             left: 5px;
             background-color: rgba(240, 248, 255, 0.664);
             border: none;
-            color: rgba(41, 92, 99, 0.8);
+            color: rgba(13, 126, 41, 0.8);
             cursor: pointer;
             padding: 5px 10px;
             border-radius: 5px;
@@ -369,11 +370,16 @@
             position: absolute;
             right: 6px;
             cursor: pointer;
-            color: #ff5555;
+            color: #e72121;
             font-weight: bold;
-            background-color: rgba(240, 248, 255, 0);
-            border-color: #ff5555;
-            border-radius: 10%;
+            background-color: rgba(240, 248, 255, 0.664);
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px;
+
+
+          
+            top: 110px;
         }
         
         
@@ -872,6 +878,9 @@
             font-size: 16px; /* Tamanho da fonte */
             transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo */
             box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.2);
+            z-index: 0;
+
+
 
 
         }
@@ -1436,87 +1445,102 @@
             box-shadow: none;
         }
 
+
         #labelnome{
-            font-size: 15px;
+            font-size: 13px;
             position: absolute;
-            margin-top: 15px;
-            margin-left: -180px;
+            top: 10px;
+            margin-left: -148px;
             padding: 4px;
             outline: none;
+            color: #393b3b;
 
         }
         #labelempresa{
-            font-size: 15px;
+            font-size: 13px;
             position: absolute;
-            margin-top: 15px;
-            margin-left: -180px;
+            top: 32px;
+            margin-left: -148px;
             padding: 4px;
             outline: none;
-
+            color: #393b3b;
 
         }
         #labelemail{
-            font-size: 15px;
+            font-size: 13px;
             position: absolute;
-            margin-top: 15px;
-            margin-left: -180px;
+            top: 55px;
+            margin-left: -148px;
             padding: 4px;
             outline: none;
-
+            color: #393b3b;
 
         }
         #labeltelefone{
-            font-size: 15px;
+            font-size: 13px;
             position: absolute;
-            margin-top: 15px;
-            margin-left: -180px;
+            top: 75px;
+            margin-left: -148px;
             padding: 4px;
             outline: none;
-
+            color: #393b3b;
 
         }
         #inputnome{
             position: absolute;
             align-items: center;
-            margin-left: -110px;
-            margin-top: 15px;
+            margin-left: -90px;
+            margin-top: 3px;
             width: 70% ;
-            height: 14px;
+            height: 12px;
             outline: none;
+            background-color: aliceblue;
+            border-color: #909696;           
 
 
         }
         #inputempresa{
             position: absolute;
             align-items: center;
-            margin-left: -110px;
-            margin-top: 15px;
+            margin-left: -90px;
+            margin-top: 3px;
             width: 70% ;
-            height: 14px;
+            height: 12px;
             outline: none;
-
+            border-color: #909696;
+            background-color: aliceblue;
 
         }
         #inputemail{
             position: absolute;
             align-items: center;
-            margin-left: -110px;
-            margin-top: 15px;
+            margin-left: -90px;
+            margin-top: 3px;
             width: 70% ;
-            height: 14px;
+            height: 12px;
             outline: none;
-
+            border-color: #909696;
+            background-color: aliceblue;
 
         }
         #inputtelefone{
             position: absolute;
             align-items: center;
-            margin-left: -110px;
-            margin-top: 15px;
+            margin-left: -90px;
+            margin-top: 3px;
             width: 70% ;
-            height: 14px;
+            height: 12px;
             outline: none;
+            border-color: #909696;
+            background-color: aliceblue;
+
         }
+        #registro{
+            width: 303px;
+            height: 90px;
+            background-color: rgba(188, 193, 197, 0.726);
+        }
+        
 
         
 
@@ -1540,7 +1564,7 @@
         <button onclick="clicarEixo()" class="pecas" id="eixo12"></button>
         <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
         <button onclick="buchaGrafite()" class="pecas" id="buchaGrafite"></button>
-        <button onclick="mancalInferior()" class="pecas" id="mancalInferior"></button>
+        <button onclick="mancalInferiorf()" class="pecas" id="mancalInferior"></button>
         <button onclick="discoAxialDeGrafite()" class="pecas" id="discoAxialGrafite"></button>
         <button onclick="discoGrafite()" class="pecas" id="discoGrafite"></button>
         <button onclick="pinoDeElastico()" class="pecas" id="pinoElastico"></button>
@@ -1556,14 +1580,14 @@
         <button onclick="tampaof()" class="pecas" id="tampao"></button>
         <button onclick="buchaDeGrafiteSuperiorf()" class="pecas" id="buchaGrafiteSuperior"></button>
         <button onclick="conjuntoMancalSuperiorf()" class="pecas" id="conjuntoMancalSuperior"></button>
-        <button onclick="etiqueta21()" class="pecas" id="etiqueta21"></button>
+        <button onclick="etiqueta210()" class="pecas" id="etiqueta21"></button>
         <button onclick="etiqueta220()" class="pecas" id="etiqueta22"></button>
         <button onclick="tampaSuperiorf()" class="pecas" id="tampaSuperior"></button>        
         <button onclick="anelOringf()" class="pecas" id="anelOring"></button>
         <button onclick="prensaCabof()" class="pecas" id="prensaCabo"></button>
-        <button onclick="etiqueta35()" class="pecas" id="etiqueta35"></button>
-        <button onclick="etiqueta34()" class="pecas" id="etiqueta34"></button>
-        <button onclick="conjuntoEstator()" class="pecas" id="conjuntoEstator"></button>
+        <button onclick="etiqueta350()" class="pecas" id="etiqueta35"></button>
+        <button onclick="etiqueta340()" class="pecas" id="etiqueta34"></button>
+        <button onclick="conjuntoEstatorf()" class="pecas" id="conjuntoEstator"></button>
         <button onclick="isolacaoExterna()" class="pecas" id="isolacaoExterna"></button>
         <button onclick="isolacaoCanal()" class="pecas" id="isolacaoCanal"></button>
         <button onclick="bobinadoMotor()" class="pecas" id="bobinadoMotor"></button>
@@ -1676,21 +1700,7 @@
             </ul>
         </div>    
 
-        <div class="divPecas" id="pedidos">     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
-            PEDIDO
-            <div id="registro">
-            <label id="labelnome" for="">Nome: </label><input id="inputnome" placeholder="Nome" type="text"><br>
-            <label id="labelempresa" for="">Empresa: </label><input id="inputempresa" type="text"><br>
-            <label id="labelemail" for="">E-mail: </label><input id="inputemail" type="text"><br>
-            <label id="labeltelefone" for="">Telefone: </label><input id="inputtelefone" type="text"><br>
-                
-            </div>
-            <ul id="pedidosUl">
-                <!-- Itens adicionados serão inseridos aqui -->
-            </ul>
-            <button id="capturarTela" onclick="salvarItens()">Salvar Itens</button>
-            
-        </div>
+        
     </div>
 
     <div class="divPecas" id="codigo11">
@@ -2010,6 +2020,349 @@
             </div>
         </ul>
     </div>
+    <div class="divPecas" id="codigo21">
+        <ul>
+            <li id="design">ETIQUETA N04 ADVERTENCIA BOMBA 4"/6" (ARMAZENAGEM)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: VINIL <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span41" onclick="clicarNaLi(this)" class="clicavel"> ETIQUETA N04 ADVERTENCIA BOMBA 4"/6" (ARMAZENAGEM) / CÓDIGO: 300.034.000012</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span41','#input41')">&#x1F6D2;</button>
+                        <input id="input41" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo35">
+        <ul>
+            <li id="design">ETIQUETA N58 (DIAGRAMA DE LIGAÇÃO) **<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: VINIL <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span42" onclick="clicarNaLi(this)" class="clicavel">ETIQUETA N58 (DIAGRAMA DE LIGAÇÃO) ** / CÓDIGO: 300.034.000036</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span42','#input42')">&#x1F6D2;</button>
+                        <input id="input42" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    <div class="divPecas" id="codigo34">
+        <ul>
+            <li id="design">ETIQUETA N60 (ATENCAO CAPACITÂNCIA) *<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: VINIL <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span43" onclick="clicarNaLi(this)" class="clicavel">ETIQUETA N60 (ATENCAO CAPACITÂNCIA) * / CÓDIGO: 300.034.000037</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span43','#input43')">&#x1F6D2;</button>
+                        <input id="input43" type="number" min="1">
+                                
+            </div>
+        </ul>
+    </div>
+    
+    <div class="divPecas" id="codigo14">
+        <ul>
+            <li id="design">ESTATOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: SAE 1020/SILICIO <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span44" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.027.000001</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span44','#input44')">&#x1F6D2;</button>
+                        <input id="input44" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span45" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 14CM (HP 0,5 M - 0,5/0,7 T) / CÓDIGO: 300.027.000002</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span45','#input45')">&#x1F6D2;</button>
+                        <input id="input45" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span46" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 18CM (HP 0,7 M - 1,0 T) / CÓDIGO: 300.027.000003</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span46','#input46')">&#x1F6D2;</button>
+                        <input id="input46" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span47" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 23CM (HP 1,0 M - 1,5 T)  / CÓDIGO: 300.027.000004</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span43','#input43')">&#x1F6D2;</button>
+                        <input id="input47" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span43" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 28CM (HP 1,5 M - 2,0 T) / CÓDIGO: 300.027.000005</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47','#input47')">&#x1F6D2;</button>
+                        <input id="input43" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span48" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 35CM (HP 2,0 M -2,5/3,0 T) / CÓDIGO: 300.027.000006</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span48','#input48')">&#x1F6D2;</button>
+                        <input id="input48" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span49" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 42CM (HP 2,5/3,0 M - 3,5/4,0 T) / CÓDIGO: 300.027.000007</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span49','#input49')">&#x1F6D2;</button>
+                        <input id="input49" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span50" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 48CM (HP 3,5/4,0 M - 4,5/5,0 T) / CÓDIGO: 300.027.000008</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span50','#input50')">&#x1F6D2;</button>
+                        <input id="input50" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span51" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 52CM (HP 4,5/5,0 M - 5,5 T) / CÓDIGO: 300.027.000009</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span51','#input51')">&#x1F6D2;</button>
+                        <input id="input51" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span52" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 56CM (HP 5,5 M - 6,0 T) / CÓDIGO: 300.027.000010</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span52','#input52')">&#x1F6D2;</button>
+                        <input id="input52" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span53" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T) / CÓDIGO: 300.027.000011</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span53','#input53')">&#x1F6D2;</button>
+                        <input id="input53" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span54" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 65CM (HP 11,0 T) / CÓDIGO: 300.027.000057</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span54','#input54')">&#x1F6D2;</button>
+                        <input id="input54" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span55" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 70CM (HP 12,0 T) / CÓDIGO: 300.027.000058</span>
+                        <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span55','#input55')">&#x1F6D2;</button>
+                        <input id="input55" type="number" min="1">
+                </li>
+                <P></P>
+                <li id="design">CONJUNTO ESTATOR BOBINADO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+                <li id="design">MATERIAL: SAE 1020/SILICIO
+                    <p></p> 
+
+                    <li class="eixo-container">
+                        <span id="span56" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,3HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000001</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span56','#input56')">&#x1F6D2;</button>
+                            <input id="input56" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span57" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,3HP T 220V 60HZ VMU/B / CÓDIGO: 310.045.000002</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span57','#input57')">&#x1F6D2;</button>
+                            <input id="input57" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span58" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,5/0,7HP T 220/380V 60HZ VMU/B / CÓDIGO: 310.045.000005</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span58','#input58')">&#x1F6D2;</button>
+                            <input id="input58" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span59" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,5HP M 110/220V 60HZ VMU/B/E  / CÓDIGO: 310.045.000003</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span59','#input59')">&#x1F6D2;</button>
+                            <input id="input59" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span60" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,5HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000004</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span60','#input60')">&#x1F6D2;</button>
+                            <input id="input60" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span61" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,7HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000007</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span61','#input61')">&#x1F6D2;</button>
+                            <input id="input61" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span62" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,7HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000008</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span62','#input62')">&#x1F6D2;</button>
+                            <input id="input62" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span63" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,0HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000012</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span63','#input63')">&#x1F6D2;</button>
+                            <input id="input63" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span64" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,0HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000013</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span64','#input64')">&#x1F6D2;</button>
+                            <input id="input64" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span65" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,0HP T 220/380V 60HZ VMU/B / CÓDIGO: 310.045.000009</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span65','#input65')">&#x1F6D2;</button>
+                            <input id="input65" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span66" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,0HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000011</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span66','#input66')">&#x1F6D2;</button>
+                            <input id="input66" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span67" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000017</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span67','#input67')">&#x1F6D2;</button>
+                            <input id="input67" type="number" min="1">
+                    </li>
+                    <li class="eixo-container">
+                        <span id="span68" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000018</span>
+                            <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span68','#input68')">&#x1F6D2;</button>
+                            <input id="input68" type="number" min="1"> </li>
+                            
+                            <li class="eixo-container">
+                                <span id="span69" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP T 220/380V 60HZ VMU/B / CÓDIGO: 310.045.000014</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span69','#input69')">&#x1F6D2;</button>
+                                    <input id="input69" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span70" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000016</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span70','#input70')">&#x1F6D2;</button>
+                                    <input id="input70" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span71" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000022</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span71','#input71')">&#x1F6D2;</button>
+                                    <input id="input71" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span72" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000023</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span72','#input72')">&#x1F6D2;</button>
+                                    <input id="input72" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="spa73" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 440V 60HZ VMU/B/E / CÓDIGO: 310.045.000024</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span73','#input73')">&#x1F6D2;</button>
+                                    <input id="input73" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span74" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP T 220/380V 60HZ VMU/B/E / CÓDIGO: 310.045.000019</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span74','#input74')">&#x1F6D2;</button>
+                                    <input id="input74" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span75" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP T 440V 60HZ VMU/B/E / CÓDIGO: 310.045.000021</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span75','#input75')">&#x1F6D2;</button>
+                                    <input id="input75" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span76" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 110/220V 60HZ VMU/E / CÓDIGO: 310.045.000028</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span76','#input76')">&#x1F6D2;</button>
+                                    <input id="input76" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span77" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 254V 60HZ VMU/E / CÓDIGO: 310.045.000029</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span77','#input77')">&#x1F6D2;</button>
+                                    <input id="input77" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span78" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 440V 60HZ VMU/E / CÓDIGO: 310.045.000030</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span78','#input78')">&#x1F6D2;</button>
+                                    <input id="input78" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span79" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP T 220/380V 60HZ VMU/B / CÓDIGO: 310.045.000025</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span79','#input79')">&#x1F6D2;</button>
+                                    <input id="input79" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span80" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000027</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span80','#input80')">&#x1F6D2;</button>
+                                    <input id="input80" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span81" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 03,5/4,0HP M 110/220V 60HZ VMU/E / CÓDIGO 310.045.000034</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span81','#input81')">&#x1F6D2;</button>
+                                    <input id="input81" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span82" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 03,5/4,0HP M 254V 60HZ VMU/E / CÓDIGO: 310.045.000035</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span82','#input82')">&#x1F6D2;</button>
+                                    <input id="input82" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span70" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 01,5HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000016</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span70','#input70')">&#x1F6D2;</button>
+                                    <input id="input70" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span71" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000022</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span71','#input71')">&#x1F6D2;</button>
+                                    <input id="input71" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span72" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 254V 60HZ VMU/B/E / CÓDIGO: 310.045.000023</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span72','#input72')">&#x1F6D2;</button>
+                                    <input id="input72" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="spa73" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP M 440V 60HZ VMU/B/E / CÓDIGO: 310.045.000024</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span73','#input73')">&#x1F6D2;</button>
+                                    <input id="input73" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span74" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP T 220/380V 60HZ VMU/B/E / CÓDIGO: 310.045.000019</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span74','#input74')">&#x1F6D2;</button>
+                                    <input id="input74" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span75" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,0HP T 440V 60HZ VMU/B/E / CÓDIGO: 310.045.000021</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span75','#input75')">&#x1F6D2;</button>
+                                    <input id="input75" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span76" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 110/220V 60HZ VMU/E / CÓDIGO: 310.045.000028</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span76','#input76')">&#x1F6D2;</button>
+                                    <input id="input76" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span77" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 254V 60HZ VMU/E / CÓDIGO: 310.045.000029</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span77','#input77')">&#x1F6D2;</button>
+                                    <input id="input77" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span78" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP M 440V 60HZ VMU/E / CÓDIGO: 310.045.000030</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span78','#input78')">&#x1F6D2;</button>
+                                    <input id="input78" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span79" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP T 220/380V 60HZ VMU/B / CÓDIGO: 310.045.000025</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span79','#input79')">&#x1F6D2;</button>
+                                    <input id="input79" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span80" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 02,5/3,0HP T 440V 60HZ VMU/B / CÓDIGO: 310.045.000027</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span80','#input80')">&#x1F6D2;</button>
+                                    <input id="input80" type="number" min="1">
+                            </li>
+                            <li class="eixo-container">
+                                <span id="span81" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 03,5/4,0HP M 110/220V 60HZ VMU/E / CÓDIGO 310.045.000034</span>
+                                    <button class="botaoCjMancalSuperior" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span81','#input81')">&#x1F6D2;</button>
+                                    <input id="input81" type="number" min="1">
+                            </li>
+                
+                                
+            </div>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="divPecas" id="pedidos">     
+        
+        <div id="registro">
+        <label id="labelnome" for="">Nome: </label><input id="inputnome" placeholder="Nome" type="text"><br>
+        <label id="labelempresa" for="">Empresa: </label><input id="inputempresa" type="text"><br>
+        <label id="labelemail" for="">E-mail: </label><input id="inputemail" type="text"><br>
+        <label id="labeltelefone" for="">Telefone: </label><input id="inputtelefone" type="text"><br>
+        <button id="capturarTela" onclick="salvarItens()">Salvar Itens</button>
+        <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
+        </div>
+        <p><br></p>
+        <p>Pedidos<br></p>
+        <ul id="pedidosUl">
+            <!-- Itens adicionados serão inseridos aqui -->
+        </ul>
+        
+        
+    </div>
     
     
 
@@ -2057,7 +2410,7 @@
         buchaGrafiteSuperior.style.display = 'none'
         const conjuntoMancalSuperior = document.querySelector('#codigo27')
         conjuntoMancalSuperior.style.display = 'none'
-        const etiqueta21 = document.querySelector('#codigo9')
+        const etiqueta21 = document.querySelector('#codigo21')
         etiqueta21.style.display = 'none'
         const etiqueta22 = document.querySelector('#codigo22')
         etiqueta22.style.display = 'none'
@@ -2067,11 +2420,11 @@
         anelOring.style.display = 'none'
         const prensaCabo = document.querySelector('#codigo26')
         prensaCabo.style.display = 'none'
-        const etiqueta35 = document.querySelector('#codigo9')
+        const etiqueta35 = document.querySelector('#codigo35')
         etiqueta35.style.display = 'none'
-        const etiqueta34 = document.querySelector('#codigo9')
+        const etiqueta34 = document.querySelector('#codigo34')
         etiqueta34.style.display = 'none'
-        const conjuntoEstator = document.querySelector('#codigo9')
+        const conjuntoEstator = document.querySelector('#codigo14')
         conjuntoEstator.style.display = 'none'
         const isolacaoExterna = document.querySelector('#codigo9')
         isolacaoExterna.style.display = 'none'
@@ -2087,19 +2440,149 @@
         saidaDeCabos.style.display = 'none'
 
 
-        function conjuntoMancalSuperiorf(){
-            
+        function conjuntoEstatorf(){
+            conjuntoEstator.style.display = 'block'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'block'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+        }
+        function etiqueta340(){
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'block'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+        }
+        function etiqueta350(){
+            etiqueta35.style.display = 'block'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+
+        }
+        function etiqueta210(){
+            etiqueta21.style.display = 'block'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
         }
         function conjuntoMancalSuperiorf(){
-            
-        }
-        function conjuntoMancalSuperiorf(){
-            
-        }
-        function conjuntoMancalSuperiorf(){
-            
-        }
-        function conjuntoMancalSuperiorf(){
+            etiqueta21.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'block'
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
@@ -2123,6 +2606,15 @@
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
 
         }
         function etiqueta220(){
@@ -2150,7 +2642,16 @@
             tampaSuperior.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
-
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
         }
         function tampaSuperiorf(){
             tampaSuperior.style.display = 'block'
@@ -2176,6 +2677,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
 
         }
         function anelOringf(){
@@ -2202,6 +2713,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
 
         }
         function prensaCabof(){
@@ -2228,6 +2749,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
 
         }
         function buchaDeGrafiteSuperiorf(){
@@ -2254,6 +2785,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function tampaof(){
@@ -2280,6 +2822,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function retentorSuperiorf(){
@@ -2306,6 +2859,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function protetorDeAreiaPoliacetalf(){
@@ -2332,6 +2896,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function protetorDeAreiaDeNitril(){
@@ -2358,6 +2933,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
      
         }
         function porcaSextavada51612f(){
@@ -2384,6 +2970,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
 
 
         }
@@ -2412,6 +3008,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function diafragmaDe(){
@@ -2439,6 +3046,17 @@
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function tampaDeInferior(){
@@ -2465,6 +3083,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
 
@@ -2492,7 +3121,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
-
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
         }
 
         function fecharEixo() {
@@ -2519,7 +3157,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
-
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
         }
 
         function clicarEixo() {
@@ -2546,7 +3193,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
-
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
         }        
 
         function clicarEixo11(){
@@ -2573,6 +3229,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
         function buchaGrafite(){
@@ -2599,9 +3266,20 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
-        function mancalInferior(){
+        function mancalInferiorf(){
             eixo.style.display = 'none'
             eixo11.style.display = 'none'
             buchaDeGrafite.style.display = 'none'
@@ -2625,6 +3303,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }
 
@@ -2652,6 +3341,18 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
+
 
         }
         function discoGrafite(){
@@ -2678,6 +3379,18 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
+
 
         }
         function pinoDeElastico(){
@@ -2704,6 +3417,17 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'          
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
 
         }   
         function discoAxialDeInox(){
@@ -2730,6 +3454,18 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+
+
 
         }
         function discoDePoliester() {
@@ -2756,6 +3492,16 @@
             etiqueta22.style.display = 'none'
             conjuntoMancalSuperior.style.display = 'none'
             diafragma.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
 
         }
 
@@ -2852,6 +3598,8 @@ function adicionarPedidoBotao(item1, item2) {
 
 
     </script>
+            <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
+
 </body>
 
 </html>
