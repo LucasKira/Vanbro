@@ -1475,82 +1475,29 @@
             margin-top: 10px;
         }
         
-        @media (min-width: 300px) and @media (min-width: 450px) {
-        #pedidos {
-            
-            width: 100%;
-            max-width: 150px;
+        #mensagemMobile {
+            display: none;
             text-align: center;
-            color: rgb(186, 142, 192);
-            background-color: rgb(23, 52, 105);
             padding: 10px;
-            border-radius: 10px;
-            z-index: 0;
-            overflow: hidden;
-            transition: max-height 0.3s;
-            box-sizing: border-box;
-            position: absolute;
-            top: 10px;
-            right: 20px; /* Ajuste conforme necessário */                    
-            transition: max-height 0.3s;  
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: bold;
+            z-index: 8;
+            top: 90%;
+            left: 10%;
+
             
         }
 
-        #pedidosUl {
-            font-size: 39%;
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
+        @media only screen and (max-width: 900px) {
+            #mensagemMobile {
+                display: block;
+            }
 
-        #quantidade {
-            text-align: right;
-            display: block;
-            margin-right: 11px;
-            color: #dd7e52;
-        }
-
-        #pedidos:hover #pedidosUl {
-            opacity: 1;
-        }
-
-        .pedidoLi {
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
-            display: flex;
-            justify-content: space-between;
-            
-        }
-
-        #inputnome,
-        #inputempresa,
-        #inputemail,
-        #inputtelefone {
-            width: 100%;
-            height: 6.5%;
-            outline: none;
-            background-color: aliceblue;
-            border-color: #909696;
-            box-sizing: border-box;
-            margin-top: 3px;
-        }
-        #registro {
-            width: 100%;
-            max-width: 150px;
-            margin: 0 auto;
-            background-color: rgba(188, 193, 197, 0.726);
-            box-sizing: border-box;
-            padding: 10px;
-            text-align: center;
-            border-radius: 3px;
-        }
-        #capturarTela,
-        #removerTodos {
-            width: 80%;
-            max-width: 30px; /* Ajuste o valor máximo conforme necessário */
-            margin-top: 10px;
-            font-size: 10%;
-        }
+            #container {
+                display: none; /* ou ajuste conforme necessário para esconder outros elementos no celular */
+            }
         }
 
         
@@ -1569,7 +1516,9 @@
 </head>
 
 <body>
-    
+    <div id="mensagemMobile">
+        Este programa é melhor visualizado em dispositivos maiores. Por favor, acesse em um computador ou tablet para a melhor experiência.
+    </div>
     <div id="container">
         <div id="container2">
             <div class="divPecas2" id="pedidos">
@@ -1628,7 +1577,7 @@
         <button onclick="conjuntoTampaDeCanal()" class="pecas" id="conjuntoTampaDeCanal"></button>
         <button onclick="saidaDeCabos()" class="pecas" id="saidaDeCabos"></button>
         
-                
+               
 
         <div class="divPecas" id="codigo12">
             <ul>
@@ -2367,7 +2316,7 @@
                                 
             </div>
         </ul>
-    
+        
         
     </div>
     
@@ -3611,7 +3560,6 @@ function adicionarPedidoBotao(item1, item2) {
 
 
     </script>
-            <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
 
 </body>
 
