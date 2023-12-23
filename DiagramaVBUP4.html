@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VBUP4</title>
     <style>
        
-       @media screen and (max-width: 600px) {
-            /* Estilos para telas menores que 600 pixels de largura */
-            /* Ajuste o layout conforme necessário */
-        }
+       
 
         body {
             margin: 0;
@@ -1480,6 +1475,83 @@
             margin-top: 10px;
         }
         
+        @media (min-width: 300px) and @media (min-width: 450px) {
+        #pedidos {
+            
+            width: 100%;
+            max-width: 150px;
+            text-align: center;
+            color: rgb(186, 142, 192);
+            background-color: rgb(23, 52, 105);
+            padding: 10px;
+            border-radius: 10px;
+            z-index: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            box-sizing: border-box;
+            position: absolute;
+            top: 10px;
+            right: 20px; /* Ajuste conforme necessário */                    
+            transition: max-height 0.3s;  
+            
+        }
+
+        #pedidosUl {
+            font-size: 39%;
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        #quantidade {
+            text-align: right;
+            display: block;
+            margin-right: 11px;
+            color: #dd7e52;
+        }
+
+        #pedidos:hover #pedidosUl {
+            opacity: 1;
+        }
+
+        .pedidoLi {
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        #inputnome,
+        #inputempresa,
+        #inputemail,
+        #inputtelefone {
+            width: 100%;
+            height: 6.5%;
+            outline: none;
+            background-color: aliceblue;
+            border-color: #909696;
+            box-sizing: border-box;
+            margin-top: 3px;
+        }
+        #registro {
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+            background-color: rgba(188, 193, 197, 0.726);
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        #capturarTela,
+        #removerTodos {
+            width: 80%;
+            max-width: 30px; /* Ajuste o valor máximo conforme necessário */
+            margin-top: 10px;
+            font-size: 10%;
+        }
+        }
 
         
 
@@ -3539,6 +3611,7 @@ function adicionarPedidoBotao(item1, item2) {
 
 
     </script>
+            <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
 
 </body>
 
