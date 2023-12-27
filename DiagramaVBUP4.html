@@ -1401,6 +1401,31 @@
             background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
             box-shadow: none;
         }
+        .botaoCjMancalSuperiorf{
+            position: absolute;
+            align-items: center;
+            margin-left: 75.1%;
+            cursor: pointer;
+            background-color: #6caaaa; /* Cor de fundo verde */
+            color: white; /* Cor do texto branco */
+            padding: 4px 8px; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda padrão do botão */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo */
+            box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.2);
+
+
+        }
+        .botaoCjMancalSuperiorf:hover{
+                background-color:  #639b9b; /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        .botaoCjMancalSuperiorf:active{
+            background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
+            box-shadow: none;
+        }
         .botaoIsolacaoCanal{
             position: absolute;
             align-items: center;
@@ -1955,7 +1980,7 @@
             <li id="design">MATERIAL: NITRILICA  <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span id="span27" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL INOX / CÓDIGO: 300.016.000010</span>
+                    <span id="span27" onclick="clicarNaLi(this)" class="clicavel"> PROTETOR DE AREIA NITRIL / CÓDIGO: 300.016.000010</span>
                     <button class="botaoProtetorDeAreia" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span27','#input27')">&#x1F6D2;</button>
                     <input id="input27" type="number" min="1">
                                 
@@ -4680,7 +4705,6 @@ function adicionarPedidoBotao(item1, item2) {
 
     </script>
     
-
 </body>
 
 </html>
