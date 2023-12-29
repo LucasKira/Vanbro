@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANBRO - Pedidos</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #master {
+            width: 100%;
+        }
+
+        #containerInicio {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        #catalogo {
+            width: 48%;
+            max-width: 600px;
+        }
+
+        #vmu4polegada {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        #vmu4polegada a {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #6e9ac5;
+            padding: 10px;
+            transition: background-color 0.1s ease-in-out, padding 0.3s ease-in-out;
+            cursor: pointer;
+            display: block; /* Para garantir que cada link ocupa toda a largura disponível */
+            color: inherit; /* Herda a cor do texto do pai (branco) */
+            text-decoration: none; /* Remove sublinhado padrão dos links */
+        }
+
+        #vmu4polegada a:hover {
+            background-color: #4183af8e;
+            padding: 13px;
+        }
+
+        #pedidos {
+            width: 48%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #registro {
+            text-align: left;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #registro input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            box-sizing: border-box;
+            height: 8%;
+            background-color: #a6a8ac;
+            border-color: #a3a6aa;
+        }
+
+        #registro button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #registro button:hover {
+            background-color: #4183af;
+        }
+
+        #pedidos h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 6px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #pedidosUl {
+            position: relative;
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: #2c3e50;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .pedidoLi {
+            padding: 5px;
+            border-bottom: 1px solid #34495e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: auto;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;}
+    </style>
+</head>
+<body>
+    <div id="master">
+        <header id="header">CATÁLOGO VANBRO</header>
+        
+        <div id="containerInicio">
+            <div id="catalogo">
+                <!-- Adicione 15 botões aqui -->
+                <ul id="vmu4polegada">
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">MOTOR VMU4"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">MOTOR VMU6"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">MOTOR VMSP6" ATÉ 35HP"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">MOTOR VMSP6" ACIMA DE 35HP"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">MOTOR VMZ6""</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBO4"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBSP47/48"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBO61/64"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBO65/66"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBE65/66"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBSP67/68"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">HIDRÁULICA VBSP69"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBOC40 MOTOR IP21"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBOC40 MOTOR IP55"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBOC61/64 E 71/72 MOTOR IP21"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBOC61/64 E 71/72 MOTOR IP55"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBEC65/66 MOTOR IP55"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBSC67/68 MOTOR IP21"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBSC67/68 MOTOR IP55"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">BOMBA CENTRIFUGA VBSC69 MOTOR IP55"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">CONJ.HIDRÁULICO VBOC64 E VBEC65/66 PARA MOTOR IP55 20/25HP"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">CONJ.HIDRÁULICO VBSC67/68 PARA MOTOR IP55 20/25HP"</a></li>
+                    <li id="motorvmu4"><a href="/DiagramaVBUP4.html">CONJ. HIDRÁULICO VBSC69 PARA MOTOR IP55 20/25HP"</a></li>
+                </ul>
+            </div>
+
+            <div id="pedidos">
+                <h2>Pedidos</h2>
+                <div id="registro">
+                    <input id="inputnome" placeholder="Nome" type="text">
+                    <input id="inputempresa" placeholder="Empresa" type="text">
+                    <input id="inputemail" placeholder="exemple@exemple.com" type="text">
+                    <input id="inputtelefone" placeholder="051999999999" type="number">
+                    <button id="capturarTela" onclick="salvarItens()">Salvar Itens</button>
+                    <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
+                </div>
+                <ul id="pedidosUl">
+                    <li>Exemplo Pedido A</li>
+                    <li>Exemplo Pedido B</li>
+                    <li>Exemplo Pedido C</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer id="footer">
+            Contato: contatoExemplo@vanbro.com
+        </footer>
+    </div>
+
+    <script>
+        const containermotor = document.querySelector('#containerInicio');
+        function motor4clique() {
+            // Se você quiser esconder o conteúdo quando clicar no Motor VMU4"
+            containermotor.style.display = 'none';
+            // Ou, se você quiser esconder o footer também:
+            // document.getElementById('footer').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
