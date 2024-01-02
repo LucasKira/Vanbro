@@ -12,6 +12,7 @@
             margin: 0;
             overflow: auto;
             position: relative;
+            background-color: #333;
         }
         
 
@@ -20,7 +21,7 @@
             width: 100rem;
             max-width: 100%;
             height: auto;
-            background-color: #ff555500;           
+            background-color: white;
             
         }
 
@@ -33,6 +34,13 @@
             z-index: -1;
 
         }
+        #imagemCatalogoVmu6 {
+        width: 77%;
+        height: 77%;
+        display: block;
+        margin: 0; /* Remova a margem automática */
+        }
+
 
        
 
@@ -1534,11 +1542,12 @@
 
         #pedidos {
             
+            border: 2px solid #201f1f;
             width: 100%;
             max-width: 300px;
             text-align: center;
-            color: rgb(195, 147, 201);
-            background-color: rgb(23, 52, 105);
+            color: rgb(210, 206, 241);
+            background-color: #5a5a66;
             padding: 10px;
             border-radius: 10px;
             z-index: 0;
@@ -1630,7 +1639,168 @@
             #container,#divPecas,#Pedidos {
                 display: none; /* ou ajuste conforme necessário para esconder outros elementos no celular */
             }
-        }      
+        }  
+        
+        /* ---------------------------------------------------------------------------------------
+        -------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------*/
+
+
+
+        
+
+        header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #master {
+            width: 100%;
+        }
+
+        #containerInicio {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        #catalogo {
+            width: 100%;
+            max-width: 650px;
+            color: white;
+        }
+
+        #vmu4polegada {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        #motorvmu4 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #6e9ac5;
+            padding: 10px;
+            transition: background-color 0.1s ease-in-out, padding 0.3s ease-in-out;
+            cursor: pointer;
+            display: block; /* Para garantir que cada link ocupa toda a largura disponível */
+            color: inherit; /* Herda a cor do texto do pai (branco) */
+            text-decoration: none; /* Remove sublinhado padrão dos links */
+        }
+
+        #motorvmu4:hover {
+            background-color: #4183af8e;
+            padding: 13px;
+        }
+        
+
+        
+        #voltando {
+            top: 15px;
+            position: absolute;
+            left: 45%;
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Cor do texto branca */
+            padding: 10px 20px; /* Espaçamento interno */
+            font-size: 16px; /* Tamanho da fonte */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer; /* Ícone de cursor de mão ao passar o mouse */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição suaves */
+        }
+
+        #voltando:hover {
+            background-color: #555; /* Cor de fundo mais escura ao passar o mouse */
+            transform: scale(1.3); /* Efeito de escala ao passar o mouse */
+            box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.425); /* Sombra mais proeminente ao passar o mouse */
+        }
+
+        #voltando:active {
+            transform: scale(0.9); /* Efeito de escala ao clicar no botão */
+        }
+        #voltandoVmu6 {
+            top: 15px;
+            position: absolute;
+            left: 15%;
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Cor do texto branca */
+            padding: 10px 20px; /* Espaçamento interno */
+            font-size: 16px; /* Tamanho da fonte */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer; /* Ícone de cursor de mão ao passar o mouse */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição suaves */
+        }
+
+        #voltandoVmu6:hover {
+            background-color: #555; /* Cor de fundo mais escura ao passar o mouse */
+            transform: scale(1.3); /* Efeito de escala ao passar o mouse */
+            box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.425); /* Sombra mais proeminente ao passar o mouse */
+        }
+
+        #voltandoVmu6:active {
+            transform: scale(0.9); /* Efeito de escala ao clicar no botão */
+        }
+        
+
+        * {
+    scrollbar-width: thin;
+    scrollbar-color: #afc6cc #747474af;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #7b788d;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #6e9ac5;
+}
+
+/* Barra de rolagem para navegadores baseados em WebKit (como Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color :#7b788d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6e9ac5;
+}
+        
+           
+        
+
+        
+
+              
+
+        
 
        
         
@@ -1661,14 +1831,16 @@
                     <button id="removerTodos" onclick="removerItens()">Remover Todos</button>
                 </div>
                 <p><br></p>
-                <p>Pedidos<br></p>
+                <p><b>PEDIDOS</b><br></p>
                 <ul id="pedidosUl">
                     <!-- Itens adicionados serão inseridos aqui -->
                 </ul>
             </div>
         </div>
+        <img onclick="clicarImagem()" id="imagemCatalogoVmu6" src="bomba6.png" alt="">
         <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
-       
+        <button id="voltando" onclick="voltar()">VOLTAR AO CATÁLOGO</button>
+        <button id="voltandoVmu6" onclick="voltar()" >VOLTAR AO CATÁLOGO</button>
         <button onclick="clicarEixo()" class="pecas" id="eixo12"></button>
         <button onclick="clicarEixo11()" class="pecas" id="eixo11"></button>
         <button onclick="buchaGrafite()" class="pecas" id="buchaGrafite"></button>
@@ -2190,14 +2362,14 @@
                         <input id="input46" type="number" min="1">
                 </li>
                 <li class="eixo-container">
-                    <span id="span47" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 23CM (HP 1,0 M - 1,5 T)  / CÓDIGO: 300.027.000004</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span43','#input43')">&#x1F6D2;</button>
-                        <input id="input47" type="number" min="1">
+                    <span id="span47a" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 23CM (HP 1,0 M - 1,5 T)  / CÓDIGO: 300.027.000004</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47a','#input47a')">&#x1F6D2;</button>
+                        <input id="input47a" type="number" min="1">
                 </li>
                 <li class="eixo-container">
-                    <span id="span43" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 28CM (HP 1,5 M - 2,0 T) / CÓDIGO: 300.027.000005</span>
+                    <span id="span47" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 28CM (HP 1,5 M - 2,0 T) / CÓDIGO: 300.027.000005</span>
                         <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47','#input47')">&#x1F6D2;</button>
-                        <input id="input43" type="number" min="1">
+                        <input id="input47" type="number" min="1">
                 </li>
                 <li class="eixo-container">
                     <span id="span48" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 35CM (HP 2,0 M -2,5/3,0 T) / CÓDIGO: 300.027.000006</span>
@@ -3236,11 +3408,126 @@
                         
 
                     </div>
-                </ul>   
+                </ul> 
             </div>
+
+
+            <!-----------------------------------------INICIO--------------------------------------------------->
+
+            <div id="master">
+                <header id="header">CATÁLOGO VANBRO</header>
+                
+                
+                <div id="containerInicio">
+                    <div id="catalogo">
+                        <!-- Adicione 15 botões aqui -->
+                        <ul id="vmu4polegada">
+                            <li onclick="vmu4()" id="motorvmu4">MOTOR VMU4"</li>
+                            <li onclick="vmu6()" id="motorvmu4">MOTOR VMU6"</li>
+                            <li id="motorvmu4">MOTOR VMSP6" ATÉ 35HP"</li>
+                            <li id="motorvmu4">MOTOR VMSP6" ACIMA DE 35HP"</li>
+                            <li id="motorvmu4">MOTOR VMZ6""</li>
+                            <li id="motorvmu4">HIDRÁULICA VBO4"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBSP47/48"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBO61/64"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBO65/66"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBE65/66"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBSP67/68"</li>
+                            <li id="motorvmu4">HIDRÁULICA VBSP69"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBOC40 MOTOR IP21"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBOC40 MOTOR IP55"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBOC61/64 E 71/72 MOTOR IP21"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBOC61/64 E 71/72 MOTOR IP55"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBEC65/66 MOTOR IP55"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBSC67/68 MOTOR IP21"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBSC67/68 MOTOR IP55"</li>
+                            <li id="motorvmu4">BOMBA CENTRIFUGA VBSC69 MOTOR IP55"</li>
+                            <li id="motorvmu4">CONJ.HIDRÁULICO VBOC64 E VBEC65/66 PARA MOTOR IP55 20/25HP"</li>
+                            <li id="motorvmu4">CONJ.HIDRÁULICO VBSC67/68 PARA MOTOR IP55 20/25HP"</li>
+                            <li id="motorvmu4">CONJ. HIDRÁULICO VBSC69 PARA MOTOR IP55 20/25HP"</li>
+                        
+                </div>
+        
+                
                 
     
     <script>
+
+function vmu4(){
+        document.querySelector('#voltandoVmu6').style.display ='none'    
+        document.querySelector('#imagemCatalogoVmu6').style.display ='none'
+        document.querySelector('body').style.backgroundColor = '#333'
+        document.querySelector('#containerInicio').style.display = 'none'
+        document.querySelector('header').style.display = 'none'
+        document.querySelector('#voltando').style.display ='block'
+        document.querySelector('#imagemCatalogo').style.display ='block'
+        document.querySelector('#isolacaoExterna').style.display ='block'
+        document.querySelector('#isolacaoCanal').style.display ='block'
+        document.querySelector('#bobinadoMotor').style.display ='block'
+        document.querySelector('#isolacaoInterna').style.display ='block'
+        document.querySelector('#conjuntoTampaDeCanal').style.display ='block'
+        document.querySelector('#saidaDeCabos').style.display ='block'
+       }
+function vmu6(){
+        document.querySelector('#voltandoVmu6').style.display ='block'
+        document.querySelector('#imagemCatalogoVmu6').style.display ='block'
+        document.querySelector('#master').style.display = 'none'
+        document.querySelector('#containerInicio').style.display = 'none'
+        document.querySelector('header').style.display = 'none'
+        document.querySelector('#catalogo').style.display = 'none'
+        document.querySelector('#voltando').style.display = 'none'
+        document.querySelector('#voltando').style.display = 'none'
+        document.querySelector('#imagemCatalogo').style.display ='none'
+        document.querySelector('#isolacaoExterna').style.display ='none'
+        document.querySelector('#isolacaoCanal').style.display ='none'
+        document.querySelector('#bobinadoMotor').style.display ='none'
+        document.querySelector('#isolacaoInterna').style.display ='none'
+        document.querySelector('#conjuntoTampaDeCanal').style.display ='none'
+        document.querySelector('#saidaDeCabos').style.display ='none'
+
+}
+
+function voltar(){
+        document.querySelector('#voltandoVmu6').style.display ='none'
+        document.querySelector('.divPecas').style.display ='none'
+        document.querySelector('#imagemCatalogoVmu6').style.display ='none'
+        document.querySelector('#master').style.display = 'block'
+        document.querySelector('body').style.backgroundColor = '#333;'
+        document.querySelector('#containerInicio').style.display = 'block'
+        document.querySelector('header').style.display = 'block'
+        document.querySelector('#catalogo').style.display = 'block'
+        document.querySelector('#voltando').style.display = 'none'
+        document.querySelector('#voltando').style.display = 'none'
+        document.querySelector('#imagemCatalogo').style.display ='none'
+        document.querySelector('#isolacaoExterna').style.display ='none'
+        document.querySelector('#isolacaoCanal').style.display ='none'
+        document.querySelector('#bobinadoMotor').style.display ='none'
+        document.querySelector('#isolacaoInterna').style.display ='none'
+        document.querySelector('#conjuntoTampaDeCanal').style.display ='none'
+        document.querySelector('#saidaDeCabos').style.display ='none'
+
+}      
+        document.querySelector('#voltandoVmu6').style.display ='none'
+        document.querySelector('#imagemCatalogoVmu6').style.display ='none'
+        document.querySelector('#voltando').style.display = 'none'
+        document.querySelector('#imagemCatalogo').style.display ='none'
+        document.querySelector('#isolacaoExterna').style.display ='none'
+        document.querySelector('#isolacaoCanal').style.display ='none'
+        document.querySelector('#bobinadoMotor').style.display ='none'
+        document.querySelector('#isolacaoInterna').style.display ='none'
+        document.querySelector('#conjuntoTampaDeCanal').style.display ='none'
+        document.querySelector('#saidaDeCabos').style.display ='none'
+
+        //---------------------------------------------------------------------------
+        //----------------------INICIO-----------------------------------------------
+        //---------------------------------------------------------------------------
+
+        
+
+
+        
+
+
 
 
 
