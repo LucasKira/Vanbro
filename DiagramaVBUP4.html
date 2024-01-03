@@ -299,6 +299,35 @@
         .divPecas li:last-child {
             border-bottom: none;
         }
+        .divPecas6 {
+            position: fixed;
+            top: 17%;
+            left: 24%;
+            color: rgb(195, 147, 201);
+            background-color: rgb(23, 52, 105);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            max-height: 55%;
+            overflow-y: auto;
+            font-size: 120%;
+        }
+
+        .divPecas6 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .divPecas6 li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.5);
+        }
+
+        .divPecas6 li:last-child {
+            border-bottom: none;
+        }
+
+        
         
 
         #fecharEixo {
@@ -1792,6 +1821,22 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: #6e9ac5;
 }
+
+#bucha6{
+    position: absolute;
+    top: 11.5%;
+    left: 22.2%;
+    width: 3.3%;
+    height: 3.3%;   
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: rgba(240, 248, 255, 0);
+    background-color: rgba(183, 233, 209, 0);
+    border-color: rgba(34, 228, 16, 0);
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
         
            
         
@@ -1839,6 +1884,7 @@
         </div>
         <img onclick="clicarImagem()" id="imagemCatalogoVmu6" src="bomba6.png" alt="">
         <img onclick="clicarImagem()" id="imagemCatalogo" src="vanbro1.png" alt="">
+        <button onclick="buchagrafite6()" class="pecas" id="bucha6">oi</button>
         <button id="voltando" onclick="voltar()">VOLTAR AO CATÁLOGO</button>
         <button id="voltandoVmu6" onclick="voltar()" >VOLTAR AO CATÁLOGO</button>
         <button onclick="clicarEixo()" class="pecas" id="eixo12"></button>
@@ -1873,10 +1919,23 @@
         <button onclick="bobinadoMotorf()" class="pecas" id="bobinadoMotor"></button>
         <button onclick="isolacaoInternaf()" class="pecas" id="isolacaoInterna"></button>
         <button onclick="conjuntoTampaDeCanalf()" class="pecas" id="conjuntoTampaDeCanal"></button>
-        <button onclick="saidaDeCabosf()" class="pecas" id="saidaDeCabos"></button>
+        <button onclick="saidaDeCabosf()" class="pecas" id="saidaDeCabos"></button>        
+
         
         
-               
+        <div class="divPecas6" id="codigovmu61">
+            <ul>
+                <li id="design">BUCHA DE GRAFITE <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+                <li id="design">MATERIAL: GRAFITE. <span id="quantidade">Quantidade</span></li>
+                <div id="eixo">
+                    <li class="eixo-container">
+                        <span id="spanvmu61" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL STD VMU6" / CÓDIGO: 300.006.000.025</span>
+                        <button class="botaoChaveta" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61','#inputvmu61')">&#x1F6D2;</button>
+                        <input id="inputvmu61" type="number" min="1">
+                        </li>                                    
+                </div>
+            </ul>
+        </div>       
 
         <div class="divPecas" id="codigo12">
             <ul>
@@ -3467,8 +3526,10 @@ function vmu4(){
         document.querySelector('#isolacaoInterna').style.display ='block'
         document.querySelector('#conjuntoTampaDeCanal').style.display ='block'
         document.querySelector('#saidaDeCabos').style.display ='block'
+        document.querySelector('#bucha6').style.display = 'none'
        }
 function vmu6(){
+        document.querySelector('#bucha6').style.display = 'block'
         document.querySelector('#voltandoVmu6').style.display ='block'
         document.querySelector('#imagemCatalogoVmu6').style.display ='block'
         document.querySelector('#master').style.display = 'none'
@@ -3488,6 +3549,7 @@ function vmu6(){
 }
 
 function voltar(){
+        document.querySelector('#bucha6').style.display = 'none'
         document.querySelector('#voltandoVmu6').style.display ='none'
         document.querySelector('.divPecas').style.display ='none'
         document.querySelector('#imagemCatalogoVmu6').style.display ='none'
@@ -3505,8 +3567,46 @@ function voltar(){
         document.querySelector('#isolacaoInterna').style.display ='none'
         document.querySelector('#conjuntoTampaDeCanal').style.display ='none'
         document.querySelector('#saidaDeCabos').style.display ='none'
+        document.querySelector('#codigovmu61').style.display ='none'
+            buchavmu6.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+
+
 
 }      
+        document.querySelector('#bucha6').style.display ='none'
         document.querySelector('#voltandoVmu6').style.display ='none'
         document.querySelector('#imagemCatalogoVmu6').style.display ='none'
         document.querySelector('#voltando').style.display = 'none'
@@ -3528,6 +3628,8 @@ function voltar(){
         
 
 
+        const buchavmu6 = document.querySelector('#codigovmu61')
+        buchavmu6.style.display = 'none'
 
 
 
@@ -3598,8 +3700,46 @@ function voltar(){
         const saidaDeCabos = document.querySelector('#codigo20')
         saidaDeCabos.style.display = 'none'
 
+        function buchagrafite6(){
+            buchavmu6.style.display = 'block'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+
+        }
 
         function saidaDeCabosf(){
+            buchavmu6.style.display = 'none'
             conjuntoEstator.style.display = 'none'
             isolacaoExterna.style.display = 'none'
             isolacaoCanal.style.display = 'none'
@@ -3635,6 +3775,7 @@ function voltar(){
             diafragma.style.display = 'none'
         }
         function conjuntoTampaDeCanalf(){
+            buchavmu6.style.display = 'none'
             conjuntoEstator.style.display = 'none'
             isolacaoExterna.style.display = 'none'
             isolacaoCanal.style.display = 'none'
@@ -3670,6 +3811,7 @@ function voltar(){
             diafragma.style.display = 'none'
         }
         function bobinadoMotorf(){
+            buchavmu6.style.display = 'none'
             conjuntoEstator.style.display = 'none'
             isolacaoExterna.style.display = 'none'
             isolacaoCanal.style.display = 'none'
@@ -3738,6 +3880,8 @@ function voltar(){
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function isolacaoExternaf(){
             conjuntoEstator.style.display = 'none'
@@ -3773,6 +3917,8 @@ function voltar(){
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function isolacaoInternaf(){
             conjuntoEstator.style.display = 'none'
@@ -3808,6 +3954,8 @@ function voltar(){
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function conjuntoEstatorf(){
             conjuntoEstator.style.display = 'block'
@@ -3843,6 +3991,8 @@ function voltar(){
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function etiqueta340(){
             conjuntoEstator.style.display = 'none'
@@ -3878,6 +4028,8 @@ function voltar(){
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function etiqueta350(){
             etiqueta35.style.display = 'block'
@@ -3913,6 +4065,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
 
         }
         function etiqueta210(){
@@ -3949,6 +4103,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function conjuntoMancalSuperiorf(){
             etiqueta21.style.display = 'none'
@@ -3984,6 +4140,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
 
         }
         function etiqueta220(){
@@ -4021,6 +4179,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
         function tampaSuperiorf(){
             tampaSuperior.style.display = 'block'
@@ -4056,6 +4216,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
 
         }
         function anelOringf(){
@@ -4092,6 +4254,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
 
         }
         function prensaCabof(){
@@ -4128,6 +4292,8 @@ function voltar(){
             isolacaoInterna.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
 
         }
         function buchaDeGrafiteSuperiorf(){
@@ -4164,7 +4330,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function tampaof(){
@@ -4201,7 +4367,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function retentorSuperiorf(){
@@ -4238,7 +4404,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function protetorDeAreiaPoliacetalf(){
@@ -4275,7 +4441,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function protetorDeAreiaDeNitril(){
@@ -4312,7 +4478,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
      
         }
         function porcaSextavada51612f(){
@@ -4349,7 +4515,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function tampaDeDaCamara(){
@@ -4387,7 +4553,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function diafragmaDe(){
@@ -4425,7 +4591,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function tampaDeInferior(){
@@ -4462,7 +4628,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
 
@@ -4500,6 +4666,8 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
 
         function fecharEixo() {
@@ -4536,6 +4704,8 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }
 
         function clicarEixo() {
@@ -4572,6 +4742,8 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
+
         }        
 
         function clicarEixo11(){
@@ -4608,7 +4780,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function buchaGrafite(){
@@ -4645,7 +4817,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
         function mancalInferiorf(){
@@ -4682,7 +4854,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
         }
 
@@ -4720,7 +4892,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
-
+            buchavmu6.style.display = 'none'
 
 
         }
@@ -4758,6 +4930,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
 
 
 
@@ -4796,6 +4969,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
 
 
         }   
@@ -4833,6 +5007,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
 
 
 
@@ -4871,6 +5046,7 @@ function voltar(){
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
+            buchavmu6.style.display = 'none'
 
         }
 
