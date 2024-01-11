@@ -2161,6 +2161,32 @@
             background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
             box-shadow: none;
         }
+        .calcoel{
+            position: absolute;
+            align-items: center;
+            margin-left: 76.7%;
+            cursor: pointer;
+            background-color: #6caaaa; /* Cor de fundo verde */
+            color: white; /* Cor do texto branco */
+            padding: 4px 8px; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda padrão do botão */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo */
+            box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.2);
+
+
+        }
+        .calcoel:hover{
+                background-color:  #639b9b; /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        .calcoel:active{
+            background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
+            box-shadow: none;
+        }
+        
         
 
         
@@ -2877,7 +2903,7 @@
 }
 #centrifugs {
     background-color: #34495e;
-    color: #ecf0f1;
+    color: #f1ecec;
     padding: 15px 30px;
     font-size: 20px;
     border: none;
@@ -3120,6 +3146,9 @@
             margin-top: 10px;
             margin-left: 10px;
         }
+        #foradelinha{
+            color: #ec6b6b;
+        }
 
 
 
@@ -3225,9 +3254,9 @@
         <button onclick="cjmancali6()" class="pecas" id="mancali6">oi</button>
         <button onclick="buchagrafite6()" class="pecas" id="buchuela">oi</button>
         <button onclick="saidecabs6()" class="pecas" id="saidacabo6">oi</button>
-        <button onclick="isolis()" class="pecas" id="isolation">oi</button>
-        <button onclick="isolis()" class="pecas" id="calco">oi</button>
-        <button onclick="isolis()" class="pecas" id="bobinado">oi</button>
+        <button onclick="isoli()" class="pecas" id="isolation">oi</button>
+        <button onclick="calcos()" class="pecas" id="calco">oi</button>
+        <button onclick="bob6()" class="pecas" id="bobinado">oi</button>
 
 
         
@@ -3252,6 +3281,492 @@
 <!-----------------------------------------------------------------------------
 ------------------------------MOTOR VMU6-------------------------------------
 --------------------------------------------------------------------------------->
+<div class="divPecas6" id="codigovmu624">
+    <ul>
+        <li id="design">BOBINADOS DOS MOTORES DE 6”<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+        <li id="design">MATERIAL: -----.  <span id="quantidade">Quantidade</span></li>
+        <div id="eixo">
+            <li class="eixo-container">
+                <span id="spanvmu624" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.110</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu624','#inputvmu624')">&#x1F6D2;</button>
+                <input id="inputvmu624" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625011" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.111</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625011','#inputvmu625011')">&#x1F6D2;</button>
+                <input id="inputvmu625011" type="number" min="1">
+            </li>
+             <li class="eixo-container">
+                <span id="spanvmu625111" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.112</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625111','#inputvmu625111')">&#x1F6D2;</button>
+                <input id="inputvmu625111" type="number" min="1">
+            </li>                                   
+            <li class="eixo-container">
+                <span id="spanvmu625211" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.160</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625211','#inputvmu625211')">&#x1F6D2;</button>
+                <input id="inputvmu625211" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625311" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.162</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625311','#inputvmu625311')">&#x1F6D2;</button>
+                <input id="inputvmu625311" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625411" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,5HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.114</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625411','#inputvmu625411')">&#x1F6D2;</button>
+                <input id="inputvmu625411" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625511" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,5HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.115</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625511','#inputvmu625511')">&#x1F6D2;</button>
+                <input id="inputvmu625511" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625611" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,5HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.116</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625611','#inputvmu625611')">&#x1F6D2;</button>
+                <input id="inputvmu625611" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625711" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,5HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.164</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625711','#inputvmu625711')">&#x1F6D2;</button>
+                <input id="inputvmu625711" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625811" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 01,5HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.166</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625811','#inputvmu625811')">&#x1F6D2;</button>
+                <input id="inputvmu625811" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625911" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,0/2,5HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.168</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625911','#inputvmu625911')">&#x1F6D2;</button>
+                <input id="inputvmu625911" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250111" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,0/2,5HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.170</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250111','#inputvmu6250111')">&#x1F6D2;</button>
+                <input id="inputvmu6250111" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250211" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.117</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250211','#inputvmu6250211')">&#x1F6D2;</button>
+                <input id="inputvmu6250211" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250311" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.118</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250311','#inputvmu6250311')">&#x1F6D2;</button>
+                <input id="inputvmu6250311" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250411" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.119</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250411','#inputvmu6250411')">&#x1F6D2;</button>
+                <input id="inputvmu6250411" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250511" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,5/3,0HP MON 220V 60HZ VMUP/VMSP / CÓDIGO: 300.037.000.120</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250511','#inputvmu6250511')">&#x1F6D2;</button>
+                <input id="inputvmu6250511" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250611" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,5/3,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.121</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250611','#inputvmu6250611')">&#x1F6D2;</button>
+                <input id="inputvmu6250611" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 02,5/3,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.122</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711','#inputvmu6250711')">&#x1F6D2;</button>
+                <input id="inputvmu6250711" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507111" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 03,0/3,5/4,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.176</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507111','#inputvmu62507111')">&#x1F6D2;</button>
+                <input id="inputvmu62507111" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507112" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 03,0/3,5/4,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.178</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507112','#inputvmu62507112')">&#x1F6D2;</button>
+                <input id="inputvmu62507112" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507113" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 03,5/4,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.126</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507113','#inputvmu62507113')">&#x1F6D2;</button>
+                <input id="inputvmu62507113" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507114" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 03,5/4,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.127</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507114','#inputvmu62507114')">&#x1F6D2;</button>
+                <input id="inputvmu62507114" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507115" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 03,5/4,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.128</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507115','#inputvmu62507115')">&#x1F6D2;</button>
+                <input id="inputvmu62507115" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507116" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 04,5/5,0/5,5HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.188</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507116','#inputvmu62507116')">&#x1F6D2;</button>
+                <input id="inputvmu62507116" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507117" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 04,5/5,0/5,5HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.190</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507117','#inputvmu62507117')">&#x1F6D2;</button>
+                <input id="inputvmu62507117" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507118" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 04,5/5,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.132</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507118','#inputvmu62507118')">&#x1F6D2;</button>
+                <input id="inputvmu62507118" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 04,5/5,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.133</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119','#inputvmu62507119')">&#x1F6D2;</button>
+                <input id="inputvmu62507119" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625071191" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 04,5/5,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.134</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625071191','#inputvmu625071191')">&#x1F6D2;</button>
+                <input id="inputvmu625071191" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711911" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 05,5/6,0/6,5HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.138</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711911','#inputvmu6250711911')">&#x1F6D2;</button>
+                <input id="inputvmu6250711911" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 05,5/6,0/6,5HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.139</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912','#inputvmu6250711912')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711913" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 05,5/6,0/6,5HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.140</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711913','#inputvmu6250711913')">&#x1F6D2;</button>
+                <input id="inputvmu6250711913" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711914" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 06,0/6,5/7,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.200</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711914','#inputvmu6250711914')">&#x1F6D2;</button>
+                <input id="inputvmu6250711914" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711915" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 06,0/6,5/7,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.202</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711915','#inputvmu6250711915')">&#x1F6D2;</button>
+                <input id="inputvmu6250711915" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711916" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 07,0/8,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.147</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711916','#inputvmu6250711916')">&#x1F6D2;</button>
+                <input id="inputvmu6250711916" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711917" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 07,0/8,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.148</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711917','#inputvmu6250711917')">&#x1F6D2;</button>
+                <input id="inputvmu6250711917" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711918" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 07,0/8,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.149</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711918','#inputvmu6250711918')">&#x1F6D2;</button>
+                <input id="inputvmu6250711918" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711919" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 08,0/9,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.212</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711919','#inputvmu6250711919')">&#x1F6D2;</button>
+                <input id="inputvmu6250711919" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119111" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 08,0/9,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.214</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119111','#inputvmu62507119111')">&#x1F6D2;</button>
+                <input id="inputvmu62507119111" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119112" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 09,0/10,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.153</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119112','#inputvmu62507119112')">&#x1F6D2;</button>
+                <input id="inputvmu62507119112" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119113" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 09,0/10,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.154</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119113','#inputvmu62507119113')">&#x1F6D2;</button>
+                <input id="inputvmu62507119113" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711914" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 09,0/10,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.155</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711914','#inputvmu6250711914')">&#x1F6D2;</button>
+                <input id="inputvmu6250711914" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711915" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 10,0/11,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.220</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711915','#inputvmu6250711915')">&#x1F6D2;</button>
+                <input id="inputvmu6250711915" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711916" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 10,0/11,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.222</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711916','#inputvmu6250711916')">&#x1F6D2;</button>
+                <input id="inputvmu6250711916" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711917" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 11,0/12,0HP MON 220V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.385</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711917','#inputvmu6250711917')">&#x1F6D2;</button>
+                <input id="inputvmu6250711917" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711918" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 11,0/12,0HP MON 254V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.386</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711918','#inputvmu6250711918')">&#x1F6D2;</button>
+                <input id="inputvmu6250711918" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711919" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 11,0/12,0HP MON 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.387</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711919','#inputvmu6250711919')">&#x1F6D2;</button>
+                <input id="inputvmu6250711919" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119112" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 12,0/13,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.228</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119112','#inputvmu62507119112')">&#x1F6D2;</button>
+                <input id="inputvmu62507119112" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119113" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 12,0/13,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.230</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119113','#inputvmu62507119113')">&#x1F6D2;</button>
+                <input id="inputvmu62507119113" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711914" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 14,0/15,0/16,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.236</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711914','#inputvmu6250711914')">&#x1F6D2;</button>
+                <input id="inputvmu6250711914" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119115" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 14,0/15,0/16,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.238</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119115','#inputvmu62507119115')">&#x1F6D2;</button>
+                <input id="inputvmu62507119115" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711916" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 17,0/18,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.248</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711916','#inputvmu6250711916')">&#x1F6D2;</button>
+                <input id="inputvmu6250711916" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119117" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 17,0/18,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.250</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119117','#inputvmu62507119117')">&#x1F6D2;</button>
+                <input id="inputvmu62507119117" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119118" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 19,0/20,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.256</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119118','#inputvmu62507119118')">&#x1F6D2;</button>
+                <input id="inputvmu62507119118" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119119" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 19,0/20,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.258</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119119','#inputvmu62507119119')">&#x1F6D2;</button>
+                <input id="inputvmu62507119119" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507119121" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 22,5/25,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.264</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507119121','#inputvmu62507119121')">&#x1F6D2;</button>
+                <input id="inputvmu62507119121" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625071191211" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 22,5/25,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.266</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625071191211','#inputvmu625071191211')">&#x1F6D2;</button>
+                <input id="inputvmu625071191211" type="number" min="1">
+            </li>
+        </div>
+    </ul>
+</div>
+
+<div class="divPecas6" id="codigovmu623">
+    <ul>
+        <li id="design">CONJ. ISOLAÇÃO CANAL PARA MOTORES DE 6"<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+        <li id="design">MATERIAL: POLIESTER.  <span id="quantidade">Quantidade</span></li>
+        <div id="eixo">
+            <li class="eixo-container">
+                <span id="spanvmu623" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 05CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.022</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu623','#inputvmu623')">&#x1F6D2;</button>
+                <input id="inputvmu623" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62501" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 07,5CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.023</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62501','#inputvmu62501')">&#x1F6D2;</button>
+                <input id="inputvmu62501" type="number" min="1">
+            </li>
+             <li class="eixo-container">
+                <span id="spanvmu62511" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 10CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.024</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62511','#inputvmu62511')">&#x1F6D2;</button>
+                <input id="inputvmu62511" type="number" min="1">
+            </li>                                   
+            <li class="eixo-container">
+                <span id="spanvmu62521" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 14CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.025</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62521','#inputvmu62521')">&#x1F6D2;</button>
+                <input id="inputvmu62521" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62531" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 20CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.026</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62531','#inputvmu62531')">&#x1F6D2;</button>
+                <input id="inputvmu62531" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62541" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 23CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.027</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62541','#inputvmu62541')">&#x1F6D2;</button>
+                <input id="inputvmu62541" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62551" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 28CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.028</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62551','#inputvmu62551')">&#x1F6D2;</button>
+                <input id="inputvmu62551" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62561" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 34CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.029</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62561','#inputvmu62561')">&#x1F6D2;</button>
+                <input id="inputvmu62561" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62571" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 40CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.030</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62571','#inputvmu62571')">&#x1F6D2;</button>
+                <input id="inputvmu62571" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62581" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 50CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.031</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62581','#inputvmu62581')">&#x1F6D2;</button>
+                <input id="inputvmu62581 type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62591" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 57CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.032</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62591','#inputvmu62591')">&#x1F6D2;</button>
+                <input id="inputvmu62591" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625011" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 60CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.033</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625011','#inputvmu625011')">&#x1F6D2;</button>
+                <input id="inputvmu625011" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625021" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP 65CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.034</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625021','#inputvmu625021')">&#x1F6D2;</button>
+                <input id="inputvmu625021" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625031" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 70CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.035</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625031','#inputvmu625031')">&#x1F6D2;</button>
+                <input id="inputvmu625031" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625041" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VMUP/E/SP/Z 75CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.036</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625041','#inputvmu625041')">&#x1F6D2;</button>
+                <input id="inputvmu625041" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625051" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VME/SP 80CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.037</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625051','#inputvmu625051')">&#x1F6D2;</button>
+                <input id="inputvmu625051" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625061" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VME/SP 87CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.038</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625061','#inputvmu625061')">&#x1F6D2;</button>
+                <input id="inputvmu625061" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu625071" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL 6" VME/SP 95CM (24 TIRAS POLIEST) / CÓDIGO: 310.017.000.039</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625071','#inputvmu625071')">&#x1F6D2;</button>
+                <input id="inputvmu625071" type="number" min="1">
+            </li>
+        </div>
+    </ul>
+</div>
+
+<div class="divPecas6" id="codigovmu625">
+    <ul>
+        <li id="design">CONJUNTO TAMPA DE CANAL (C/ 24UN.)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+        <li id="design">MATERIAL: PVC.  <span id="quantidade">Quantidade</span></li>
+        <div id="eixo">
+            <li class="eixo-container">
+                <span id="spanvmu625" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 05CM / CÓDIGO: 310.035.000.003</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625','#inputvmu625')">&#x1F6D2;</button>
+                <input id="inputvmu625" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 07,5CM / CÓDIGO: 310.035.000.004</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250','#inputvmu6250')">&#x1F6D2;</button>
+                <input id="inputvmu6250" type="number" min="1">
+            </li>
+             <li class="eixo-container">
+                <span id="spanvmu6251" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 10CM / CÓDIGO: 310.035.000.005</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6251','#inputvmu6251')">&#x1F6D2;</button>
+                <input id="inputvmu6251" type="number" min="1">
+            </li>                                   
+            <li class="eixo-container">
+                <span id="spanvmu6252" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 14CM / CÓDIGO: 310.035.000.006</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6252','#inputvmu6252')">&#x1F6D2;</button>
+                <input id="inputvmu6252" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6253" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 20CM / CÓDIGO: 310.035.000.007</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6253','#inputvmu6253')">&#x1F6D2;</button>
+                <input id="inputvmu6253" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6254" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 23CM / CÓDIGO: 310.035.000.008</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6254','#inputvmu6254')">&#x1F6D2;</button>
+                <input id="inputvmu6254" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6255" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 28CM / CÓDIGO: 310.035.000.009</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6255','#inputvmu6255')">&#x1F6D2;</button>
+                <input id="inputvmu6255" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6256" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 34CM / CÓDIGO: 310.035.000.010</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6256','#inputvmu6256')">&#x1F6D2;</button>
+                <input id="inputvmu6256" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6257" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 40CM / CÓDIGO: 310.035.000.011</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6257','#inputvmu6257')">&#x1F6D2;</button>
+                <input id="inputvmu6257" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6258" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 50CM / CÓDIGO: 310.035.000.012</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6258','#inputvmu6258')">&#x1F6D2;</button>
+                <input id="inputvmu6258" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6259" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 57CM / CÓDIGO: 310.035.000.013</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6259','#inputvmu6259')">&#x1F6D2;</button>
+                <input id="inputvmu6259" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62501" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 60CM / CÓDIGO: 310.035.000.014</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62501','#inputvmu62501')">&#x1F6D2;</button>
+                <input id="inputvmu62501" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62502" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 65CM / CÓDIGO: 310.035.000.015</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62502','#inputvmu62502')">&#x1F6D2;</button>
+                <input id="inputvmu62502" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62503" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 70CM / CÓDIGO: 310.035.000.016</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62503','#inputvmu62503')">&#x1F6D2;</button>
+                <input id="inputvmu62503" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62504" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 75CM / CÓDIGO: 310.035.000.017</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62504','#inputvmu62504')">&#x1F6D2;</button>
+                <input id="inputvmu62504" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62505" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 80CM / CÓDIGO: 310.035.000.018</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62505','#inputvmu62505')">&#x1F6D2;</button>
+                <input id="inputvmu62505" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62506" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 87CM / CÓDIGO: 310.035.000.019</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62506','#inputvmu62506')">&#x1F6D2;</button>
+                <input id="inputvmu62506" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu62507" onclick="clicarNaLi(this)" class="clicavel">CONJ TAMPA CANAL VME/VMUP 6” 90CM / CÓDIGO: 310.035.000.020</span>
+                <button class="calcoel" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu62507','#inputvmu62507')">&#x1F6D2;</button>
+                <input id="inputvmu62507" type="number" min="1">
+            </li>
+        </div>
+    </ul>
+</div>
 <div class="divPecas6" id="codigovmu622">
     <ul>
         <li id="design">SAIDA ALIMENTAÇÃO (CFE. CONFIGURAÇÃO)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
@@ -6503,13 +7018,13 @@
                             <li id="motorvmu4">MOTOR VMSP6" ACIMA DE 35HP"</li>
                             <li id="motorvmu4">HIDRÁULICA VBO61/64"</li>
                             <li id="motorvmu4">HIDRÁULICA VBO65/66"</li>
-                            <li id="motorvmu4">HIDRÁULICA VBE65/66"</li>
+                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">HIDRÁULICA VBE65/66" (Fora de linha)</span></li>
                             <li id="motorvmu4">HIDRÁULICA VBSP67/68"</li>
                             <li id="motorvmu4">HIDRÁULICA VBSP69"</li>
                             <li id="motorvmu4">CONJ.HIDRÁULICO VBOC64 E VBEC65/66 PARA MOTOR IP55 20/25HP"</li>
                             <li id="motorvmu4">CONJ.HIDRÁULICO VBSC67/68 PARA MOTOR IP55 20/25HP"</li>
                             <li id="motorvmu4">CONJ. HIDRÁULICO VBSC69 PARA MOTOR IP55 20/25HP"</li>
-                            <li id="motorvmu4">MOTOR VMZ6""</li>
+                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">MOTOR VMZ6" (Fora de linha)</span></li>
 
                         </ul>
                     </div>
@@ -6661,11 +7176,8 @@ function vmu4(){
         
             
        }
-function vmu6(){  
-        
+function vmu6(){      
     
-
-
         document.querySelector('#isolation').style.display = 'block'
         document.querySelector('#calco').style.display = 'block'
         document.querySelector('#bobinado').style.display = 'block'
@@ -6789,6 +7301,10 @@ function vmu6(){
 }
 
 function voltar(){  
+    
+        document.querySelector('#codigovmu624').style.display = 'none'
+        document.querySelector('#codigovmu623').style.display = 'none'
+        document.querySelector('#codigovmu625').style.display = 'none'
         document.querySelector('#isolation').style.display = 'none'
         document.querySelector('#calco').style.display = 'none'
         document.querySelector('#bobinado').style.display = 'none'
@@ -6918,6 +7434,9 @@ function voltar(){
 
 
 }
+document.querySelector('#codigovmu624').style.display = 'none'
+document.querySelector('#codigovmu623').style.display = 'none'
+document.querySelector('#codigovmu625').style.display = 'none'
 document.querySelector('#isolation').style.display = 'none'
 document.querySelector('#calco').style.display = 'none'
 document.querySelector('#bobinado').style.display = 'none'
@@ -6987,6 +7506,12 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
         //---------------------------------------------------------------------------
         //----------------------INICIO-----------------------------------------------
         //---------------------------------------------------------------------------
+        const bobi6 = document.querySelector('#codigovmu624')
+        bobi6.style.display = 'none'
+        const iso = document.querySelector('#codigovmu623')
+        iso.style.display = 'none'
+        const calc = document.querySelector('#codigovmu625')
+        calc.style.display = 'none'
         const saidda = document.querySelector('#codigovmu622')
         saidda.style.display = 'none'
         const mancalid6 = document.querySelector('#codigovmu626')
@@ -7120,6 +7645,218 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
         saidaDeCabos.style.display = 'none'
 
 
+        function bob6(){
+            iso.style.display = 'none'
+            calc.style.display = 'none'
+            saidda.style.display = 'none'
+            aneli6.style.display = 'none'
+            parafuvedan.style.display = 'none'
+            protetord6.style.display = 'none'
+            anelrete6.style.display = 'none'
+            retenta6.style.display = 'none'
+            tampao6.style.display = 'none'
+            protetodeareia6.style.display ='none'
+            porcearruel6.style.display ='none'
+            chavetainduzido6.style.display ='none'
+            eixo6P.style.display = 'none'
+            discespacadr.style.display = 'none'
+            etiquet20.style.display = 'none'
+            etiqueta58vmu6.style.display = 'none'
+            etiquetanvmu6.style.display = 'none'
+            parafusoearruela.style.display = 'none'
+            tampaDaCamara6.style.display = 'none'
+            diafragmVmu6.style.display ='none'
+            cjtampainferiorVmu6.style.display ='none'
+            discpoliester6.style.display ='none'
+            discinoxvmu6.style.display = 'none'
+            discaxialgrafitevmu6.style.display = 'none'
+            pinoElasticovmu6.style.display = 'none'
+            discgrafite6.style.display = 'none'
+            anelDeRetencao.style.display ='none'
+            mancalinf6.style.display ='none'
+            buchavmu6.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            etiqueta21vmu6.style.display = 'none'
+            estatorEbobinado.style.display = 'none'
+            cnjmancal6.style.display ='none'
+            mancalid6.style.display = 'none'
+            bobi6.style.display = 'block'
+
+
+        }
+        function isoli(){
+            iso.style.display = 'block'
+            calc.style.display = 'none'
+            saidda.style.display = 'none'
+            aneli6.style.display = 'none'
+            parafuvedan.style.display = 'none'
+            protetord6.style.display = 'none'
+            anelrete6.style.display = 'none'
+            retenta6.style.display = 'none'
+            tampao6.style.display = 'none'
+            protetodeareia6.style.display ='none'
+            porcearruel6.style.display ='none'
+            chavetainduzido6.style.display ='none'
+            eixo6P.style.display = 'none'
+            discespacadr.style.display = 'none'
+            etiquet20.style.display = 'none'
+            etiqueta58vmu6.style.display = 'none'
+            etiquetanvmu6.style.display = 'none'
+            parafusoearruela.style.display = 'none'
+            tampaDaCamara6.style.display = 'none'
+            diafragmVmu6.style.display ='none'
+            cjtampainferiorVmu6.style.display ='none'
+            discpoliester6.style.display ='none'
+            discinoxvmu6.style.display = 'none'
+            discaxialgrafitevmu6.style.display = 'none'
+            pinoElasticovmu6.style.display = 'none'
+            discgrafite6.style.display = 'none'
+            anelDeRetencao.style.display ='none'
+            mancalinf6.style.display ='none'
+            buchavmu6.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            etiqueta21vmu6.style.display = 'none'
+            estatorEbobinado.style.display = 'none'
+            cnjmancal6.style.display ='none'
+            mancalid6.style.display = 'none'
+            bobi6.style.display = 'none'
+
+
+        }
+        function calcos(){
+            calc.style.display = 'block'
+            saidda.style.display = 'none'
+            aneli6.style.display = 'none'
+            parafuvedan.style.display = 'none'
+            protetord6.style.display = 'none'
+            anelrete6.style.display = 'none'
+            retenta6.style.display = 'none'
+            tampao6.style.display = 'none'
+            protetodeareia6.style.display ='none'
+            porcearruel6.style.display ='none'
+            chavetainduzido6.style.display ='none'
+            eixo6P.style.display = 'none'
+            discespacadr.style.display = 'none'
+            etiquet20.style.display = 'none'
+            etiqueta58vmu6.style.display = 'none'
+            etiquetanvmu6.style.display = 'none'
+            parafusoearruela.style.display = 'none'
+            tampaDaCamara6.style.display = 'none'
+            diafragmVmu6.style.display ='none'
+            cjtampainferiorVmu6.style.display ='none'
+            discpoliester6.style.display ='none'
+            discinoxvmu6.style.display = 'none'
+            discaxialgrafitevmu6.style.display = 'none'
+            pinoElasticovmu6.style.display = 'none'
+            discgrafite6.style.display = 'none'
+            anelDeRetencao.style.display ='none'
+            mancalinf6.style.display ='none'
+            buchavmu6.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            etiqueta21vmu6.style.display = 'none'
+            estatorEbobinado.style.display = 'none'
+            cnjmancal6.style.display ='none'
+            mancalid6.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
+
+        }
         function saidecabs6(){
             saidda.style.display = 'block'
             aneli6.style.display = 'none'
@@ -7185,6 +7922,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             estatorEbobinado.style.display = 'none'
             cnjmancal6.style.display ='none'
             mancalid6.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function cjmancali6(){
@@ -7252,6 +7992,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             cnjmancal6.style.display ='none'
             mancalid6.style.display = 'block'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function aneldeteta(){
@@ -7319,6 +8062,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             cnjmancal6.style.display ='none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function paraeveda(){
@@ -7386,6 +8132,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             cnjmancal6.style.display ='none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function prens6(){
@@ -7453,6 +8202,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function anelRet6(){
@@ -7520,6 +8272,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function rententorD6(){
@@ -7588,6 +8343,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function tampaoD6(){
@@ -7655,6 +8413,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function mancalsu6(){
@@ -7722,6 +8483,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function protetor6(){
@@ -7789,6 +8553,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function arruelporca6(){
@@ -7856,6 +8623,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function chavetainduzid6(){
@@ -7923,6 +8693,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function eixode6p(){
@@ -7990,6 +8763,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function espacadorDisco(){
@@ -8057,6 +8833,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
 
@@ -8125,6 +8904,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function etiqn20(){
@@ -8192,6 +8974,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function etiqn21(){
@@ -8259,6 +9044,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function etiqn58(){
@@ -8326,6 +9114,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function etiqn6(){
@@ -8393,6 +9184,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function parafusoArruelas(){
@@ -8460,6 +9254,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function tampaCam6(){
@@ -8527,6 +9324,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function diagragmaf(){
@@ -8594,6 +9394,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function ConjTampainferiorVmu6(){
@@ -8661,6 +9464,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function discopoliester6(){
@@ -8728,6 +9534,10 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
+
 
         }
         function discInoxVmu6(){
@@ -8796,6 +9606,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function discoaxialvmu6(){
@@ -8863,6 +9676,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function pinoDeElasticoVmu6 (){
@@ -8930,6 +9746,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function cjdiscografiteVmu6(){
@@ -8996,6 +9815,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function anelDeRetencaoVmu6(){
@@ -9063,6 +9885,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function mancainferior6(){
@@ -9130,7 +9955,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
-
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function buchagrafite6(){
@@ -9198,6 +10025,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
         function clicarImagem(){
@@ -9265,7 +10095,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
-
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
 
@@ -9334,6 +10166,9 @@ document.querySelector('#tampainfvmu6').style.display = 'none'
             aneli6.style.display = 'none'
             mancalid6.style.display = 'none'
             saidda.style.display = 'none'
+            calc.style.display = 'none'
+            iso.style.display = 'none'
+            bobi6.style.display = 'none'
 
         }
 
