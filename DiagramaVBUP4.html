@@ -770,18 +770,35 @@
             font-size: 0.8em;
         }        
         #conjuntoEstator{
-            width: 8.2%;
-            height: 24%;
+            width: 2%;
+            height: 2%;
             position: absolute;
-            top: 82.5%;
+            top: 85%;
             left: 61.3%;
             transform: translate(-50%, -50%);
             z-index: 0;
-            color: rgba(240, 248, 255, 0);
-            border-color: rgba(240, 248, 255, 0);
+            background-color: rgb(56, 181, 219);
+            border-color: rgb(10, 11, 117);
             cursor: pointer;
             font-size: 0.8em;
+            border-radius: 100%;
+
         }
+        #cjbobina13{
+            width: 1.8%;
+            height: 1.8%;
+            position: absolute;
+            top: 87.1%;
+            left: 55.7%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            background-color: rgb(56, 181, 219);
+            border-color: rgb(10, 11, 117);
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 100%;
+        }
+        
         #isolacaoExterna{
             width: 2%;
             height: 2%;
@@ -5670,6 +5687,8 @@
         <button onclick="isolacaoInternaf()" class="pecas" id="isolacaoInterna"></button>
         <button onclick="conjuntoTampaDeCanalf()" class="pecas" id="conjuntoTampaDeCanal"></button>
         <button onclick="saidaDeCabosf()" class="pecas" id="saidaDeCabos"></button> 
+        <button onclick="cjbobinado13()" class="pecas" id="cjbobina13"></button> 
+
 
 
        <!--------------------------------------------------------------------------------------
@@ -7292,6 +7311,26 @@
                 <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102722','#inputvmu622102722')">&#x1F6D2;</button>
                 <input id="inputvmu622102722" type="number" min="1">
             </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102723" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 08,0/9,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.186</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102723','#inputvmu622102723')">&#x1F6D2;</button>
+                <input id="inputvmu622102723" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102724" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 09,0/10,0HP M 220/254V VMUP/SP/E / CÓDIGO: 300.033.000.187</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102724','#inputvmu622102724')">&#x1F6D2;</button>
+                <input id="inputvmu622102724" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102725" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 09,0/10,0HP M 440V VMUP/SP/E / CÓDIGO: 300.033.000.188</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102725','#inputvmu622102725')">&#x1F6D2;</button>
+                <input id="inputvmu622102725" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102726" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 10,0/11,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.154</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102726','#inputvmu622102726')">&#x1F6D2;</button>
+                <input id="inputvmu622102726" type="number" min="1">
+            </li>
 
         </div>
     </ul>
@@ -8896,12 +8935,12 @@
                     <input id="input15" type="number" min="1">
                 </li>
                 <li class="eixo-container">
-                    <span id="span15" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL R1 / CÓDIGO: 300.006.000067</span>
+                    <span id="span15" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL R1 / CÓDIGO: 300.006.000024</span>
                     <button class="botaoBuchaMancal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span15','#input15')">&#x1F6D2;</button>
                     <input id="input15" type="number" min="1">
                 </li>
                 <li class="eixo-container">
-                    <span id="span15" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL R2 / CÓDIGO: 300.006.000067</span>
+                    <span id="span15" onclick="clicarNaLi(this)" class="clicavel">BUCHA MANCAL R2 / CÓDIGO: 300.006.000062</span>
                     <button class="botaoBuchaMancal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span15','#input15')">&#x1F6D2;</button>
                     <input id="input15" type="number" min="1">
                 </li>
@@ -8941,7 +8980,7 @@
             <li id="design">MATERIAL: GRAFITE <span id="quantidade">Quantidade</span></li>
             <div id="eixo">
                 <li class="eixo-container">
-                    <span id="span18" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL GRAFITE / CÓDIGO: 310.028.000010</span>
+                    <span id="span18" onclick="clicarNaLi(this)" class="clicavel"> DISCO AXIAL GRAFITE / CÓDIGO: 300.028.000010</span>
                     <button class="botaoAxialGrafite" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span18','#input18')">&#x1F6D2;</button>
                     <input id="input18" type="number" min="1">
                                 
@@ -9250,81 +9289,11 @@
         </ul>
     </div>
     
-    <div class="divPecas" id="codigo14">
+    <div class="divPecas" id="codigo13">
         <ul>
-            <li id="design">ESTATOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
-            <li id="design">MATERIAL: SAE 1020/SILICIO <span id="quantidade">Quantidade</span></li>
-            <div id="eixo">
-                <li class="eixo-container">
-                    <span id="span44" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.027.000001</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span44','#input44')">&#x1F6D2;</button>
-                        <input id="input44" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span45" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 14CM (HP 0,5 M - 0,5/0,7 T) / CÓDIGO: 300.027.000002</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span45','#input45')">&#x1F6D2;</button>
-                        <input id="input45" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span46" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 18CM (HP 0,7 M - 1,0 T) / CÓDIGO: 300.027.000003</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span46','#input46')">&#x1F6D2;</button>
-                        <input id="input46" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span47a" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 23CM (HP 1,0 M - 1,5 T)  / CÓDIGO: 300.027.000004</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47a','#input47a')">&#x1F6D2;</button>
-                        <input id="input47a" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span47" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 28CM (HP 1,5 M - 2,0 T) / CÓDIGO: 300.027.000005</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47','#input47')">&#x1F6D2;</button>
-                        <input id="input47" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span48" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 35CM (HP 2,0 M -2,5/3,0 T) / CÓDIGO: 300.027.000006</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span48','#input48')">&#x1F6D2;</button>
-                        <input id="input48" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span49" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 42CM (HP 2,5/3,0 M - 3,5/4,0 T) / CÓDIGO: 300.027.000007</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span49','#input49')">&#x1F6D2;</button>
-                        <input id="input49" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span50" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 48CM (HP 3,5/4,0 M - 4,5/5,0 T) / CÓDIGO: 300.027.000008</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span50','#input50')">&#x1F6D2;</button>
-                        <input id="input50" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span51" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 52CM (HP 4,5/5,0 M - 5,5 T) / CÓDIGO: 300.027.000009</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span51','#input51')">&#x1F6D2;</button>
-                        <input id="input51" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span52" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 56CM (HP 5,5 M - 6,0 T) / CÓDIGO: 300.027.000010</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span52','#input52')">&#x1F6D2;</button>
-                        <input id="input52" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span53" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T) / CÓDIGO: 300.027.000011</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span53','#input53')">&#x1F6D2;</button>
-                        <input id="input53" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span54" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 65CM (HP 11,0 T) / CÓDIGO: 300.027.000057</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span54','#input54')">&#x1F6D2;</button>
-                        <input id="input54" type="number" min="1">
-                </li>
-                <li class="eixo-container">
-                    <span id="span55" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 70CM (HP 12,0 T) / CÓDIGO: 300.027.000058</span>
-                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span55','#input55')">&#x1F6D2;</button>
-                        <input id="input55" type="number" min="1">
-                </li>
-                <P></P>
                 <li id="design">CONJUNTO ESTATOR BOBINADO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
                 <li id="design">MATERIAL: SAE 1020/SILICIO
-                    <p></p> 
-
+                <div>
                     <li class="eixo-container">
                         <span id="span56" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,3HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000001</span>
                             <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span56','#input56')">&#x1F6D2;</button>
@@ -9659,6 +9628,81 @@
             </ul>
         </div>
 
+    <div class="divPecas" id="codigo14">
+        <ul>
+            <li id="design">ESTATOR <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+            <li id="design">MATERIAL: SAE 1020/SILICIO <span id="quantidade">Quantidade</span></li>
+            <div id="eixo">
+                <li class="eixo-container">
+                    <span id="span44" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 10CM (HP 0,3 M - 0,3 T) / CÓDIGO: 300.027.000001</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span44','#input44')">&#x1F6D2;</button>
+                        <input id="input44" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span45" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 14CM (HP 0,5 M - 0,5/0,7 T) / CÓDIGO: 300.027.000002</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span45','#input45')">&#x1F6D2;</button>
+                        <input id="input45" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span46" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 18CM (HP 0,7 M - 1,0 T) / CÓDIGO: 300.027.000003</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span46','#input46')">&#x1F6D2;</button>
+                        <input id="input46" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span47a" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 23CM (HP 1,0 M - 1,5 T)  / CÓDIGO: 300.027.000004</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47a','#input47a')">&#x1F6D2;</button>
+                        <input id="input47a" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span47" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 28CM (HP 1,5 M - 2,0 T) / CÓDIGO: 300.027.000005</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span47','#input47')">&#x1F6D2;</button>
+                        <input id="input47" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span48" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/B/E 35CM (HP 2,0 M -2,5/3,0 T) / CÓDIGO: 300.027.000006</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span48','#input48')">&#x1F6D2;</button>
+                        <input id="input48" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span49" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 42CM (HP 2,5/3,0 M - 3,5/4,0 T) / CÓDIGO: 300.027.000007</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span49','#input49')">&#x1F6D2;</button>
+                        <input id="input49" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span50" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 48CM (HP 3,5/4,0 M - 4,5/5,0 T) / CÓDIGO: 300.027.000008</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span50','#input50')">&#x1F6D2;</button>
+                        <input id="input50" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span51" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 52CM (HP 4,5/5,0 M - 5,5 T) / CÓDIGO: 300.027.000009</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span51','#input51')">&#x1F6D2;</button>
+                        <input id="input51" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span52" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 56CM (HP 5,5 M - 6,0 T) / CÓDIGO: 300.027.000010</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span52','#input52')">&#x1F6D2;</button>
+                        <input id="input52" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span53" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 60CM (HP 6,5/7,0/7,5/8,0/9,0/10,0 T) / CÓDIGO: 300.027.000011</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span53','#input53')">&#x1F6D2;</button>
+                        <input id="input53" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span54" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 65CM (HP 11,0 T) / CÓDIGO: 300.027.000057</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span54','#input54')">&#x1F6D2;</button>
+                        <input id="input54" type="number" min="1">
+                </li>
+                <li class="eixo-container">
+                    <span id="span55" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 4" VMU/E 70CM (HP 12,0 T) / CÓDIGO: 300.027.000058</span>
+                        <button class="botaoMotorBobinado" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span55','#input55')">&#x1F6D2;</button>
+                        <input id="input55" type="number" min="1">
+                </li>
+                                  
+                </div>
+            </ul>
+        </div>
+
         <div class="divPecas" id="codigo15">
             <ul>
                 <li id="design">ISOLACAO DE CABECEIRA INTERNA<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
@@ -9701,22 +9745,22 @@
                             <input id="input125" type="number" min="1">
                     </li>             
                     <li class="eixo-container">
-                        <span id="span126" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 18CM (18 TIRAS) / CÓDIGO: 300.017.000003</span>
+                        <span id="span126" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 18CM (18 TIRAS) / CÓDIGO: 310.017.000003</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span126','#input126')">&#x1F6D2;</button>
                             <input id="input126" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span127" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 23CM (18 TIRAS) / CÓDIGO: 300.017.000004</span>
+                        <span id="span127" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 23CM (18 TIRAS) / CÓDIGO: 310.017.000004</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span127','#input127')">&#x1F6D2;</button>
                             <input id="input127" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span128" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 28CM (18 TIRAS) / CÓDIGO: 300.017.000005</span>
+                        <span id="span128" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 28CM (18 TIRAS) / CÓDIGO: 310.017.000005</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span128','#input128')">&#x1F6D2;</button>
                             <input id="input128" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span129" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 35CM (18 TIRAS) / CÓDIGO: 300.017.000006</span>
+                        <span id="span129" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 35CM (18 TIRAS) / CÓDIGO: 310.017.000006</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span129','#input129')">&#x1F6D2;</button>
                             <input id="input129" type="number" min="1">
                     </li> 
@@ -9731,12 +9775,12 @@
                             <input id="input131" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span132" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 52CM (18 TIRAS) / CÓDIGO: 300.017.000009</span>
+                        <span id="span132" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 52CM (18 TIRAS) / CÓDIGO: 310.017.000009</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span132','#input132')">&#x1F6D2;</button>
                             <input id="input132" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span133" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 56CM (18 TIRAS) / CÓDIGO: 300.017.000010</span>
+                        <span id="span133" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 56CM (18 TIRAS) / CÓDIGO: 310.017.000010</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span133','#input133')">&#x1F6D2;</button>
                             <input id="input133" type="number" min="1">
                     </li> 
@@ -9751,7 +9795,7 @@
                             <input id="input135" type="number" min="1">
                     </li> 
                     <li class="eixo-container">
-                        <span id="span136" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 70CM (18 TIRAS) / CÓDIGO: 300.017.000041</span>
+                        <span id="span136" onclick="clicarNaLi(this)" class="clicavel">CONJ ISOLACAO CANAL VME/VMU4" 70CM (18 TIRAS) / CÓDIGO: 310.017.000041</span>
                             <button class="botaoIsolacaoCanal" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span136','#input136')">&#x1F6D2;</button>
                             <input id="input136" type="number" min="1">
                     </li> 
@@ -10097,7 +10141,7 @@
             <div class="divPecas" id="codigo20">
                 <ul>
                     <li id="design">SAIDA ALIMENTAÇÃO (CFE. CONFIGURAÇÃO)<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
-                    <li id="design">MATERIAL: POLIESTER  <span id="quantidade">Quantidade</span></li>
+                    <li id="design">MATERIAL: COBRE/PVC  <span id="quantidade">Quantidade</span></li>
                     <div id="eixo">
                         <li class="eixo-container">
                             <span id="span200" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 3F 4" 00,3HP M 110/220V VMU/B / CÓDIGO: 300.033.000005</span>
@@ -10225,9 +10269,14 @@
                                 <input id="input224" type="number" min="1">
                         </li>
                         <li class="eixo-container">
-                            <span id="span225" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 3F 4" 06,5/7,0/7,5/8,0HP T 220V VMU / CÓDIGO: 300.033.000050</span>
+                            <span id="span225" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 3F 4" 06,5/7,0/7,5/8,0HP T 220V VMU / CÓDIGO: 300.033.000040</span>
                                 <button class="botaoIsolacaoCanalInterna" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span225','#input225')">&#x1F6D2;</button>
                                 <input id="input225" type="number" min="1">
+                        </li>
+                        <li class="eixo-container">
+                            <span id="span2251" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 3F 4" 06,5/7,0/7,5/8,0HP T 380/440V VMU / CÓDIGO: 300.033.000050</span>
+                                <button class="botaoIsolacaoCanalInterna" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#span2251','#input2251')">&#x1F6D2;</button>
+                                <input id="input2251" type="number" min="1">
                         </li>
                         <li class="eixo-container">
                             <span id="span226" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 3F 4" 09,0/10,0HP T 220V VMU / CÓDIGO: 300.033.000222</span>
@@ -10793,9 +10842,9 @@
                         <h1 id="bombde4">BOMBAS 4"</h1>
                         <!-- Adicione botões aqui -->
                         <ul id="vmu4polegada">
-                            <li onclick="vmu4(),telaDePedidos()" id="motorvmu4">MOTOR VMUP4"</li>
-                            <li onclick="vhu4f(),telaDePedidos()" id="motorvmu4">HIDRÁULICA VBOP4"</li>
-                            <li onclick="vhu48f(),telaDePedidos()" id="motorvmu4">HIDRÁULICA VBSP47/48"</li>
+                            <li onclick="vmu4(),telaDePedidos()" id="motorvmu4">Motor VMU400</li>
+                            <li onclick="vhu4f(),telaDePedidos()" id="motorvmu4">Conjunto Hidráulico VBOP400 (40 a 46)</li>
+                            <li onclick="vhu48f(),telaDePedidos()" id="motorvmu4">Conjunto Hidráulico VBSP400 (47 e 48)</li>
                         </ul>
                     </div>
                 </div>
@@ -10804,18 +10853,18 @@
                         <h1 id="bombde4">BOMBAS 6"</h1>
                         <!-- Adicione botões aqui -->
                         <ul id="vmu4polegada">
-                            <li onclick="vmu6(),telaDePedidos()" id="motorvmu4">MOTOR VMUP6"</li>
-                            <li onclick="vmsp637(),telaDePedidos()" id="motorvmu4">MOTOR VMSP6" ATÉ 35HP"</li>
-                            <li onclick="vmsp640(),telaDePedidos()" id="motorvmu4">MOTOR VMSP6" ACIMA DE 37.5HP"</li>
-                            <li id="motorvmu4">HIDRÁULICA VBO61/64"</li>
-                            <li id="motorvmu4">HIDRÁULICA VBO65/66"</li>
-                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">HIDRÁULICA VBE65/66" (Fora de linha)</span></li>
-                            <li id="motorvmu4">HIDRÁULICA VBSP67/68"</li>
-                            <li id="motorvmu4">HIDRÁULICA VBSP69"</li>
-                            <li id="motorvmu4">CONJ.HIDRÁULICO VBOC64 E VBEC65/66 PARA MOTOR IP55 20/25HP"</li>
-                            <li id="motorvmu4">CONJ.HIDRÁULICO VBSC67/68 PARA MOTOR IP55 20/25HP"</li>
-                            <li id="motorvmu4">CONJ. HIDRÁULICO VBSC69 PARA MOTOR IP55 20/25HP"</li>
-                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">MOTOR VMZ6" (Fora de linha)</span></li>
+                            <li onclick="vmu6(),telaDePedidos()" id="motorvmu4">Motor VMUP6"</li>
+                            <li onclick="vmsp637(),telaDePedidos()" id="motorvmu4">Motor VMSP6" até 35HP"</li>
+                            <li onclick="vmsp640(),telaDePedidos()" id="motorvmu4">Motor VMSP6" acima de 37.5HP"</li>
+                            <li id="motorvmu4">Conjunto Hidráulico VBO61/64"</li>
+                            <li id="motorvmu4">Conjunto Hidráulico VBO65/66"</li>
+                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">Conjunto Hidráulico VBE65/66" (Fora de linha)</span></li>
+                            <li id="motorvmu4">Conjunto Hidráulico VBSP67/68"</li>
+                            <li id="motorvmu4">Conjunto Hidráulico VBSP69"</li>
+                            <li id="motorvmu4">Conj.Hidráulico VBOC64 E VBEC65/66 para motor IP55 20/25HP"</li>
+                            <li id="motorvmu4">Conj.Hidráulico VBSC67/68 para motor IP55 20/25HP"</li>
+                            <li id="motorvmu4">Conj.Hidráulico VBSC69 para motor IP55 20/25HP"</li>
+                            <li class="foradelinha" id="motorvmu4"><span id="foradelinha">Motor VMZ6" (Fora de linha)</span></li>
 
                         </ul>
                     </div>
@@ -10835,8 +10884,7 @@
                             <li id="motorvmu4">BOMBA CENTRIFUGA VBSC69 MOTOR IP55"</li>
                         </ul>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         
                 
@@ -11176,6 +11224,8 @@ document.querySelector('#isolation').style.display = 'none'
         document.querySelector('#uldobotao').style.display = 'none'
 }
 function vmu4(){    
+    document.querySelector('#cjbobina13').style.display = 'block'
+
 document.querySelector('#voltandovhu48').style.display = 'none'
 document.querySelector('#imagemhidraulica48').style.display = 'none'
 document.querySelector('#arruelaEporcas24').style.display = 'none'
@@ -11624,7 +11674,8 @@ function vmsp640(){
 
 }
 function voltar(){  
-    
+    document.querySelector('#cjbobina13').style.display = 'none'
+
 document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
@@ -11962,6 +12013,7 @@ document.querySelector('#hEntradaDagua1').style.display = 'none'
         document.querySelector('#bobinadoMotor').style.display ='none'
         document.querySelector('#isolacaoCanal').style.display ='none'
         document.querySelector('#diafragma').style.display ='none'
+        document.querySelector('#codigo13').style.display ='none'
 
         
         const pedidoulclass = document.querySelector('.pedidoclassul')
@@ -12324,7 +12376,9 @@ document.querySelector('#buchagrafitevmsp172').style.display ='none'
 
 
 //VMU4 e outros
+document.querySelector('#cjbobina13').style.display = 'none'
 
+        document.querySelector('#codigo13').style.display ='none'
         document.querySelector('#imagemCatalogo').style.display ='none'
         document.querySelector('#isolacaoExterna').style.display ='none'
         document.querySelector('#isolacaoCanal').style.display ='none'
@@ -12383,7 +12437,7 @@ document.querySelector('#buchagrafitevmsp172').style.display ='none'
         //---------------------------------------------------------------------------
         //----------------------INICIO-----------------------------------------------
         //---------------------------------------------------------------------------
-
+        
 const discosuperiorvms6 = document.querySelector('#codigovmsp614')
 discosuperiorvms6.style.display ='none'
 const cjdiscovmsp6 = document.querySelector('#codigovmsp610')
@@ -12532,6 +12586,7 @@ induzvmsp6.style.display = 'none'
         const saidaDeCabos = document.querySelector('#codigo20')
         saidaDeCabos.style.display = 'none'
 
+        
 // FUNÇÕES VHU48 -------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------//
 
@@ -12590,7 +12645,8 @@ document.querySelector('#codigovhu487').style.display = 'none'
 document.querySelector('#codigovhu488').style.display = 'none'
 document.querySelector('#codigovhu4891').style.display = 'none'
 document.querySelector('#codigovhu4892').style.display = 'none'
-}function vh485(){
+}
+function vh485(){
 document.querySelector('#codigovhu483').style.display = 'none'
 document.querySelector('#codigovhu482').style.display = 'none'
 document.querySelector('#codigovhu481').style.display = 'none'
@@ -12665,7 +12721,8 @@ document.querySelector('#codigovhu487').style.display = 'none'
 document.querySelector('#codigovhu488').style.display = 'none'
 document.querySelector('#codigovhu4891').style.display = 'none'
 document.querySelector('#codigovhu4892').style.display = 'none'
-}function vh487(){
+}
+function vh487(){
 document.querySelector('#codigovhu483').style.display = 'none'
 document.querySelector('#codigovhu482').style.display = 'none'
 document.querySelector('#codigovhu481').style.display = 'none'
@@ -18417,6 +18474,7 @@ document.querySelector('#codigovmspa620').style.display ='none'
 
 }
         function clicarImagem(){
+document.querySelector('#codigo13').style.display ='none'
 document.querySelector('#codigovmspa610').style.display ='none'
 document.querySelector('#codigovmspa612').style.display ='none'
 document.querySelector('#codigovmspa627').style.display ='none'
@@ -18557,6 +18615,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
     document.querySelector('#codigovmspa620').style.display ='none'
+    document.querySelector('#codigo13').style.display ='none'
 
 document.querySelector('#codigovhu1').style.display = 'none'
 document.querySelector('#codigovhu2').style.display = 'none'
@@ -18673,6 +18732,44 @@ tampaDaCamara6.style.display = 'none'
         // ---------------------------------------
         //---------------MOTOR VMUP --------------
 
+
+        function cjbobinado13(){
+            buchavmu6.style.display = 'none'
+            conjuntoEstator.style.display = 'none'
+            isolacaoExterna.style.display = 'none'
+            isolacaoCanal.style.display = 'none'
+            bobinadoMotor.style.display = 'none'
+            isolacaoInterna.style.display = 'none'
+            conjuntoTampaDeCanal.style.display = 'none'
+            saidaDeCabos.style.display = 'none'
+            etiqueta34.style.display = 'none'
+            etiqueta35.style.display = 'none'
+            etiqueta21.style.display = 'none'
+            conjuntoMancalSuperior.style.display = 'none'
+            eixo.style.display = 'none'
+            eixo11.style.display = 'none'
+            buchaDeGrafite.style.display = 'none'
+            conjuntoMancalInferior.style.display = 'none'
+            discoAxialGrafite.style.display = 'none'
+            discoDeGrafite.style.display = 'none' 
+            pinoElastico.style.display ='none'
+            discoAxialInox.style.display = 'none'
+            discoPoliester.style.display ='none'
+            tampaInferior.style.display = 'none'
+            tampaDaCamara.style.display = 'none'
+            porcaSextavada51612.style.display = 'none'
+            protetorDeAreiaNitril.style.display = 'none'
+            protetorDeAreiaPoliacetal.style.display ='none'
+            retentorSuperior.style.display ='none'
+            tampao.style.display = 'none'
+            buchaGrafiteSuperior.style.display ='none'
+            prensaCabo.style.display = 'none'
+            anelOring.style.display = 'none'
+            tampaSuperior.style.display = 'none'
+            etiqueta22.style.display = 'none'
+            diafragma.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='block'
+        }
         function saidaDeCabosf(){
             buchavmu6.style.display = 'none'
             conjuntoEstator.style.display = 'none'
@@ -18708,6 +18805,8 @@ tampaDaCamara6.style.display = 'none'
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
+
         }
         function conjuntoTampaDeCanalf(){
             buchavmu6.style.display = 'none'
@@ -18744,6 +18843,8 @@ tampaDaCamara6.style.display = 'none'
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
+
         }
         function bobinadoMotorf(){
             buchavmu6.style.display = 'none'
@@ -18780,6 +18881,8 @@ tampaDaCamara6.style.display = 'none'
             tampaSuperior.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
+
         }
         function isolacaoCanalf(){
             conjuntoEstator.style.display = 'none'
@@ -18816,6 +18919,7 @@ tampaDaCamara6.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function isolacaoExternaf(){
@@ -18853,6 +18957,7 @@ tampaDaCamara6.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function isolacaoInternaf(){
@@ -18890,6 +18995,7 @@ tampaDaCamara6.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function conjuntoEstatorf(){
@@ -18927,6 +19033,7 @@ tampaDaCamara6.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function etiqueta340(){
@@ -18964,6 +19071,7 @@ tampaDaCamara6.style.display = 'none'
             etiqueta22.style.display = 'none'
             diafragma.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function etiqueta350(){
@@ -19001,6 +19109,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19039,6 +19148,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function conjuntoMancalSuperiorf(){
@@ -19076,6 +19186,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19115,6 +19226,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function tampaSuperiorf(){
@@ -19152,6 +19264,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19190,6 +19303,7 @@ tampaDaCamara6.style.display = 'none'
             conjuntoTampaDeCanal.style.display = 'none'
             saidaDeCabos.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19267,6 +19381,7 @@ anelzinho.style.display ='none'
 cjdiscovmsp6.style.display ='none'
 discosuperiorvms6.style.display ='none'
             prensaCabo.style.display = 'block'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19305,6 +19420,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function tampaof(){
@@ -19342,6 +19458,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function retentorSuperiorf(){
@@ -19379,6 +19496,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function protetorDeAreiaPoliacetalf(){
@@ -19416,6 +19534,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function protetorDeAreiaDeNitril(){
@@ -19453,7 +19572,8 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
-     
+            document.querySelector('#codigo13').style.display ='none'
+
         }
         function porcaSextavada51612f(){
             protetorDeAreiaNitril.style.display = 'none'
@@ -19490,6 +19610,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function tampaDeDaCamara(){
@@ -19528,6 +19649,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function diafragmaDe(){
@@ -19566,6 +19688,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function tampaDeInferior(){
@@ -19603,6 +19726,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
        
@@ -19641,6 +19765,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }        
 
@@ -19679,6 +19804,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function buchaGrafite(){
@@ -19716,6 +19842,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
         function mancalInferiorf(){
@@ -19753,6 +19880,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
 
@@ -19791,6 +19919,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }
@@ -19829,6 +19958,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
 
@@ -19868,6 +19998,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
         }   
@@ -19906,6 +20037,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
 
 
@@ -19945,6 +20077,7 @@ discosuperiorvms6.style.display ='none'
             saidaDeCabos.style.display = 'none'
             etiqueta34.style.display = 'none'
             buchavmu6.style.display = 'none'
+            document.querySelector('#codigo13').style.display ='none'
 
         }
 
