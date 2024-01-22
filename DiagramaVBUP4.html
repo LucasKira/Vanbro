@@ -20041,25 +20041,27 @@ function adicionarPedidoBotao(item1, item2) {
     const pedidosUl = document.getElementById('pedidosUl');
     const novoPedido = document.createElement('li');
     novoPedido.className = 'pedidoLi';
-    novoPedido.id ='pedidoLi'
+    novoPedido.id = 'pedidoLi';
 
     // Adiciona a quantidade ao lado esquerdo de cada item na lista de pedidos
     novoPedido.innerHTML = `${spanItem.textContent} Quantidade:${quantidade} <span class="removerPedido" onclick="removerPedido(this)">Remover</span>`;
 
     pedidosUl.appendChild(novoPedido);
 
-    // Adiciona o item à lista de itens adicionados
-    itensAdicionados.push(`${spanItem.textContent} QTD:${quantidade}`);
-    
-    // Verifica se a altura máxima foi atingida e adiciona scrollbar se necessário
+    // Atualiza a altura máxima
+    verificarAlturaMaxima();
+}
+
+function verificarAlturaMaxima() {
     const pedidos = document.getElementById('pedidos');
     const maxHeight = 500; // Defina a altura máxima desejada em pixels
+
     if (pedidos.scrollHeight > maxHeight) {
         pedidos.style.overflowY = 'auto';
         pedidos.style.maxHeight = maxHeight + "px";
     } else {
         pedidos.style.overflowY = 'hidden'; // Esconde o scrollbar se não for necessário
-        pedidos.style.maxHeight = (pedidos.scrollHeight +120) + "px";
+        pedidos.style.maxHeight = "none"; // Remova a restrição de altura
     }
 }
       
