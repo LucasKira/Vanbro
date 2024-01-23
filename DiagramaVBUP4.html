@@ -2181,7 +2181,7 @@
         .estatr6{
             position: absolute;
             align-items: center;
-            margin-left: 77.2%;
+            margin-left: 78%;
             cursor: pointer;
             background-color: #6caaaa; /* Cor de fundo verde */
             color: white; /* Cor do texto branco */
@@ -2203,6 +2203,32 @@
             background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
             box-shadow: none;
         }
+        .estat{
+            position: absolute;
+            align-items: center;
+            margin-left: 75.7%;
+            cursor: pointer;
+            background-color: #6caaaa; /* Cor de fundo verde */
+            color: white; /* Cor do texto branco */
+            padding: 4px 8px; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda padrão do botão */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo */
+            box-shadow: 3px 3px 1px 2px rgba(0, 0, 0, 0.2);
+
+
+        }
+        .estat:hover{
+                background-color:  #639b9b; /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        .estat:active{
+            background-color: #d1dde0; /* Cor de fundo mais escura ao passar o mouse */
+            box-shadow: none;
+        }
+        
         .ponteirachaveta{
             position: absolute;
             align-items: center;
@@ -5350,18 +5376,35 @@
     font-size: 0.8em;
 }#cjestator21{
     position: absolute;
-    top: 33.2%;
-    left: 46.2%;
-    width: 8.3%;
-    height: 28%;   
+    top: 49.2%;
+    left: 41%;
+    width: 2%;
+    height: 2%;   
     transform: translate(-50%, -50%);
     z-index: 0;
     color: rgba(240, 248, 255, 0);
-    background-color: rgba(183, 233, 209, 0);
-    border-color: rgba(30, 243, 11, 0);
+    background-color: rgb(100, 242, 247);
+    border-color: rgb(16, 72, 228);
     cursor: pointer;
     font-size: 0.8em;
-}#etiquetavmsp623{
+    border-radius: 100%;
+}
+#cjestator22{
+    position: absolute;
+    top: 42.2%;
+    left: 45%;
+    width: 2%;
+    height: 2%;   
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: rgba(240, 248, 255, 0);
+    background-color: rgb(100, 242, 247);
+    border-color: rgb(16, 72, 228);
+    cursor: pointer;
+    font-size: 0.8em;
+    border-radius: 100%;
+}
+#etiquetavmsp623{
     position: absolute;
     top: 28.6%;
     left: 38.5%;
@@ -5889,6 +5932,8 @@
     <button onclick="chavetainduzid6()"class="pecas"id="chavetainduzido19">oi</button>
     <button onclick="induzidovmspa620()"class="pecas"id="eixoinduzido20">oi</button>
     <button onclick="estatorebobivmspa621()"class="pecas"id="cjestator21">oi</button>
+    <button onclick="estatbobinvmspa622()"class="pecas"id="cjestator22">oi</button>    
+
     <button onclick="etiqn20()"class="pecas"id="etiquetavmsp623">oi</button>
     <button onclick="etiqn21()"class="pecas"id="etiquetavmsp624">oi</button>
     <button onclick="saidvmspa625()"class="pecas"id="saidavmsp25">oi</button>
@@ -6810,6 +6855,56 @@
                 <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu625071191211','#inputvmu625071191211')">&#x1F6D2;</button>
                 <input id="inputvmu625071191211" type="number" min="1">
             </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912110" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 27,5/30,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.272</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912110','#inputvmu6250711912110')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912110" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912111" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 27,5/30,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.274</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912111','#inputvmu6250711912111')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912111" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912112" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 32,5/35,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.281</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912112','#inputvmu6250711912112')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912112" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912113" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 32,5/35,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.282</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912113','#inputvmu6250711912113')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912113" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912114" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 37,5/40,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.288</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912114','#inputvmu6250711912114')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912114" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912115" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 37,5/40,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.290</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912115','#inputvmu6250711912115')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912115" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912116" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 42,5/45,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.296</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912116','#inputvmu6250711912116')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912116" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912117" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 42,5/45,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.298</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912117','#inputvmu6250711912117')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912117" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912118" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 47,5/50,0HP TRI 220/380V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.304</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912118','#inputvmu6250711912118')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912118" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu6250711912119" onclick="clicarNaLi(this)" class="clicavel">BOBINADO 6" 47,5/50,0HP TRI 440V 60HZ VME/VMUP/VMSP / CÓDIGO: 300.037.000.306</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu6250711912119','#inputvmu6250711912119')">&#x1F6D2;</button>
+                <input id="inputvmu6250711912119" type="number" min="1">
+            </li>
         </div>
     </ul>
 </div>
@@ -7331,6 +7426,232 @@
                 <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102726','#inputvmu622102726')">&#x1F6D2;</button>
                 <input id="inputvmu622102726" type="number" min="1">
             </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102727" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 10,0/11,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.155</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102727','#inputvmu622102727')">&#x1F6D2;</button>
+                <input id="inputvmu622102727" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102728" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 11,0/12,0HP M 220/254V VMUP/SP/E / CÓDIGO: 300.033.000.189</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102728','#inputvmu622102728')">&#x1F6D2;</button>
+                <input id="inputvmu622102728" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102729" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 11,0/12,0HP M 440V VMUP/SP/E / CÓDIGO: 300.033.000.190</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102729','#inputvmu622102729')">&#x1F6D2;</button>
+                <input id="inputvmu622102729" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102730" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 12,0/13,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.191</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102730','#inputvmu622102730')">&#x1F6D2;</button>
+                <input id="inputvmu622102730" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102731" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 12,0/13,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.192</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102731','#inputvmu622102731')">&#x1F6D2;</button>
+                <input id="inputvmu622102731" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102732" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 14,0/15,0/16,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.193</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102732','#inputvmu622102732')">&#x1F6D2;</button>
+                <input id="inputvmu622102732" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102733" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 14,0/15,0/16,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.194</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102733','#inputvmu622102733')">&#x1F6D2;</button>
+                <input id="inputvmu622102733" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102734" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 17,0/18,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.195</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102734','#inputvmu622102734')">&#x1F6D2;</button>
+                <input id="inputvmu622102734" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102735" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 17,0/18,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.196</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102735','#inputvmu622102735')">&#x1F6D2;</button>
+                <input id="inputvmu622102735" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102736" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 19,0/20,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.197</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102736','#inputvmu622102736')">&#x1F6D2;</button>
+                <input id="inputvmu622102736" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102737" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 19,0/20,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.198</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102737','#inputvmu622102737')">&#x1F6D2;</button>
+                <input id="inputvmu622102737" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102738" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 22,5/25,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.199</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102738','#inputvmu622102738')">&#x1F6D2;</button>
+                <input id="inputvmu622102738" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102739" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 22,5/25,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.200</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102739','#inputvmu622102739')">&#x1F6D2;</button>
+                <input id="inputvmu622102739" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102740" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 27,5/30,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.201</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102740','#inputvmu622102740')">&#x1F6D2;</button>
+                <input id="inputvmu622102740" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102741" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 27,5/30,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.269</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102741','#inputvmu622102741')">&#x1F6D2;</button>
+                <input id="inputvmu622102741" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102742" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 32,5/35,0HP T 220V VMUP/SP/E / CÓDIGO: 300.033.000.203</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102742','#inputvmu622102742')">&#x1F6D2;</button>
+                <input id="inputvmu622102742" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102743" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 32,5/35,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.270</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102743','#inputvmu622102743')">&#x1F6D2;</button>
+                <input id="inputvmu622102743" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102744" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 37,5/40,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.206</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102744','#inputvmu622102744')">&#x1F6D2;</button>
+                <input id="inputvmu622102744" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102745" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 42,5/45,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.208</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102745','#inputvmu622102745')">&#x1F6D2;</button>
+                <input id="inputvmu622102745" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102746" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 1X 6" 47,5/50,0HP T 380/440V VMUP/SP/E / CÓDIGO: 300.033.000.210</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102746','#inputvmu622102746')">&#x1F6D2;</button>
+                <input id="inputvmu622102746" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102747" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 03,0/3,5/4,0HP T 220/380/440V VMUP/SP/E / CÓDIGO: 300.033.000106</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102747','#inputvmu622102747')">&#x1F6D2;</button>
+                <input id="inputvmu622102747" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102748" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 04,5/5,0/5,5HP T 220/380/440V VMUP/SP/E / CÓDIGO: 300.033.000118</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102748','#inputvmu622102748')">&#x1F6D2;</button>
+                <input id="inputvmu622102748" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102749" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 06,0/6,5/7,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000236</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102749','#inputvmu622102749')">&#x1F6D2;</button>
+                <input id="inputvmu622102749" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102750" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 08,0/9,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000237</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102750','#inputvmu622102750')">&#x1F6D2;</button>
+                <input id="inputvmu622102750" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102751" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 10,0/11,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000238</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102751','#inputvmu622102751')">&#x1F6D2;</button>
+                <input id="inputvmu622102751" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102752" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 12,0/13,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000239</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102752','#inputvmu622102752')">&#x1F6D2;</button>
+                <input id="inputvmu622102752" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102753" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 14,0/15,0/16,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000.240</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102753','#inputvmu622102753')">&#x1F6D2;</button>
+                <input id="inputvmu622102753" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102754" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 17,0/18,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000241</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102754','#inputvmu622102754')">&#x1F6D2;</button>
+                <input id="inputvmu622102754" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102755" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 19,0/20,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000242</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102755','#inputvmu622102755')">&#x1F6D2;</button>
+                <input id="inputvmu622102755" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102756" onclick="clicarNaLi(this)" class="clicavel">SAIDA ALIM 6F 6" 22,5/25,0HP T 220/380V VMUP/SP/E  / CÓDIGO: 300.033.000243</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102756','#inputvmu622102756')">&#x1F6D2;</button>
+                <input id="inputvmu622102756" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102757" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 03,0/3,5/4,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000172</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102757','#inputvmu622102757')">&#x1F6D2;</button>
+                <input id="inputvmu622102757" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102758" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 04,5/5,0/5,5HP T 220/380V VMUP/SP/E  / CÓDIGO: 300.033.000176</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102758','#inputvmu622102758')">&#x1F6D2;</button>
+                <input id="inputvmu622102758" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102759" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 06,0/6,5/7,0HP T 220/380V VMUP/SP/E  / CÓDIGO: 300.033.000226</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102759','#inputvmu622102759')">&#x1F6D2;</button>
+                <input id="inputvmu622102759" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102760" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 08,0/9,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000227</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102760','#inputvmu622102760')">&#x1F6D2;</button>
+                <input id="inputvmu622102760" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102761" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 10,0/11,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000228</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102761','#inputvmu622102761')">&#x1F6D2;</button>
+                <input id="inputvmu622102761" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102762" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 12,0/13,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000229</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102762','#inputvmu622102762')">&#x1F6D2;</button>
+                <input id="inputvmu622102762" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102763" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 14,0/15,0/16,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000230</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102763','#inputvmu622102763')">&#x1F6D2;</button>
+                <input id="inputvmu622102763" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102764" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 17,0/18,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000231</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102764','#inputvmu622102764')">&#x1F6D2;</button>
+                <input id="inputvmu622102764" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102765" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 19,0/20,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000232</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102765','#inputvmu622102765')">&#x1F6D2;</button>
+                <input id="inputvmu622102765" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102766" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 22,5/25,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000233</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102766','#inputvmu622102766')">&#x1F6D2;</button>
+                <input id="inputvmu622102766" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102767" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 27,5/30,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000202</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102767','#inputvmu622102767')">&#x1F6D2;</button>
+                <input id="inputvmu622102767" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102768" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 32,5/35,0HP T 220/380V VMUP/SP/E / CÓDIGO: 300.033.000204</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102768','#inputvmu622102768')">&#x1F6D2;</button>
+                <input id="inputvmu622102768" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102769" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 37,5/40,0HP T 220/380V VMUP/SP / CÓDIGO: 300.033.000251</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102769','#inputvmu622102769')">&#x1F6D2;</button>
+                <input id="inputvmu622102769" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102770" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 42,5/45,0HP T 220/380V VMUP/SP / CÓDIGO: 300.033.000252</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102770','#inputvmu622102770')">&#x1F6D2;</button>
+                <input id="inputvmu622102770" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu622102771" onclick="clicarNaLi(this)" class="clicavel">SAIDA CAB CHAT 2X 6" 47,5/50,0HP T 220/380V VMUP/SP / CÓDIGO: 300.033.000253</span>
+                <button class="said" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu622102771','#inputvmu622102771')">&#x1F6D2;</button>
+                <input id="inputvmu622102771" type="number" min="1">
+            </li>
+
 
         </div>
     </ul>
@@ -9292,7 +9613,7 @@
     <div class="divPecas" id="codigo13">
         <ul>
                 <li id="design">CONJUNTO ESTATOR BOBINADO <button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
-                <li id="design">MATERIAL: SAE 1020/SILICIO
+                <li id="design">MATERIAL: ----- <span id="quantidade">Quantidade</span></li>
                 <div>
                     <li class="eixo-container">
                         <span id="span56" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 3F 4" 00,3HP M 110/220V 60HZ VMU/B/E / CÓDIGO: 310.045.000001</span>
@@ -10627,26 +10948,8 @@
 </div>
 <div class="divPecas6" id="codigovmspa621">
     <ul>
-        <li id="design">ESTATOR E CONJUNTO ESTATOR BOBINADO<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
-        <li id="design">MATERIAL: -----  <span id="quantidade">Quantidade</span></li>
-        <div id="eixo"> 
-            <li class="eixo-container">
-                <span id="spanvmu61886" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 80CM (HP 37,5/40 T) / CÓDIGO: 300.027.000037</span>
-                <button class="estatr6" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61886','#inputvmu61886')">&#x1F6D2;</button>
-                <input id="inputvmu61886" type="number" min="1">
-            </li> 
-            <li class="eixo-container">
-                <span id="spanvmu61887" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 87CM (HP 42,5/45 T) / CÓDIGO: 300.027.000038</span>
-                <button class="estatr6" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61887','#inputvmu61887')">&#x1F6D2;</button>
-                <input id="inputvmu61887" type="number" min="1">
-            </li>
-            <li class="eixo-container">
-                <span id="spanvmu61888" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 95CM (HP 47,5/50 T) / CÓDIGO: 300.027.000039</span>
-                <button class="estatr6" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61888','#inputvmu61888')">&#x1F6D2;</button>
-                <input id="inputvmu61888" type="number" min="1">
-            </li>
-            <br>
-            <li id="design">CONJUNTO ESTATOR BOBINADO</li>
+        <div>
+            <li id="design">CONJUNTO ESTATOR BOBINADO<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
             <li id="design">MATERIAL: -----  <span id="quantidade">Quantidade</span></li>                                  
                 
             <li class="eixo-container">
@@ -10693,13 +10996,34 @@
                     <span id="spanvmu618954" onclick="clicarNaLi(this)" class="clicavel">CONJ EST BOB 2CC 6" 47,5/50,0HP T 220/380V 60HZ VMS/P / CÓDIGO: 310.046.000167</span>
                     <button class="estatr6" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu618954','#inputvmu61854')">&#x1F6D2;</button>
                     <input id="inputvmu618954" type="number" min="1">
-                </li>
-                
+                </li>               
 
         </div>
     </ul>
 </div> 
-
+<div class="divPecas6" id="codigovmspa622">
+    <ul>
+        <li id="design">ESTATOR<button onclick="fecharEixo()" id="fecharEixo">FECHAR</button></li>
+        <li id="design">MATERIAL: -----  <span id="quantidade">Quantidade</span></li>
+        <div id="eixo"> 
+            <li class="eixo-container">
+                <span id="spanvmu61886" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 80CM (HP 37,5/40 T) / CÓDIGO: 300.027.000037</span>
+                <button class="estat" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61886','#inputvmu61886')">&#x1F6D2;</button>
+                <input id="inputvmu61886" type="number" min="1">
+            </li> 
+            <li class="eixo-container">
+                <span id="spanvmu61887" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 87CM (HP 42,5/45 T) / CÓDIGO: 300.027.000038</span>
+                <button class="estat" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61887','#inputvmu61887')">&#x1F6D2;</button>
+                <input id="inputvmu61887" type="number" min="1">
+            </li>
+            <li class="eixo-container">
+                <span id="spanvmu61888" onclick="clicarNaLi(this)" class="clicavel">ESTATOR 6" VMSP 95CM (HP 47,5/50 T) / CÓDIGO: 300.027.000039</span>
+                <button class="estat" id="adicionarPedidoBtn" onclick="adicionarPedidoBotao('#spanvmu61888','#inputvmu61888')">&#x1F6D2;</button>
+                <input id="inputvmu61888" type="number" min="1">
+            </li>
+        </div>
+    </ul>
+</div> 
 
 
 
@@ -11599,6 +11923,7 @@ function vmsp640(){
     document.querySelector('#chavetainduzido19').style.display ='block'
     document.querySelector('#eixoinduzido20').style.display ='block'
     document.querySelector('#cjestator21').style.display ='block'
+    document.querySelector('#cjestator22').style.display ='block'
     document.querySelector('#etiquetavmsp623').style.display ='block'
     document.querySelector('#etiquetavmsp624').style.display ='block'
     document.querySelector('#saidavmsp25').style.display ='block'
@@ -11675,10 +12000,11 @@ function vmsp640(){
 }
 function voltar(){  
     document.querySelector('#cjbobina13').style.display = 'none'
-
 document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     document.querySelector('#codigovmspa620').style.display ='none'
     document.querySelector('#codigovmspa612').style.display ='none'
     document.querySelector('#codigovmspa610').style.display ='none'
@@ -11706,6 +12032,7 @@ document.querySelector('#codigovmspa621').style.display ='none'
     document.querySelector('#buchagrafite18').style.display ='none'
     document.querySelector('#chavetainduzido19').style.display ='none'
     document.querySelector('#eixoinduzido20').style.display ='none'
+    document.querySelector('#cjestator22').style.display ='none'
     document.querySelector('#cjestator21').style.display ='none'
     document.querySelector('#etiquetavmsp623').style.display ='none'
     document.querySelector('#etiquetavmsp624').style.display ='none'
@@ -12071,6 +12398,8 @@ document.querySelector('#hEntradaDagua1').style.display = 'none'
 }
 
 // VMSP ACIMA DE 37.5
+
+document.querySelector('#codigovmspa622').style.display ='none'
 document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
@@ -12112,6 +12441,7 @@ document.querySelector('#imagemMotorVmsp6375').style.display ='none'
     document.querySelector('#buchagrafite18').style.display ='none'
     document.querySelector('#chavetainduzido19').style.display ='none'
     document.querySelector('#eixoinduzido20').style.display ='none'
+    document.querySelector('#cjestator22').style.display ='none'
     document.querySelector('#cjestator21').style.display ='none'
     document.querySelector('#etiquetavmsp623').style.display ='none'
     document.querySelector('#etiquetavmsp624').style.display ='none'
@@ -13864,15 +14194,108 @@ anelzinho.style.display ='none'
 discosuperiorvms6.style.display ='none'
 discopoliestervmsp6.style.display ='none'
 
-
-function induzidovmspa620(){
+function estatbobinvmspa622(){
+    
+    document.querySelector('#codigovmspa622').style.display ='block'
     document.querySelector('#codigovmspa627').style.display ='none'
-document.querySelector('#codigovmspa625').style.display ='none'
-document.querySelector('#codigovmspa621').style.display ='none'
-    document.querySelector('#codigovmspa620').style.display ='block'
+    document.querySelector('#codigovmspa625').style.display ='none'
+    document.querySelector('#codigovmspa621').style.display ='none'
+    document.querySelector('#codigovmspa620').style.display ='none'
     document.querySelector('#codigovmspa610').style.display ='none'
     document.querySelector('#codigovmspa612').style.display ='none'
     document.querySelector('#codigovmspa636').style.display ='none'
+    document.querySelector('#codigovmspa629').style.display ='none'
+    document.querySelector('#codigovmspa618').style.display ='none'
+    document.querySelector('#codigovmspa617').style.display ='none'
+    document.querySelector('#codigovmspa614').style.display ='none'
+    document.querySelector('#codigovmspa611').style.display ='none'
+    
+        discosuperiorvms6.style.display ='none'
+        cjdiscovmsp6.style.display ='none'
+        anelzinho.style.display ='none'
+        anelretpequeno.style.display ='none'
+        induzvmsp6.style.display = 'none'
+                iso.style.display = 'none'
+                calc.style.display = 'none'
+                saidda.style.display = 'none'
+                aneli6.style.display = 'none'
+                parafuvedan.style.display = 'none'
+                protetord6.style.display = 'none'
+                anelrete6.style.display = 'none'
+                retenta6.style.display = 'none'
+                tampao6.style.display = 'none'
+                protetodeareia6.style.display ='none'
+                porcearruel6.style.display ='none'
+                chavetainduzido6.style.display ='none'
+                eixo6P.style.display = 'none'
+                discespacadr.style.display = 'none'
+                etiquet20.style.display = 'none'
+                etiqueta58vmu6.style.display = 'none'
+                etiquetanvmu6.style.display = 'none'
+                parafusoearruela.style.display = 'none'
+                tampaDaCamara6.style.display = 'none'
+                diafragmVmu6.style.display ='none'
+                cjtampainferiorVmu6.style.display ='none'
+                discpoliester6.style.display ='none'
+                discinoxvmu6.style.display = 'none'
+                discaxialgrafitevmu6.style.display = 'none'
+                pinoElasticovmu6.style.display = 'none'
+                discgrafite6.style.display = 'none'
+                anelDeRetencao.style.display ='none'
+                mancalinf6.style.display ='none'
+                buchavmu6.style.display = 'none'
+                conjuntoEstator.style.display = 'none'
+                isolacaoExterna.style.display = 'none'
+                isolacaoCanal.style.display = 'none'
+                bobinadoMotor.style.display = 'none'
+                isolacaoInterna.style.display = 'none'
+                conjuntoTampaDeCanal.style.display = 'none'
+                saidaDeCabos.style.display = 'none'
+                etiqueta34.style.display = 'none'
+                etiqueta35.style.display = 'none'
+                etiqueta21.style.display = 'none'
+                conjuntoMancalSuperior.style.display = 'none'
+                eixo.style.display = 'none'
+                eixo11.style.display = 'none'
+                buchaDeGrafite.style.display = 'none'
+                conjuntoMancalInferior.style.display = 'none'
+                discoAxialGrafite.style.display = 'none'
+                discoDeGrafite.style.display = 'none' 
+                pinoElastico.style.display ='none'
+                discoAxialInox.style.display = 'none'
+                discoPoliester.style.display ='none'
+                tampaInferior.style.display = 'none'
+                tampaDaCamara.style.display = 'none'
+                porcaSextavada51612.style.display = 'none'
+                protetorDeAreiaNitril.style.display = 'none'
+                protetorDeAreiaPoliacetal.style.display ='none'
+                retentorSuperior.style.display ='none'
+                tampao.style.display = 'none'
+                buchaGrafiteSuperior.style.display ='none'
+                prensaCabo.style.display = 'none'
+                anelOring.style.display = 'none'
+                tampaSuperior.style.display = 'none'
+                etiqueta22.style.display = 'none'
+                diafragma.style.display = 'none'
+                etiqueta21vmu6.style.display = 'none'
+                estatorEbobinado.style.display = 'none'
+                cnjmancal6.style.display ='none'
+                mancalid6.style.display = 'none'
+                bobi6.style.display = 'none'
+                document.querySelector('#codigovmu626').style.display ='none'
+    
+    }
+
+function induzidovmspa620(){
+    
+document.querySelector('#codigovmspa622').style.display ='none'
+document.querySelector('#codigovmspa627').style.display ='none'
+document.querySelector('#codigovmspa625').style.display ='none'
+document.querySelector('#codigovmspa621').style.display ='none'
+document.querySelector('#codigovmspa620').style.display ='block'
+document.querySelector('#codigovmspa610').style.display ='none'
+document.querySelector('#codigovmspa612').style.display ='none'
+document.querySelector('#codigovmspa636').style.display ='none'
 document.querySelector('#codigovmspa629').style.display ='none'
 document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
@@ -13968,6 +14391,7 @@ document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -14057,6 +14481,7 @@ document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -14131,6 +14556,7 @@ document.querySelector('#codigovmspa611').style.display ='none'
             mancalid6.style.display = 'none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
+            document.querySelector('#codigovmspa622').style.display ='none'
 
 }
 function saidvmspa625(){
@@ -14146,6 +14572,7 @@ document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='none'
 document.querySelector('#codigovmspa611').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -14237,6 +14664,7 @@ document.querySelector('#codigovmspa618').style.display ='none'
 document.querySelector('#codigovmspa617').style.display ='none'
 document.querySelector('#codigovmspa614').style.display ='block'
 document.querySelector('#codigovmspa611').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
@@ -14311,6 +14739,7 @@ document.querySelector('#codigovmspa611').style.display ='none'
             mancalid6.style.display = 'none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
+            document.querySelector('#codigovmspa622').style.display ='none'
 
 }
 function mancalinferiorvmspa617(){
@@ -14401,6 +14830,7 @@ document.querySelector('#codigovmspa620').style.display ='none'
             mancalid6.style.display = 'none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
+            document.querySelector('#codigovmspa622').style.display ='none'
 
 }function buchgrafitvmspa618(){
     document.querySelector('#codigovmspa610').style.display ='none'
@@ -14415,6 +14845,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14489,7 +14921,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
 
-}function tampsuperiorvmspa629(){
+}
+function tampsuperiorvmspa629(){
     document.querySelector('#codigovmspa610').style.display ='none'
     document.querySelector('#codigovmspa612').style.display ='none'
     document.querySelector('#codigovmspa636').style.display ='none'
@@ -14502,6 +14935,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14576,7 +15011,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
 
-}function tampaovmspa636(){
+}
+function tampaovmspa636(){
     document.querySelector('#codigovmspa610').style.display ='none'
     document.querySelector('#codigovmspa612').style.display ='none'
     document.querySelector('#codigovmspa636').style.display ='block'
@@ -14589,6 +15025,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14663,7 +15101,8 @@ document.querySelector('#codigovmspa620').style.display ='none'
             bobi6.style.display = 'none'
             document.querySelector('#codigovmu626').style.display ='none'
 
-}function cjdiscograftvmspa611(){
+}
+function cjdiscograftvmspa611(){
     document.querySelector('#codigovmspa610').style.display ='none'
     document.querySelector('#codigovmspa612').style.display ='none'
     document.querySelector('#codigovmspa636').style.display ='none'
@@ -14676,6 +15115,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14765,6 +15206,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14853,6 +15296,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -14942,6 +15387,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='block'
     cjdiscovmsp6.style.display ='none'
     anelzinho.style.display ='none'
@@ -15030,6 +15477,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     discosuperiorvms6.style.display ='none'
     cjdiscovmsp6.style.display ='block'
     anelzinho.style.display ='none'
@@ -15120,6 +15569,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     anelzinho.style.display ='block'
     anelretpequeno.style.display ='none'
     induzvmsp6.style.display = 'none'
@@ -15210,6 +15661,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
     anelretpequeno.style.display ='block'
     induzvmsp6.style.display = 'none'
             iso.style.display = 'none'
@@ -15303,6 +15756,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
             iso.style.display = 'none'
             calc.style.display = 'none'
             saidda.style.display = 'none'
@@ -15469,6 +15924,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function bob6(){
             induzvmsp6.style.display = 'none'
@@ -15559,6 +16016,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function isoli(){
             iso.style.display = 'block'
@@ -15647,6 +16106,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function calcos(){
             calc.style.display = 'block'
@@ -15735,6 +16196,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function saidecabs6(){
             saidda.style.display = 'block'
@@ -15823,6 +16286,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function cjmancali6(){
             aneli6.style.display = 'none'
@@ -15911,6 +16376,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function aneldeteta(){
             aneli6.style.display = 'block'
@@ -15999,6 +16466,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function paraeveda(){
             aneli6.style.display = 'none'
@@ -16087,6 +16556,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function prens6(){
             parafuvedan.style.display = 'none'
@@ -16175,6 +16646,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function anelRet6(){
             protetord6.style.display = 'none'
@@ -16263,6 +16736,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function rententorD6(){
             anelrete6.style.display = 'none'
@@ -16352,6 +16827,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function tampaoD6(){
             retenta6.style.display = 'none'
@@ -16440,6 +16917,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function mancalsu6(){
             tampao6.style.display = 'none'
@@ -16528,6 +17007,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function protetor6(){
             protetodeareia6.style.display ='block'
@@ -16616,6 +17097,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
 
         }
         function arruelporca6(){
@@ -16705,6 +17188,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
         }
         function chavetainduzid6(){
@@ -16794,6 +17278,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
         }
         function eixode6p(){
@@ -16883,6 +17368,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
         }
         function espacadorDisco(){
@@ -16972,6 +17458,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
         }
 
@@ -17062,6 +17549,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function etiqn20(){
             etiquet20.style.display = 'block'
@@ -17150,6 +17639,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function etiqn21(){
             etiquet20.style.display = 'none'
@@ -17238,6 +17729,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function etiqn58(){
             etiquet20.style.display = 'none'
@@ -17326,6 +17819,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function etiqn6(){
             etiqueta58vmu6.style.display = 'none'
@@ -17414,6 +17909,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function parafusoArruelas(){
             etiquetanvmu6.style.display = 'none'
@@ -17502,6 +17999,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function tampaCam6(){
             parafusoearruela.style.display = 'none'
@@ -17590,6 +18089,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function diagragmaf(){
             tampaDaCamara6.style.display = 'none'
@@ -17678,6 +18179,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function ConjTampainferiorVmu6(){
             tampaDaCamara6.style.display = 'none'
@@ -17766,6 +18269,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function discopoliester6(){
             tampaDaCamara6.style.display = 'none'
@@ -17854,6 +18359,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function discInoxVmu6(){
             tampaDaCamara6.style.display = 'none'
@@ -17943,6 +18450,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function discoaxialvmu6(){
             tampaDaCamara6.style.display = 'none'
@@ -18031,6 +18540,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function pinoDeElasticoVmu6 (){
             tampaDaCamara6.style.display = 'none'
@@ -18119,6 +18630,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function cjdiscografiteVmu6(){
             tampaDaCamara6.style.display = 'none'
@@ -18206,6 +18719,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
 
         }
         function anelDeRetencaoVmu6(){
@@ -18295,6 +18810,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function mancainferior6(){
             tampaDaCamara6.style.display = 'none'
@@ -18383,6 +18900,8 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
+
         }
         function buchagrafite6(){
             tampaDaCamara6.style.display = 'none'
@@ -18471,6 +18990,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
 }
         function clicarImagem(){
@@ -18481,6 +19001,7 @@ document.querySelector('#codigovmspa627').style.display ='none'
 document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
 document.querySelector('#codigovmspa620').style.display ='none'
+document.querySelector('#codigovmspa622').style.display ='none'
 
 document.querySelector('#codigovhu1').style.display = 'none'
 document.querySelector('#codigovhu2').style.display = 'none'
@@ -18616,6 +19137,7 @@ document.querySelector('#codigovmspa625').style.display ='none'
 document.querySelector('#codigovmspa621').style.display ='none'
     document.querySelector('#codigovmspa620').style.display ='none'
     document.querySelector('#codigo13').style.display ='none'
+    document.querySelector('#codigovmspa622').style.display ='none'
 
 document.querySelector('#codigovhu1').style.display = 'none'
 document.querySelector('#codigovhu2').style.display = 'none'
