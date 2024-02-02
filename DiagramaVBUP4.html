@@ -6470,6 +6470,79 @@ color: #3498db00;
 
 /*--------------HIDRÁULICA VHEP66-----------------*/
 
+#modeloEstagioTirante6r {
+    position: absolute;
+    width: 100%;
+    max-width: 105px;
+    border-radius: 6px;
+    background-color: #a3aaaa;;
+    border: 1px solid black;
+    bottom: 40px;
+    left: 125px;
+}
+
+#quantestagtirante6r {
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 6px;
+    background-color: #a3aaaa;;
+    border: 1px solid black;
+    bottom: 10px;
+    left: 125px;
+}
+
+#tirante6r {
+    position: absolute;
+    color: #a3aaaa;;
+    bottom: 40px;
+    left: 15px;
+    
+}
+
+#qntestagtirante6r {
+    position: absolute;
+    color: #a3aaaa;;
+    bottom: 10px;
+    left: 15px;
+}
+
+#modeloEstagioTirante6b {
+    position: absolute;
+    width: 100%;
+    max-width: 105px;
+    border-radius: 6px;
+    background-color: #a3aaaa;;
+    border: 1px solid black;
+    bottom: 40px;
+    left: 125px;
+}
+
+#quantestagtirante6b {
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 6px;
+    background-color: #a3aaaa;;
+    border: 1px solid black;
+    bottom: 10px;
+    left: 125px;
+}
+
+#tirante6b {
+    position: absolute;
+    color: #a3aaaa;;
+    bottom: 40px;
+    left: 15px;
+    
+}
+
+#qntestagtirante6b {
+    position: absolute;
+    color: #a3aaaa;;
+    bottom: 10px;
+    left: 15px;
+}
 
 #entradaDaguavbop661{
 position: absolute;
@@ -7827,19 +7900,19 @@ color: #3498db00;
         <div id="eixo">
             <li class="eixo-container">
                 <span id="spanvhu64ao" onclick="clicarNaLi(this)" class="clicavel">TIRANTE 6" / CÓDIGO: 300.013.001369</span>
-                <button class="tiranter" id="adicionarPedidoBtn" onclick="adicionarPedidoBotaoTirante6('#spanvhu64ao','#inputvhu64ao')">&#x1F6D2;</button>
+                <button class="tiranter" id="adicionarPedidoBtn" onclick="adicionarPedidoBotaoTirante6b('#spanvhu64ao','#inputvhu64ao')">&#x1F6D2;</button>
                 <input id="inputvhu64ao" type="number" min="1">
             </li>     
             <li>
                 <p></p>
-                <span id="tirante6">MODELO: </span>
-                <select name="Modelo" id="modeloEstagioTirante6">
+                <span id="tirante6b">MODELO: </span>
+                <select name="Modelo" id="modeloEstagioTirante6b">
                     <option value="" disabled selected>MODELO</option>                    
                     <option value="VBOP65">VBOP65</option>
                     <option value="VBOP66">VBOP66</option>                 
                 </select>
-                <span id="qntestagtirante6">ESTÁGIOS: </span>
-                <input placeholder="QUANTIDADE" id="quantestagtirante6" type="number" min="1">
+                <span id="qntestagtirante6b">ESTÁGIOS: </span>
+                <input placeholder="QUANTIDADE" id="quantestagtirante6b" type="number" min="1">
                 <p></p>
             </li>                                     
         </div>
@@ -8237,8 +8310,8 @@ color: #3498db00;
                 <span id="tirante6">MODELO: </span>
                 <select name="Modelo" id="modeloEstagioTirante6">
                     <option value="" disabled selected>MODELO</option>                    
-                    <option value="VBSP65">VBEP65</option>
-                    <option value="VBSP66">VBEP66</option>                 
+                    <option value="VBEP65">VBEP65</option>
+                    <option value="VBEP66">VBEP66</option>                 
                 </select>
                 <span id="qntestagtirante6">ESTÁGIOS: </span>
                 <input placeholder="QUANTIDADE" id="quantestagtirante6" type="number" min="1">
@@ -8620,23 +8693,23 @@ color: #3498db00;
         <li id="design">MATERIAL: INOX AISI 304  <span id="quantidade">Quantidade</span></li>
         <div id="eixo">
             <li class="eixo-container">
-                <span id="spanvhu64" onclick="clicarNaLi(this)" class="clicavel">TIRANTE 6" / CÓDIGO: 300.013.001369</span>
-                <button class="tiranter" id="adicionarPedidoBtn" onclick="adicionarPedidoBotaoTirante6('#spanvhu64','#inputvhu64')">&#x1F6D2;</button>
-                <input id="inputvhu64" type="number" min="1">
+                <span id="spanvhu64r" onclick="clicarNaLi(this)" class="clicavel">TIRANTE 6" / CÓDIGO: 300.013.001369</span>
+                <button class="tiranter" id="adicionarPedidoBtn" onclick="adicionarPedidoBotaoTirante6r('#spanvhu64r','#inputvhu64r')">&#x1F6D2;</button>
+                <input id="inputvhu64r" type="number" min="1">
             </li>     
             <li>
                 <p></p>
-                <span id="tirante6">MODELO: </span>
-                <select name="Modelo" id="modeloEstagioTirante6">
+                <span id="tirante6r">MODELO: </span>
+                <select name="Modelo" id="modeloEstagioTirante6r">
                     <option value="" disabled selected>MODELO</option>                    
-                    <option value="VBSP61">VBSP61</option>
-                    <option value="VBSP62">VBSP62</option>
-                    <option value="VBSP63">VBSP63</option>
-                    <option value="VBSP64">VBSP64</option>
+                    <option value="VBOP61">VBOP61</option>
+                    <option value="VBOP62">VBOP62</option>
+                    <option value="VBOP63">VBOP63</option>
+                    <option value="VBOP64">VBOP64</option>
 
                 </select>
-                <span id="qntestagtirante6">ESTÁGIOS: </span>
-                <input placeholder="QUANTIDADE" id="quantestagtirante6" type="number" min="1">
+                <span id="qntestagtirante6r">ESTÁGIOS: </span>
+                <input placeholder="QUANTIDADE" id="quantestagtirante6r" type="number" min="1">
                 <p></p>
 
             </li>                                     
@@ -27674,7 +27747,48 @@ function verificarAlturaMaxima() {
         pedidos.style.maxHeight = "none"; // Remova a restrição de altura
     }
 }
-      
+     
+function adicionarPedidoBotaoTirante6r(item1, item2) {
+
+// Obter os elementos depois de definir as variáveis
+const modeloEstagioTirante6r = document.getElementById('modeloEstagioTirante6r');
+const quantestagtirante6r = document.getElementById('quantestagtirante6r');
+
+const quantidadeInput = document.querySelector(item2);
+const quantidade = quantidadeInput.value || 1;
+const spanItem = document.querySelector(item1);
+
+// Verificar se o modelo e a quantidade de estágios foram fornecidos
+if (modeloEstagioTirante6r.value === "" || quantestagtirante6r.value === "") {
+    alert("INDIQUE O MODELO E A QUANTIDADE DE ESTÁGIOS");
+} else {
+    // Adiciona o conteúdo do spanItem à lista de pedidos
+    const pedidosUl = document.getElementById('pedidosUl');
+    const novoPedido = document.createElement('li');
+    novoPedido.className = 'pedidoLi';
+    novoPedido.id = 'pedidoLi';
+
+    // Adiciona a quantidade e outras informações à lista de pedidos
+    let conteudoPedido = `${spanItem.textContent} - Quantidade: ${quantidade}<br>`;
+    
+    // Adiciona o modelo se existir
+    if (modeloEstagioTirante6r.value !== "") {
+        conteudoPedido += ` - Modelo: ${modeloEstagioTirante6r.value}`;
+    }
+
+    // Adiciona a quantidade de estágios se existir
+    if (quantestagtirante6r.value !== "") {
+        conteudoPedido += ` - Estágios: ${quantestagtirante6r.value}`;
+    }
+
+    conteudoPedido += '<span class="removerPedido" onclick="removerPedido(this)">Remover</span>';
+    novoPedido.innerHTML = conteudoPedido;
+    pedidosUl.appendChild(novoPedido);
+
+    // Atualiza a altura máxima
+    verificarAlturaMaxima();
+}
+}
 function adicionarPedidoBotaoTirante6(item1, item2) {
 
     // Obter os elementos depois de definir as variáveis
@@ -27716,7 +27830,47 @@ function adicionarPedidoBotaoTirante6(item1, item2) {
         verificarAlturaMaxima();
     }
 }
+function adicionarPedidoBotaoTirante6b(item1, item2) {
 
+// Obter os elementos depois de definir as variáveis
+const modeloEstagioTirante6b = document.getElementById('modeloEstagioTirante6b');
+const quantestagtirante6b = document.getElementById('quantestagtirante6b');
+
+const quantidadeInput = document.querySelector(item2);
+const quantidade = quantidadeInput.value || 1;
+const spanItem = document.querySelector(item1);
+
+// Verificar se o modelo e a quantidade de estágios foram fornecidos
+if (modeloEstagioTirante6b.value === "" || quantestagtirante6b.value === "") {
+    alert("INDIQUE O MODELO E A QUANTIDADE DE ESTÁGIOS");
+} else {
+    // Adiciona o conteúdo do spanItem à lista de pedidos
+    const pedidosUl = document.getElementById('pedidosUl');
+    const novoPedido = document.createElement('li');
+    novoPedido.className = 'pedidoLi';
+    novoPedido.id = 'pedidoLi';
+
+    // Adiciona a quantidade e outras informações à lista de pedidos
+    let conteudoPedido = `${spanItem.textContent} - Quantidade: ${quantidade}<br>`;
+    
+    // Adiciona o modelo se existir
+    if (modeloEstagioTirante6b.value !== "") {
+        conteudoPedido += ` - Modelo: ${modeloEstagioTirante6b.value}`;
+    }
+
+    // Adiciona a quantidade de estágios se existir
+    if (quantestagtirante6b.value !== "") {
+        conteudoPedido += ` - Estágios: ${quantestagtirante6b.value}`;
+    }
+
+    conteudoPedido += '<span class="removerPedido" onclick="removerPedido(this)">Remover</span>';
+    novoPedido.innerHTML = conteudoPedido;
+    pedidosUl.appendChild(novoPedido);
+
+    // Atualiza a altura máxima
+    verificarAlturaMaxima();
+}
+}
 function adicionarPedidoBotaoEixo6(item1, item2) {
 
 // Obter os elementos depois de definir as variáveis
